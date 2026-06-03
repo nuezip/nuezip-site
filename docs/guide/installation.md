@@ -1,42 +1,55 @@
 # Installation
 
-This page explains how to install Gomoku on macOS and covers common issues you may encounter.
+Gomoku is available for macOS through the Mac App Store. The app costs $4.99 and provides a one-time purchase for full access to all features.
 
 ## Download Options
 
-- **Mac App Store** — If an App Store build is published, install from the App Store for automatic updates.
-- **GitHub Releases** — Download the latest macOS build (.dmg or .zip) from the project's Releases page: `https://github.com/your-org/gomoku/releases`.
+- **Mac App Store**: [Download Gomoku](https://apps.apple.com/app/id6771268165) - $4.99
 
-If an App Store build is available, you can find the app by its numeric App Store ID: `6771268165`.
+### Mac App Store (Recommended)
 
-- Public App Store link: https://apps.apple.com/app/id6771268165
-- Developer (App Store Connect): https://appstoreconnect.apple.com/apps/6771268165/distribution/info
+The Mac App Store version provides automatic updates and seamless integration with macOS.
 
-If you don't see an App Store entry yet, use the GitHub Releases download.
+- **Price**: $4.99 (one-time purchase)
+- **App Store ID**: 6771268165
+- **Link**: https://apps.apple.com/app/id6771268165
 
-## Installing from a .dmg (recommended for most users)
+### GitHub Releases (Alternative)
 
-1. Download the latest `.dmg` from the Releases page.
-2. Double-click the downloaded `.dmg` to open it.
-3. Drag the `Gomoku.app` icon into your `Applications` folder.
-4. Eject the mounted image and open `Gomoku` from `Applications`.
+If you prefer to download directly, you can get the app from GitHub Releases. Note that this version does not receive automatic updates.
+
+## Installation Steps
+
+### Mac App Store Installation (Recommended)
+
+1. Click the "Download Gomoku" link above or search for "Gomoku" in the Mac App Store
+2. Click "Get" or "Buy" to purchase the app ($4.99)
+3. The app will automatically download and install
+4. Launch Gomoku from your Applications folder or Launchpad
+
+### GitHub Releases Installation
+
+1. Download the latest `.dmg` from the Releases page
+2. Double-click the downloaded `.dmg` to open it
+3. Drag the `Gomoku.app` icon into your `Applications` folder
+4. Eject the mounted image and open `Gomoku` from `Applications`
 
 If macOS prevents opening the app (Gatekeeper), open **System Settings → Privacy & Security** and click **Open Anyway** for Gomoku, or right-click the app and choose **Open**.
 
 ## First Launch
 
-On first run Gomoku may request the following permissions:
+When you launch Gomoku for the first time, you may be prompted to grant the following permissions:
 
-- **Local Network** — required for LAN (局域网) play so other devices on your Wi‑Fi can discover and join games.
-- **Files and Folders** — to save and open game records (SGF) and settings.
-- **Accessibility / Screen Recording** — optional; only needed if you enable auxiliary features that capture the screen or use overlay helpers.
+- **Local Network**: Required for LAN (局域网) play so other devices on your Wi‑Fi can discover and join games
+- **Files and Folders**: To save and open game records (SGF) and settings
+- **Accessibility / Screen Recording**: Optional; only needed if you enable auxiliary features that capture the screen or use overlay helpers
 
-Grant permissions when prompted; you can change them later in **System Settings → Privacy & Security**.
+Grant permissions when prompted. You can modify these permissions at any time in **System Settings → Privacy & Security**.
 
 ## Updates
 
-- If you installed from the **Mac App Store**, updates are handled automatically.
-- If you use the **GitHub Releases** build, download the newer release and replace the app in `Applications`.
+- **Mac App Store version**: Updates are handled automatically by the App Store
+- **GitHub Releases version**: Download the newer release and replace the app in `Applications`
 
 ## Uninstall
 
@@ -61,8 +74,10 @@ rm -rf ~/Library/Logs/gomoku
 
 ## Troubleshooting
 
-- If macOS blocks the app at launch, open **System Settings → Privacy & Security** and allow Gomoku to open.
-- For LAN issues, ensure all devices are on the same Wi‑Fi network and that **Local Network** permission was granted.
-- If you see a notarization warning, download a signed/notarized build from Releases or the App Store.
+If you encounter issues during installation:
 
-If you need more help, see the Troubleshooting guide or open an issue on the project repository.
+- **macOS blocks the app**: Open **System Settings → Privacy & Security** and click **Open Anyway** for Gomoku
+- **LAN issues**: Ensure all devices are on the same Wi‑Fi network and that **Local Network** permission was granted
+- **Notarization warning**: Download a signed/notarized build from the Mac App Store or GitHub Releases
+
+For more help, visit the [Troubleshooting guide](./troubleshooting.md) or open an issue on the project repository.
