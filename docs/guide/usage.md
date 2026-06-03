@@ -1,23 +1,25 @@
 # Usage Guide
 
+> NOTE: This documentation site has been adapted for the Gomoku project. Project source path: `/Users/terry/nuecms-workspace/gomoku`.
+
 ## Basic Navigation
 
 ### Opening Images
 
 - **File Menu**: Click File > Open to select individual images
 - **Folder View**: Click File > Open Folder to browse an entire directory
-- **Drag & Drop**: Drag image files or folders directly onto the application window
-- **Chrome Extension**: Click the extension icon on any website to view all images
+-- **Drag & Drop**: Drag files directly onto the application window
+-- **Browser integration**: If a browser extension exists for Gomoku, install it from the browser store to enable web integrations
 ## Finder Sync Extension
 
 ### Quick Image Processing from Finder
 
-The Finder Sync Extension adds a Nicasa button to your Finder toolbar for quick image processing:
+The Finder Sync Extension example below was written for an image tool; for Gomoku adapt it to the project's quick actions. Example placeholder:
 
-1. Select one or more images in Finder
-2. Click the Nicasa toolbar button
-3. Choose **Image Optimizer** to compress files or **AI Image Editor** to enhance images
-4. Nicasa will open automatically and process the selected files
+1. Select one or more items in Finder
+2. Click the Gomoku toolbar button
+3. Choose a quick action from the menu
+4. Gomoku (or the associated tool) will open and process the selected items
 
 ### Supported Formats
 
@@ -44,46 +46,34 @@ When viewing an image in full screen:
 
 1. Click the screenshot button in the toolbar or use keyboard shortcut
 2. Select the area you want to capture
-3. The screenshot will automatically open in Nicasa for editing
+3. The screenshot will open in Gomoku for editing
 
 ### Screen Recording Permission
 
-For screenshot functionality, Nicasa needs screen recording permission:
+For screenshot or recording functionality on macOS, the related application needs Screen Recording permission:
 
 1. Go to System Settings > Privacy & Security > Screen Recording
-2. Check the box next to Nicasa
-3. Restart Nicasa if necessary
+2. Check the box next to the application
+3. Restart the application if necessary
 
 ## AI Image Editor
 
 ### AI Editor Overview
 
-Nicasa includes powerful AI tools for image enhancement:
-
-- **Auto Enhance**: Automatically improve image quality
-- **Smart Crop**: Intelligent cropping suggestions
-- **Color Correction**: AI-powered color adjustments
-- **Noise Reduction**: Remove noise and grain
-- **Sharpening**: Intelligent sharpening without artifacts
+Gomoku may provide analysis or AI-assisted features. Replace this section with project-specific details such as move suggestions, board analysis, or AI opponents.
 
 ### Inpainting Tool
 
-The inpainting tool allows you to:
-
-- Remove unwanted objects from images
-- Fill in missing parts intelligently
-- Restore damaged areas
-- Clean up backgrounds
+(Placeholder) Replace tools section with Gomoku-specific utilities.
 
 ## Transparent Overlay Mode
 
-Perfect for designers and artists:
+Perfect for designers and artists (placeholder):
 
-1. Open an image in Nicasa
-2. Enable overlay mode from the View menu
-3. Adjust transparency with the slider
-4. The image will stay on top of all other windows
-5. Use for tracing, reference work, or UI comparison
+1. Open a board or resource in Gomoku
+2. Enable overlay or reference mode if available
+3. Adjust settings as needed
+4. Use for tracing, reference work, or comparison
 
 ## Keyboard Shortcuts
 
@@ -105,47 +95,31 @@ Perfect for designers and artists:
 
 ### Installation
 
-1. Install the [Nicasa Chrome Extension](https://chromewebstore.google.com/detail/nicasa-image-viewer/cihceekeiedkinpjjjfehlgjdhpeokbj)
-2. The extension icon will appear in your browser toolbar
+1. If a browser extension exists for Gomoku, document installation here and remove this placeholder.
 
 ### Usage
 
-1. Visit any website
-2. Click the Nicasa extension icon
-3. View all images from the page in a grid
-4. Click any image to open it in Nicasa
-5. Use all Nicasa features on web images
+1. Visit any website where the extension applies
+2. Click the extension icon
+3. Use the provided features to interact with web content
 
 ## Settings
 
-Access settings through Nicasa > Preferences:
+Access settings through Gomoku > Preferences (or the equivalent application settings):
 
 - **General**: Default folder, language, theme
-- **Viewing**: Thumbnail size, zoom behavior, animations
-- **Editor**: AI tool preferences, default enhancements
-- **Extensions**: Chrome extension settings
+- **Interface**: Display and interaction settings
+- **Tools**: Analysis, AI or game tools preferences
+- **Integrations**: Browser or system integrations
 - **Privacy**: Data collection preferences
 
 ## Supported Formats
 
-Nicasa supports all common image formats:
-
-- **Standard**: JPEG, PNG, GIF, BMP, TIFF, WebP
-- **RAW**: CR2, NEF, ARW, DNG (with conversion)
-- **Vector**: SVG (with rasterization)
-- **Animated**: GIF, APNG
-
-- JPEG/JPG
-- PNG
-- GIF (static)
-- BMP
-- TIFF
-- WebP
-- HEIC (on supported systems)
+Supported formats / platforms depend on the Gomoku project. Replace this list with game clients, export formats (SGF), or platform requirements.
 
 ## Tips and Tricks
 
-- Use the search bar to quickly find images by filename
-- Create collections by organizing images in folders
-- Use the rating system to mark your favorite images
-- Export images in different formats through the File menu
+-- Use search or filters to find games, boards, or saved records
+-- Create collections or rooms to organize matches
+-- Use analysis tools to mark notable positions
+-- Export or share game records (SGF, JSON) as needed

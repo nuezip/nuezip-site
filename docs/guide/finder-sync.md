@@ -1,61 +1,61 @@
-# Finder Sync Extension
+# 局域网联机（LAN Play）
 
-## Overview
+## 概述
 
-The Nicasa Finder Sync Extension adds a toolbar button to macOS Finder, allowing you to quickly process image files without opening the main Nicasa app.
+Gomoku 支持在同一局域网内与好友对弈。局域网模式使用本地网络广播发现房间或直接通过地址加入房主。
 
-### Features
+主要功能：
 
-- **Image Optimizer**: Compress and optimize selected images
-- **AI Image Editor**: Edit selected images with AI (repair, enhance, fill, etc.)
-- **Quick access via Finder toolbar**
-- **Works with multiple selected images**
+- 创建房间（Host）并启动局域网服务
+- 局域网发现（自动列出同一网络的房间）
+- 直接通过 IP:port 加入指定房间
+- 房间聊天与观战（如可用）
 
-## Installation & Setup
+## 如何创建房间（作为主机）
 
-### Installing via Nicasa App
+1. 打开 Gomoku，进入 “联机 / 局域网” 页面
+2. 选择“创建房间”或“开始托管”
+3. 选择棋盘尺寸（例如 15x15 / 18x18）和对局规则
+4. 点击“开始托管” — 应显示端口号（默认端口由应用决定）
+5. 通知好友房间名称或你的局域网 IP（示例：192.168.1.42）
 
-The Finder Sync Extension is included with the main Nicasa app. After installing the app, enable the extension:
+应用会在后台启动一个局域网服务并广播房间信息以便局域网内其他设备发现。
 
-1. Open **System Settings** > **Extensions** > **Finder Extensions**
-2. Toggle **Nicasa Finder Sync** on
+## 如何加入房间（作为客户端）
 
-### Toolbar Button
+方法一：自动发现
 
-Once enabled, a Nicasa icon appears in the Finder toolbar.
+1. 在“联机 / 局域网”页面选择“查找房间”或刷新列表
+2. 选择显示的房间并点击“加入”
 
-If not visible:
-1. Right-click the Finder toolbar
-2. Select **Customize Toolbar...**
-3. Drag the Nicasa button into place
+方法二：手动加入
 
-## Using the Finder Toolbar Button
+1. 选择“手动加入”或“输入地址”
+2. 输入主机的 IP:port（例如 `192.168.1.42:12345`）
+3. 点击“加入”并等待连接
 
-### Selecting Files
+## 权限与网络注意事项（macOS）
 
-Open Finder and select one or more images. Supported formats:
-- `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.webp`, `.svg`, `.tiff`, `.ico`
+- 请确保 Gomoku 在 **System Settings → Privacy & Security → Local Network** 中被允许，否则无法被其他设备发现。
+- 所有设备必须连接到相同的 Wi‑Fi 网络（路由器的 AP 隔离/客户端隔离会阻止发现）。
+- 如果使用防火墙，请允许 Gomoku 的传入/传出网络流量或打开对应端口。
 
-### Using the Menu
+## 常见问题与排查
 
-Click the Nicasa toolbar button, then choose:
+- 无法发现房间：检查 Local Network 权限并确保路由没有启用 AP 隔离。
+- 无法加入（连接超时）：确认主机 IP/端口正确，检查主机防火墙。
+- 房间出现延迟或卡顿：尝试使用有线连接或更稳定的网络；关闭其它占用带宽的应用。
 
-| Option | Description |
-|--------|-------------|
-| **Image Optimizer** | Compresses and optimizes the selected images |
-| **AI Image Editor** | Opens the selected images in Nicasa's AI editor for repair, enhancement, or inpainting |
+## 日志与持久化
 
-> ⚠️ **Note**: If no file is selected, the button will beep and the action will not run.
+局域网服务的持久化信息（如房间快照）保存在应用的数据目录中。上线后（沙盒环境）路径示例：
 
-### Workflow
+```
+~/Library/Containers/com.w3cub.gomoku/Data/Library/Application Support/com.w3cub.gomoku/
+```
 
-1. Select images in Finder
-2. Click the Nicasa toolbar button → choose the desired action
-3. The Nicasa app will open automatically and process the selected images
+参考项目文档 `docs/macos-sandbox-paths.md` 获取更多细节和定位日志的方法。
 
-## Tips
+---
 
-- For best results, select images inside a folder you have access to
-- You can select multiple files at once
-- If an image does not open, check that it is one of the supported formats
-- The extension works seamlessly with macOS sandboxing – you only need to authorize access the first time
+如果你希望我把站点上的“联机”指南转换成更详细的步骤（含截图或常见问题模板），我可以继续完善并添加操作截图。 

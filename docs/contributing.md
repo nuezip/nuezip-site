@@ -1,6 +1,6 @@
 # Contributing
 
-We welcome contributions to improve the Nicasa Support documentation! Whether you're fixing a typo, adding a new guide, or improving existing content, your help is appreciated.
+We welcome contributions to improve the Gomoku documentation! Whether you're fixing a typo, adding a new guide, or improving existing content, your help is appreciated.
 
 ## Ways to Contribute
 
@@ -34,8 +34,8 @@ We welcome contributions to improve the Nicasa Support documentation! Whether yo
 1. **Fork the repository** on GitHub
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/nicasa-support.git
-   cd nicasa-support
+   git clone https://github.com/YOUR_USERNAME/gomoku.git
+   cd gomoku
    ```
 3. **Install dependencies**:
    ```bash
@@ -105,13 +105,13 @@ This project follows a code of conduct. By participating, you agree to:
 - Focus on constructive feedback
 - Accept responsibility for mistakes
 
-See [CODE_OF_CONDUCT.md](https://github.com/nicasa-project/nicasa-support/blob/main/CODE_OF_CONDUCT.md) for details.
+See [CODE_OF_CONDUCT.md](https://github.com/your-org/gomoku/blob/main/CODE_OF_CONDUCT.md) for details.
 
 ## Questions?
 
 If you have questions about contributing:
-- Check existing [issues](https://github.com/nicasa-project/nicasa-support/issues) and [discussions](https://github.com/nicasa-project/nicasa-support/discussions)
+-- Check existing [issues](https://github.com/your-org/gomoku/issues) and [discussions](https://github.com/your-org/gomoku/discussions)
 - Create a new issue if needed
 - Contact the maintainers
 
-Thank you for helping improve Nicasa Support documentation! 🎉
+Thank you for helping improve Gomoku documentation! 🎉

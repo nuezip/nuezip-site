@@ -5,8 +5,8 @@
       <div class="nav-container">
         <div class="nav-brand">
           <VPLink href="/" class="brand-link">
-            <img src="/logo.png" alt="Nicasa Logo" class="brand-logo" />
-            <span class="brand-text">Nicasa</span>
+            <img src="/logo.png" alt="Gomoku Logo" class="brand-logo" />
+            <span class="brand-text">Gomoku</span>
           </VPLink>
         </div>
         <div class="nav-links">
@@ -31,16 +31,16 @@
           <div class="hero-visual">
             <div class="floating-elements">
               <div class="floating-card card-1">
-                <div class="card-icon">🖼️</div>
-                <div class="card-text">Image Viewer</div>
+                <div class="card-icon">♟️</div>
+                <div class="card-text">Board Game</div>
               </div>
               <div class="floating-card card-2">
                 <div class="card-icon">⚡</div>
-                <div class="card-text">Lightning Fast</div>
+                <div class="card-text">Responsive Play</div>
               </div>
               <div class="floating-card card-3">
-                <div class="card-icon">🎨</div>
-                <div class="card-text">AI Enhanced</div>
+                <div class="card-icon">🎯</div>
+                <div class="card-text">AI Analysis</div>
               </div>
             </div>
             <div class="hero-image">
@@ -56,8 +56,8 @@
     <section class="features-section">
       <div class="features-container">
         <div class="section-header">
-          <h2 class="section-title">Powerful Features</h2>
-          <p class="section-subtitle">Everything you need for instant image viewing</p>
+          <h2 class="section-title">Key Features</h2>
+          <p class="section-subtitle">Everything you need to play, review, and analyze Gomoku</p>
         </div>
         <div class="features-grid">
           <div v-for="(feature, index) in data.features" :key="feature.title"
@@ -79,13 +79,13 @@
     <section class="testimonials-section">
       <div class="testimonials-container">
         <div class="section-header">
-          <h2 class="section-title">Loved by Users</h2>
+          <h2 class="section-title">Loved by Players</h2>
           <p class="section-subtitle">Real feedback from our community</p>
         </div>
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">Nicasa has transformed how I browse images online. It's incredibly fast and intuitive.</p>
+            <p class="testimonial-text">Gomoku makes it easy to play and review games — fast and pleasant experience.</p>
             <div class="testimonial-author">
               <div class="author-avatar">A</div>
               <div class="author-info">
@@ -96,7 +96,7 @@
           </div>
           <div class="testimonial-card">
             <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">The AI enhancement features are a game-changer. No more blurry images!</p>
+            <p class="testimonial-text">The analysis tools helped me improve my opening — great for practice.</p>
             <div class="testimonial-author">
               <div class="author-avatar">S</div>
               <div class="author-info">
@@ -107,7 +107,7 @@
           </div>
           <div class="testimonial-card">
             <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">As a developer, I love the distraction-free interface. Pure focus on the content.</p>
+            <p class="testimonial-text">Clean interface keeps the focus on the board and the game.</p>
             <div class="testimonial-author">
               <div class="author-avatar">M</div>
               <div class="author-info">
@@ -125,7 +125,7 @@
       <div class="faq-container">
         <div class="section-header">
           <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">Quick answers to common questions</p>
+          <p class="section-subtitle">Quick answers for macOS players</p>
         </div>
         <div class="faq-grid">
           <div v-for="faq in faqs" :key="faq.question" class="faq-item">
@@ -142,11 +142,11 @@
     <section class="cta-section">
       <div class="cta-container">
         <div class="cta-content">
-          <h2 class="cta-title">Ready to Experience Instant Image Viewing?</h2>
-          <p class="cta-description">Join thousands of users who have discovered a better way to browse images.</p>
+          <h2 class="cta-title">Ready to Play Gomoku?</h2>
+          <p class="cta-description">Start a game, play AI, or join friends on your local network.</p>
           <div class="cta-actions">
-            <a href="/guide/installation" class="btn btn-primary">Purchase for macOS</a>
-            <a href="/guide/installation" class="btn btn-secondary">Free Chrome Extension</a>
+            <a href="/guide/installation" class="btn btn-primary">Get Started</a>
+            <a href="/guide/usage" class="btn btn-secondary">How to Play</a>
           </div>
         </div>
       </div>
@@ -157,16 +157,15 @@
       <div class="footer-container">
         <div class="footer-content">
           <div class="footer-brand">
-            <div class="footer-logo">Nicasa</div>
-            <p class="footer-tagline">See every image, instantly.</p>
+            <div class="footer-logo">Gomoku</div>
+            <p class="footer-tagline">Play. Analyze. Improve.</p>
           </div>
           <div class="footer-links">
             <div class="footer-column">
               <h4 class="footer-heading">Product</h4>
               <a href="/guide/installation" class="footer-link">Mac App</a>
-              <a href="/guide/installation" class="footer-link">Chrome Extension</a>
-              <a href="/#features" class="footer-link">Features</a>
-              <a href="/guide/installation" class="footer-link">Pricing</a>
+              <a href="/guide/usage" class="footer-link">Features</a>
+              <a href="/guide/installation" class="footer-link">Installation</a>
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Support</h4>
@@ -176,13 +175,13 @@
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Community</h4>
-              <a href="https://github.com/nicasa-project/nicasa-support" class="footer-link">GitHub</a>
-              <a href="https://github.com/nicasa-project/nicasa-support/blob/main/CHANGELOG.md" class="footer-link">Changelog</a>
+              <a href="https://github.com/your-org/gomoku" class="footer-link">GitHub</a>
+              <a href="https://github.com/your-org/gomoku/blob/main/CHANGELOG.md" class="footer-link">Changelog</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 Nicasa Project. Built with ❤️ for image enthusiasts.</p>
+          <p class="footer-copyright">© 2026 Gomoku Project. Built with ❤️ for players.</p>
         </div>
       </div>
     </footer>
@@ -215,28 +214,24 @@ const featureColors = [
 // FAQ data
 const faqs = [
   {
-    question: "Is Nicasa free?",
-    answer: "The Chrome extension is completely free to download and use. The macOS app requires a one-time purchase for full access to all features."
+    question: "Is Gomoku free?",
+    answer: "Check the installation page for current distribution and pricing (GitHub Releases are typically free; an App Store build may have a price)."
   },
   {
-    question: "Does it work on all websites?",
-    answer: "Nicasa works on most standard websites. Some sites with strict content security policies may limit image extraction."
+    question: "Does Gomoku work offline?",
+    answer: "Yes. Core gameplay and analysis work offline. LAN play requires a local network connection."
   },
   {
-    question: "Is my data uploaded anywhere?",
-    answer: "No. All processing happens locally on your device. Nicasa does not collect, transmit, or store your images."
-  },
-  {
-    question: "Does it support offline viewing?",
-    answer: "Yes. The macOS app works fully offline for local image files. Web image extraction requires an active connection."
+    question: "Is my game data uploaded anywhere?",
+    answer: "No. Game records and logs are stored locally. LAN play transmits moves only to peers on your local network."
   },
   {
     question: "Which macOS versions are supported?",
-    answer: "Nicasa supports macOS 12 Monterey and later. It is optimized for Apple Silicon and runs natively on M-series chips."
+    answer: "Gomoku supports macOS 12 Monterey and later, and is optimized for Apple Silicon (M-series)."
   },
   {
-    question: "What permissions does the Chrome extension need?",
-    answer: "The extension requests access to page content solely to extract image URLs. No browsing history is read or stored."
+    question: "What permissions does Gomoku need?",
+    answer: "Gomoku may request Local Network access for LAN play and Files & Folders permission to save or open game records. Screen Recording/Accessibility are optional for auxiliary features."
   }
 ]
 </script>

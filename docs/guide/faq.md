@@ -1,124 +1,53 @@
 # FAQ
 
-## General Questions
+### 什么是 Gomoku？
 
-### What is Nicasa?
+Gomoku 是一款面向 macOS 的五子棋/棋谱查看与联机对弈应用，支持人机对战、联机对战与本地保存对局（`.sgf`）。
 
-Nicasa is a modern desktop image viewer and screenshot tool designed exclusively for macOS. It provides fast, intuitive navigation through your image collections with a clean, responsive interface and powerful AI editing capabilities.
+### 支持哪些 macOS 版本？
 
-### Is Nicasa free?
+建议使用 macOS Monterey (12) 及以上。某些旧系统可能无法获得最佳体验。
 
-The Chrome extension is completely free to download and use. The macOS app requires a one-time purchase of $4.99 for full access to all features.
+### 如何下载安装？
 
-### Which operating systems are supported?
+从项目的 Releases 页面下载签名的发行包，或直接通过项目提供的安装说明进行安装。开发者构建可参考仓库中的 README。
 
-Nicasa is currently available exclusively for macOS 10.13 or later. Windows and Linux versions are not available at this time.
+### 如何进行联机对局（LAN Play）？
 
-### How do I update Nicasa?
+打开应用的“联机 / 局域网”页面，创建房间或加入可见房间。确保授予 Local Network 权限并且所有设备在同一 Wi‑Fi 网络中。
 
-Updates are handled through the Mac App Store. You'll receive notifications when updates are available, and can update directly through the App Store application.
+### 如何保存或导出对局？
 
-## Usage Questions
+使用应用内的保存/导出功能将对局保存为 `.sgf` 文件，默认保存位置可在导出时选择。
 
-### How do I take screenshots with Nicasa?
+### 如何将 Gomoku 设为默认打开 `.sgf` 文件的应用？
 
-1. Launch Nicasa
-2. Click the screenshot button in the toolbar or use `Cmd+S`
-3. Select the area you want to capture
-4. The screenshot will open in Nicasa for immediate editing
+请参见文档“将 Gomoku 设为默认 SGF 查看器”的说明，在 Finder 的 Get Info 面板中修改默认打开应用。
 
-### Does Nicasa work with web images?
+### 是否会上传我的数据？
 
-Yes! Install the free Nicasa Chrome extension to:
-- View all images from any website in one place
-- Extract and browse images instantly
-- Open images directly in Nicasa for enhanced viewing
+Gomoku 采用本地优先设计，默认不向外发送个人数据。联机对弈仅在本地网络内传输对局数据。详见隐私政策页。
 
-### What AI editing features are available?
+### 如何更新应用？
 
-Nicasa includes powerful AI tools:
-- **Auto Enhance**: Automatically improve image quality
-- **Smart Crop**: Intelligent cropping suggestions
-- **Inpainting**: Remove unwanted objects intelligently
-- **Color Correction**: AI-powered color adjustments
-- **Noise Reduction**: Remove noise and grain
+从 Releases 页面下载新版本或使用应用内更新机制（如有）。
 
-### How does Transparent Overlay Mode work?
+### 如何报告问题或请求新功能？
 
-Perfect for designers and artists:
-- Pin images above all windows with adjustable transparency
-- Use for tracing, reference work, or UI comparison
-- Maintains position across all applications
+在项目仓库打开 issue，并附上你的 macOS 版本、Gomoku 版本、复现步骤以及日志（如有）。
 
-## Technical Questions
+### 日志和保存数据存放在哪里？
 
-### Why do I need to grant screen recording permission?
+对于沙盒/商店版本，应用数据和日志通常位于：
 
-Screen recording permission is required for the screenshot functionality. This allows Nicasa to capture your screen when you use the screenshot tool.
+```
+~/Library/Containers/com.w3cub.gomoku/Data/Library/Application Support/com.w3cub.gomoku/
+```
 
-### Can I use Nicasa offline?
+开发构建的日志可能打印到控制台或放置在项目的 `src-tauri` 目录下。
 
-Yes. The macOS app works fully offline for local image files. Web image extraction through the Chrome extension requires an active internet connection.
+### 可以和 AI 对弈吗？
 
-### Which macOS versions are supported?
+可以。Gomoku 包含 AI 对手并提供多档难度，可在对局设置中选择。
 
-Nicasa supports macOS 10.13 or later. It is optimized for Apple Silicon and runs natively on M-series chips.
-
-### What permissions does the Chrome extension need?
-
-The extension requests access to page content solely to extract image URLs. No browsing history is read or stored.
-
-### Is my data uploaded anywhere?
-
-No. All processing happens locally on your device. Nicasa does not collect, transmit, or store your images.
-
-### How do I backup my settings?
-
-Your settings are stored locally. To backup:
-1. Go to Nicasa > Preferences
-2. Export your settings if available
-3. Or manually backup the application preferences folder
-
-Settings are stored in the application data folder. Copy this folder to backup your preferences.
-
-### Is there a portable version?
-
-A portable version is available for Windows. Download it from our website.
-
-## Development Questions
-
-### Can I contribute to Nicasa?
-
-Visit our [GitHub repository](https://github.com/nicasa-project/nicasa-support) to contribute code, report issues, or suggest features.
-
-### How do I build Nicasa from source?
-
-See our developer documentation on GitHub for build instructions.
-
-### What technologies does Nicasa use?
-
-Nicasa is built with modern web technologies including Electron for the desktop wrapper and Vue.js for the interface.
-
-## Privacy Questions
-
-### Does Nicasa collect any data?
-
-No, Nicasa does not collect or transmit any personal data. All image processing happens locally on your device.
-
-### Are my images safe?
-
-Yes, Nicasa only accesses images you explicitly open. It doesn't upload or share your files.
-
-### What permissions does Nicasa need?
-
-Nicasa needs access to your file system to read images and save settings. It doesn't require internet access to function.
-
-## Still Have Questions?
-
-If you can't find the answer here, please:
-
-1. Check our [full documentation](../)
-2. Search our [GitHub issues](https://github.com/nicasa-project/nicasa-support/issues)
-3. Create a new issue if needed
-
-We're here to help!
+如果这些问题没有覆盖到你的疑问，请在项目仓库创建 issue 或查看完整文档页面。

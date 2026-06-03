@@ -1,10 +1,10 @@
 {
-  "name": "nicasa-support",
+  "name": "gomoku-docs",
   "version": "1.0.0",
   "type": "module",
-  "description": "Technical support documentation for Nicasa - a smooth, modern image-viewing application",
+  "description": "Documentation for the Gomoku project",
   "main": "index.js",
-  "homepage": "https://nicasa-project.github.io/nicasa-support",
+  "homepage": "https://gomoku.w3cub.com",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -12,8 +12,8 @@
     "docs:deploy": "./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["nicasa", "image-viewer", "documentation", "support"],
-  "author": "Nicasa Project",
+  "keywords": ["gomoku", "documentation", "game", "board"],
+  "author": "Gomoku Project",
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.6.4"

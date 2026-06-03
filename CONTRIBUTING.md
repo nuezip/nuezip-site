@@ -1,10 +1,10 @@
-# Contributing to Nicasa Support
+# Contributing to Gomoku Documentation
 
-Thank you for your interest in contributing to the Nicasa Support documentation! This repository contains the technical support documentation for the Nicasa image viewer application.
+Thank you for your interest in contributing to the Gomoku documentation! This repository contains the official documentation for the Gomoku project.
 
 ## Ways to Contribute
 
-- **Report Issues**: Found a bug in the documentation or have a suggestion? [Open an issue](https://github.com/nicasa-project/nicasa-support/issues)
+- **Report Issues**: Found a bug in the documentation or have a suggestion? [Open an issue](https://github.com/your-org/gomoku/issues)
 - **Improve Documentation**: Fix typos, clarify instructions, or add missing information
 - **Add Guides**: Create new guides for common issues or features
 - **Translate**: Help translate the documentation to other languages
@@ -12,7 +12,7 @@ Thank you for your interest in contributing to the Nicasa Support documentation!
 ## Getting Started
 
 1. Fork this repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/nicasa-support.git`
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/gomoku.git`
 3. Install dependencies: `pnpm install`
 4. Start development server: `pnpm docs:dev`
 5. Make your changes
@@ -61,4 +61,4 @@ This project follows a code of conduct to ensure a welcoming environment for all
 
 ## Questions?
 
-If you have questions about contributing, feel free to [open an issue](https://github.com/nicasa-project/nicasa-support/issues) or contact the maintainers.
+If you have questions about contributing, feel free to [open an issue](https://github.com/your-org/gomoku/issues) or contact the maintainers.

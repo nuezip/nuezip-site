@@ -1,185 +1,84 @@
-# Troubleshooting
+# Troubleshooting (Gomoku on macOS)
 
-## Common Issues
+This page collects common problems for macOS users and how to resolve them.
 
-### Application Won't Start
+## Application won't start or crashes on launch
 
-**Symptoms**: Nicasa fails to launch or crashes immediately
+Symptoms: Gomoku does not open, crashes immediately, or shows an unexpected error.
 
-**Solutions**:
-1. Ensure you're running macOS 10.13 or later
-2. Check that you have at least 4GB of RAM
-3. Restart your Mac
-4. Reinstall Nicasa from the Mac App Store
-5. Check for conflicting applications
+Steps to try:
 
-### Screenshots Not Working
+1. Ensure your macOS version meets the minimum requirements (Monterey 12+ recommended).
+2. Quit and relaunch the app.
+3. Reboot your Mac.
+4. If the app was downloaded from Releases, try downloading a newer build or the signed/notarized build.
+5. If problems persist, collect logs (see below) and open an issue on the project repository.
 
-**Symptoms**: Screenshot functionality doesn't work
+## LAN / Matchmaking issues
 
-**Solutions**:
-1. **Grant Screen Recording Permission**:
-   - Go to System Settings > Privacy & Security > Screen Recording
-   - Check the box next to Nicasa
-   - Restart Nicasa
-2. Ensure no other screenshot tools are running
-3. Try restarting your Mac
+Symptoms: You cannot discover or join LAN games.
 
-### Chrome Extension Not Working
+Checklist:
 
-**Symptoms**: Extension doesn't appear or doesn't extract images
+1. Confirm **Local Network** permission is granted (System Settings → Privacy & Security → Local Network).
+2. Ensure all devices are connected to the same Wi‑Fi network; router client/AP isolation will block discovery.
+3. Disable or configure firewall rules to allow Gomoku traffic.
 
-**Solutions**:
-1. Ensure the extension is enabled in Chrome
-2. Check that you're using a compatible version of Chrome
-3. Try refreshing the webpage
-4. Reinstall the extension
-5. Clear browser cache and cookies
+## Saving / Opening game records (SGF) fails
 
-### Images Not Loading
+Symptoms: Export or import of `.sgf` files fails or prompts for permission.
 
-**Symptoms**: Thumbnails don't appear or images fail to open
+Fixes:
 
-**Solutions**:
-1. Check file permissions on the image files
-2. Ensure the images aren't corrupted
-3. Verify the format is supported (JPEG, PNG, GIF, BMP, TIFF, WebP)
-4. Try opening the folder again
-5. Restart Nicasa
+1. Check **Files and Folders** permission (System Settings → Privacy & Security → Files and Folders).
+2. Try saving to `Documents` or `Downloads` first to verify write access.
+3. Ensure the target path is not on an external drive with restrictive permissions.
 
-### Slow Performance
+## Permission-related issues
 
-**Symptoms**: Application is sluggish or thumbnails load slowly
+If a feature prompts for permission but doesn't work after granting it:
 
-**Solutions**:
-1. Close other memory-intensive applications
-2. Ensure adequate free RAM (8GB recommended)
-3. Reduce thumbnail grid size in preferences
-4. Clear application cache
-5. Restart your Mac
+1. Quit the app and reopen it after granting the permission.
+2. If needed, reset the permission prompt with `tccutil` (see the Permissions guide).
 
-### AI Editor Not Working
+## Performance issues
 
-**Symptoms**: AI editing tools are unavailable or not functioning
+If the game is laggy or slow:
 
-**Solutions**:
-1. Ensure you have a stable internet connection (for some features)
-2. Check that your Mac meets the minimum requirements
-3. Restart Nicasa
-4. Update to the latest version
-5. Contact support if the issue persists
+1. Close other heavy applications.
+2. Prefer a wired connection for LAN play when possible.
+3. Reduce background processes that consume CPU or network bandwidth.
 
-### Permission Problems
+## View logs
 
-**Symptoms**: App requests permissions or certain features don't work
+To troubleshoot crashes or network issues, application logs are the most useful artifact. In sandboxed (App Store) builds, check:
 
-**Solutions**:
-1. **Screen Recording**: System Settings > Privacy & Security > Screen Recording
-2. **Accessibility**: System Settings > Privacy & Security > Accessibility (for overlay mode)
-3. **Files and Folders**: System Settings > Privacy & Security > Files and Folders
-4. Restart Nicasa after granting permissions
-
-### Overlay Mode Issues
-
-**Symptoms**: Transparent overlay mode doesn't work properly
-
-**Solutions**:
-1. Grant Accessibility permission in System Settings
-2. Ensure no other overlay tools are running
-3. Try toggling overlay mode off and on
-4. Restart Nicasa
-
-## Error Messages
-
-### "Screen Recording Permission Required"
-
-**Solution**: Grant screen recording permission as described above in the Screenshots section.
-
-### "Failed to Load Image"
-
-**Possible Causes**:
-- File is corrupted
-- Unsupported format
-- File permissions issue
-- File is too large
-
-**Solutions**:
-1. Try opening the file with Preview.app to verify it's valid
-2. Convert to a supported format
-3. Check file permissions
-4. Ensure file size is reasonable
-
-### "Extension Not Responding"
-
-**Solution**: Refresh the webpage and try again. If persistent, reinstall the extension.
-
-## Getting Help
-
-If you continue to experience issues:
-
-1. Check this troubleshooting guide
-2. Visit our [FAQ](/guide/faq)
-3. Submit an issue on [GitHub](https://github.com/nicasa-app/nicasa-support/issues)
-4. Include your macOS version, Nicasa version, and detailed steps to reproduce the issue
-
-## System Information
-
-When reporting issues, please include:
-
-- macOS version (Apple menu > About This Mac)
-- Nicasa version (Nicasa > About Nicasa)
-- Mac model and chip (Apple Silicon or Intel)
-- Steps to reproduce the issue
-- Any error messages
-
-This usually means the image file has been moved or deleted. Try reopening the folder or selecting a different directory.
-
-### "Unsupported format"
-
-The image format isn't recognized. Check our list of [supported formats](/guide/usage) or convert the image to a compatible format.
-
-### "Out of memory"
-
-Your system doesn't have enough RAM. Close other applications or upgrade your memory.
-
-## Advanced Troubleshooting
-
-### View Logs
-
-To access application logs:
-
-1. Go to Help > Show Logs
-2. Or find logs in:
-   - Windows: `%APPDATA%\Nicasa\logs`
-   - macOS: `~/Library/Application Support/Nicasa/logs`
-   - Linux: `~/.config/Nicasa/logs`
-
-### Reset Application
-
-To reset all settings to default:
-
-1. Close Nicasa
-2. Delete the application data folder
-3. Restart Nicasa
-
-### Command Line Options
-
-For advanced users, Nicasa supports command line arguments:
-
-```bash
-nicasa --verbose          # Enable verbose logging
-nicasa --reset-settings   # Reset all settings
-nicasa /path/to/folder    # Open specific folder
+```
+~/Library/Containers/com.w3cub.gomoku/Data/Library/Logs/gomoku/gomoku.log
 ```
 
-## Getting More Help
+When running a development build, logs may be in the project directory (`./src-tauri/gomoku.log`) or printed to the console.
 
-If these solutions don't resolve your issue:
+## Resetting the app
 
-1. Check our [FAQ](/guide/faq)
-2. Search existing [issues](https://github.com/nicasa-project/nicasa-support/issues)
-3. Create a new issue with:
-   - Your operating system and version
-   - Nicasa version
-   - Steps to reproduce the problem
-   - Any error messages or screenshots
+To reset settings and clear local data:
+
+1. Quit Gomoku
+2. Remove the container or support data (be careful—this deletes saved games and settings):
+
+```bash
+rm -rf ~/Library/Containers/com.w3cub.gomoku
+```
+
+3. Reopen Gomoku and reconfigure.
+
+## Report an issue
+
+When opening an issue, include:
+
+- macOS version (Apple menu → About This Mac)
+- Gomoku version (Gomoku → About Gomoku)
+- Steps to reproduce
+- Logs (attach `gomoku.log` if available)
+
+This helps maintainers identify and fix the problem faster.

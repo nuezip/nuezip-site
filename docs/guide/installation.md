@@ -1,85 +1,64 @@
 # Installation
 
-## Download Nicasa
+This page explains how to install Gomoku on macOS and covers common issues you may encounter.
 
-Nicasa is available exclusively for macOS through the Mac App Store. The app costs $4.99 and provides a one-time purchase for full access to all features.
+## Download Options
 
-### Download Options
+- **Mac App Store** — If an App Store build is published, install from the App Store for automatic updates.
+- **GitHub Releases** — Download the latest macOS build (.dmg or .zip) from the project's Releases page: `https://github.com/your-org/gomoku/releases`.
 
-- **Mac App Store**: [Download Nicasa](https://apps.apple.com/us/app/nicasa-image-viewer/id6756032669?mt=12) - $4.99
-- **Chrome Extension**: [Free Chrome Extension](https://chromewebstore.google.com/detail/nicasa-image-viewer/cihceekeiedkinpjjjfehlgjdhpeokbj) - Free
+If you don't see an App Store entry yet, use the GitHub Releases download.
 
-## Installation Steps
+## Installing from a .dmg (recommended for most users)
 
-### Mac App Store Installation
+1. Download the latest `.dmg` from the Releases page.
+2. Double-click the downloaded `.dmg` to open it.
+3. Drag the `Gomoku.app` icon into your `Applications` folder.
+4. Eject the mounted image and open `Gomoku` from `Applications`.
 
-1. Click the "Download Nicasa" link above or search for "Nicasa" in the Mac App Store
-2. Click "Get" or "Buy" to purchase the app ($4.99)
-3. The app will automatically download and install
-4. Launch Nicasa from your Applications folder or Launchpad
-
-### Chrome Extension Installation
-
-1. Visit the [Chrome Web Store page](https://chromewebstore.google.com/detail/nicasa-image-viewer/cihceekeiedkinpjjjfehlgjdhpeokbj)
-2. Click "Add to Chrome"
-3. Confirm the installation in the popup
-4. The extension will be added to your browser
-
-#### Chrome Extension Demo
-
-<div style="position:relative;padding-bottom:56.25%;height:0;">
-	<iframe src="https://www.youtube.com/embed/NJPweIr1J4s" frameborder="0"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen
-		style="position:absolute;top:0;left:0;width:100%;height:100%;">
-	</iframe>
-</div>
-
-<p><a href="https://www.youtube.com/watch?v=NJPweIr1J4s" target="_blank" rel="noopener">Watch: Nicasa Chrome Extension — Quick Demo</a></p>
+If macOS prevents opening the app (Gatekeeper), open **System Settings → Privacy & Security** and click **Open Anyway** for Gomoku, or right-click the app and choose **Open**.
 
 ## First Launch
 
-When you launch Nicasa for the first time:
+On first run Gomoku may request the following permissions:
 
-1. You'll be prompted to grant necessary permissions (screen recording for screenshots)
-2. The application will scan for images in your Pictures folder
-3. You can start browsing your collection immediately
-4. Consider installing the Chrome extension for enhanced web browsing
+- **Local Network** — required for LAN (局域网) play so other devices on your Wi‑Fi can discover and join games.
+- **Files and Folders** — to save and open game records (SGF) and settings.
+- **Accessibility / Screen Recording** — optional; only needed if you enable auxiliary features that capture the screen or use overlay helpers.
 
-### Finder Sync Extension
+Grant permissions when prompted; you can change them later in **System Settings → Privacy & Security**.
 
-Nicasa includes a Finder toolbar extension for quick image processing:
+## Updates
 
-1. After launching Nicasa, go to **System Settings** → **Extensions** → **Finder Extensions**
-2. Enable **Nicasa Finder Sync**
-3. Right-click the Finder toolbar → **Customize Toolbar...**
-4. Drag the Nicasa button to add it to your toolbar
+- If you installed from the **Mac App Store**, updates are handled automatically.
+- If you use the **GitHub Releases** build, download the newer release and replace the app in `Applications`.
 
-This allows you to optimize or edit selected images directly from Finder.
+## Uninstall
+
+To uninstall Gomoku:
+
+1. Quit Gomoku
+2. Drag `Gomoku.app` from `Applications` to the Trash
+3. (Optional) Remove app data and logs:
+
+```bash
+rm -rf ~/Library/Containers/com.w3cub.gomoku
+rm -rf ~/Library/Logs/gomoku
+```
+
+See `docs/macos-sandbox-paths.md` in the source project for details about sandboxed paths.
 
 ## System Requirements
 
-- **macOS**: 10.13 or later
-- **Storage**: 54.5 MB available space
-- **Memory**: 4GB RAM minimum, 8GB recommended
+- **macOS**: Monterey (12) or later recommended
+- **CPU**: Apple Silicon (M-series) or Intel (64-bit)
+- **Memory**: 4GB minimum, 8GB recommended
+- **Storage**: ~200 MB (varies by build)
 
-## Permissions
+## Troubleshooting
 
-Nicasa requires the following permissions:
+- If macOS blocks the app at launch, open **System Settings → Privacy & Security** and allow Gomoku to open.
+- For LAN issues, ensure all devices are on the same Wi‑Fi network and that **Local Network** permission was granted.
+- If you see a notarization warning, download a signed/notarized build from Releases or the App Store.
 
-- **Screen Recording**: For screenshot functionality (can be granted later)
-- **Accessibility**: For overlay mode features (optional)
-- **Files and Folders**: Access to Pictures folder and user-selected directories
-
-You can modify these permissions at any time in System Settings > Privacy & Security.
-
-## Troubleshooting Installation
-
-If you encounter issues during installation:
-
-- Ensure you have administrator/root privileges
-- Check that your system meets the minimum requirements
-- Try downloading the file again
-- For Linux, ensure you have the required dependencies installed
-
-For more help, visit our [Issues page](https://github.com/nicasa-project/nicasa-support/issues).
+If you need more help, see the Troubleshooting guide or open an issue on the project repository.

@@ -5,9 +5,9 @@ import { withBase } from 'vitepress'
 <template>
   <div class="home-badge-row">
     <a
-      href="https://apps.apple.com/app/apple-store/id6756032669?pt=128326876&ct=officiallnk&mt=8" target="_blank" rel="noopener noreferrer"
+      href="/guide/installation" target="_self" rel="noopener noreferrer"
       class="store-badge-link"
-      aria-label="Download on the Mac App Store"
+      aria-label="Gomoku installation guide"
     >
       <img
         :src="withBase('/badges/Mac-App-Store.png')"
@@ -18,9 +18,9 @@ import { withBase } from 'vitepress'
       />
     </a>
     <a
-      href="https://chromewebstore.google.com/detail/nicasa-image-viewer/cihceekeiedkinpjjjfehlgjdhpeokbj" target="_blank" rel="noopener noreferrer"
+      href="/guide/installation" target="_self" rel="noopener noreferrer"
       class="store-badge-link"
-      aria-label="Get it on the Chrome Web Store"
+      aria-label="Gomoku installation guide"
     >
       <img
         :src="withBase('/badges/Chrome-Web-Store.png')"

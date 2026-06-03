@@ -8,21 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.1.32] - 2026-04-16
 
 ### Added
-- Improved browser extension integration for a smoother experience when opening images
-- Better compatibility with more websites when loading images
-- Faster and smoother image browsing performance
-- More accurate image sorting to match your system view
-- Improved overall interaction and editing experience
+### Added
+- Improved local network matchmaking and LAN play stability
+- Better compatibility and portability for game records (SGF)
+- Faster game load times and improved UI responsiveness
+- Improved overall interaction and gameplay experience
 - Enhanced macOS compatibility and stability
 - General bug fixes and performance improvements
 
 ## [1.0.0] - 2025-12-11
 
-### Added
-- Initial release of Nicasa Support documentation
+-### Added
+- Initial release of Gomoku documentation
 - Complete VitePress setup with TypeScript configuration
 - Comprehensive user guides:
-  - Introduction to Nicasa
+  - Introduction to Gomoku
   - Installation instructions for macOS
   - Usage guide with keyboard shortcuts
   - Troubleshooting section

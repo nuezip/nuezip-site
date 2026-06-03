@@ -1,62 +1,33 @@
 # Privacy Policy
 
-## Data Collection
+Gomoku is designed as an offline-first application. This page explains what (if any) data the app collects and how it is used.
 
-The developer does not collect any data from this app.
+## Local-first design
 
-### Information We Do Not Collect
+- Game records (saved replays / SGF files), settings, and logs are stored locally on your Mac. They are not uploaded by default.
+- LAN play transmits moves and room metadata only to peers on your local network while a match is in progress.
 
-- Personal information
-- Usage statistics
-- Device information
-- Location data
-- Image content or metadata
-- Browsing history
-- Any other user data
+## What we do not collect
 
-### Chrome Extension
+- We do not collect personal files, images, or browsing history.
+- We do not send your game records or private data to external servers unless you explicitly use a cloud or sharing feature that performs an upload (not enabled by default).
 
-The Nicasa Chrome extension requests access to page content solely to extract image URLs for the image viewing functionality. The extension:
+## Permissions used by the app
 
-- Does not read or store browsing history
-- Does not track user behavior
-- Does not transmit any data to external servers
-- Only processes image URLs locally within your browser
+- **Local Network**: Required to discover and join LAN games on your Wi‑Fi network. You will be prompted by macOS the first time this is needed.
+- **Files and Folders**: Required to read/open and save game records (SGF) and user settings.
+- **Screen Recording / Accessibility**: Optional; only requested if you enable auxiliary features that require them.
 
-### Local Processing
+You can manage these permissions in **System Settings → Privacy & Security**.
 
-All image processing, editing, and viewing happens locally on your device. No images or data are uploaded to external servers.
+## Third-party services
 
-### Permissions
+Gomoku does not include third-party analytics or advertising by default. If the project adds optional cloud or sharing integrations in the future, they will be documented and disclosed here.
 
-Nicasa requests the following permissions on macOS:
+## Privacy requests
 
-- **Screen Recording**: Required for screenshot functionality
-- **Accessibility**: Optional, used for overlay mode features
-- **Files and Folders**: Access to user-selected directories for image browsing
+If you believe Gomoku holds personal data about you and wish to request access, deletion, or portability, please open an issue in the project repository or contact the maintainers. Typical responses will confirm whether any personal data is held and how to remove it.
 
-These permissions can be managed in System Settings > Privacy & Security.
+## Contact
 
-### Third-Party Services
-
-Nicasa does not integrate with any third-party analytics, advertising, or data collection services.
-
-### Privacy Choices
-
-If you wish to exercise privacy rights (for example: access, deletion, portability, or opt-out requests), or if you believe Nicasa has personal data about you, you can submit a request using one of the methods below:
-
-- Email: nicasa@w3cub.com
-- Open a privacy issue: https://github.com/nicasa-app/nicasa-support/issues
-- Use our hosted Privacy Choices page: /guide/privacy-choices
-
-Because Nicasa does not collect personal data as described above, many requests will be answered with a confirmation that no personal data is held. If we begin to collect personal data in future releases, this page and the hosted Privacy Choices form will provide a way to submit and track requests.
-
-We aim to respond to legitimate privacy requests within 30 days.
-
-### Updates
-
-This privacy policy may be updated with new versions of the application. Users will be notified of any significant changes.
-
-### Contact
-
-For privacy-related questions, please contact us through the [GitHub repository](https://github.com/nicasa-app/nicasa-support/issues).
+For privacy questions or requests, open an issue at the project repository (https://github.com/your-org/gomoku) or contact the maintainers.

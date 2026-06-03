@@ -1,70 +1,42 @@
 # Terms of Service
 
-## Acceptance of Terms
+These Terms govern your use of the Gomoku application. By downloading, installing, or using Gomoku, you agree to these Terms. If you do not agree, do not use the application.
 
-By downloading, installing, or using Nicasa ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
+## License and Use
 
-## Description of Service
+Gomoku is provided under the license terms included with each release. You are granted a limited, non-exclusive, non-transferable license to use the application on your devices in accordance with the license terms.
 
-Nicasa is a desktop image viewer and screenshot tool for macOS that provides:
+## Local Features and Data
 
-- Image viewing and browsing capabilities
-- Screenshot and screen capture functionality
-- AI-powered image editing tools
-- Chrome browser extension for web image extraction
-- Transparent overlay mode for design work
-
-## License and Usage Rights
-
-### Mac App Store Version
-- Requires one-time purchase of $4.99
-- Licensed for use on devices associated with your Apple ID
-- Family Sharing compatible
-
-### Chrome Extension
-- Free to download and use
-- Subject to Chrome Web Store terms and conditions
+Gomoku is an offline-first application. Game records, settings, and logs are stored locally unless you use an explicit cloud or sharing feature.
 
 ## User Responsibilities
 
-You agree to:
+- Use Gomoku lawfully and in compliance with applicable rules.
+- Do not attempt to decompile, reverse engineer, or modify the app in violation of the license.
 
-- Use the App only for lawful purposes
-- Not attempt to reverse engineer, decompile, or modify the App
-- Respect intellectual property rights
-- Grant necessary system permissions for App functionality
-- Not use the App to violate any laws or regulations
+## Privacy
 
-## Privacy and Data
+Please review the Privacy Policy for information about data practices and privacy.
 
-Please refer to our [Privacy Policy](/guide/privacy) for information about data collection and privacy practices.
+## No Warranty
 
-## Disclaimers
+Gomoku is provided "as is" without warranties of any kind. To the fullest extent permitted by law, the maintainers disclaim all warranties, whether express, implied, statutory or otherwise, including merchantability and fitness for a particular purpose.
 
-### No Warranty
-The App is provided "as is" without warranty of any kind. The developer disclaims all warranties, express or implied, including but not limited to merchantability and fitness for a particular purpose.
+## Limitation of Liability
 
-### Limitation of Liability
-In no event shall the developer be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
-
-## Intellectual Property
-
-Nicasa and its associated trademarks are owned by the developer. The App's code and design are protected by copyright law.
+To the maximum extent permitted by law, the maintainers are not liable for any indirect, incidental, special, consequential or exemplary damages arising from your use of the application.
 
 ## Termination
 
-These Terms are effective until terminated. Your rights under these Terms will terminate automatically if you fail to comply with any of these Terms.
+The rights granted to you terminate automatically if you fail to comply with these Terms.
 
-## Governing Law
+## Changes
 
-These Terms shall be governed by and construed in accordance with the laws of applicable jurisdictions, without regard to conflict of law principles.
+We may update these Terms from time to time. Continued use after changes constitutes acceptance of the revised Terms.
 
-## Changes to Terms
+## Contact
 
-The developer reserves the right to modify these Terms at any time. Continued use of the App after changes constitutes acceptance of the new Terms.
+For questions about these Terms, open an issue at the project repository: `https://github.com/your-org/gomoku/issues`.
 
-## Contact Information
-
-For questions about these Terms, please contact us through the [GitHub repository](https://github.com/nicasa-app/nicasa-support/issues).
-
-*Last updated: April 16, 2026*
+*Last updated: 2026-04-16*

@@ -1,15 +1,15 @@
 # Guide
 
-Welcome to the Nicasa Support Guide! This section contains comprehensive documentation to help you get the most out of Nicasa.
+Welcome to the Gomoku Support Guide! This section contains documentation to help you get the most out of Gomoku.
 
 ## Getting Started
 
-If you're new to Nicasa, start here:
+If you're new to Gomoku, start here:
 
-- **[Introduction](guide/introduction.md)** - Learn what Nicasa is and its key features
-- **[Installation](guide/installation.md)** - Download and install Nicasa on your system
+- **[Introduction](guide/introduction.md)** - Learn what Gomoku is and its key features
+- **[Installation](guide/installation.md)** - Install Gomoku on your Mac
 - **[Usage](guide/usage.md)** - Basic usage guide and keyboard shortcuts
- - **[Set Nicasa as Your Default Image Viewer](guide/set-default-image-viewer.md)** - How to associate image files with Nicasa
+ - **[Set Gomoku as Your Default SGF Viewer](guide/set-default-image-viewer.md)** - How to associate `.sgf` files with Gomoku
 
 ## Advanced Topics
 
@@ -21,8 +21,8 @@ Once you're familiar with the basics:
 ## Need Help?
 
 - 📖 [Full Documentation](/) - Back to main documentation
-- 🐛 [Report Issues](https://github.com/nicasa-project/nicasa-support/issues) - Found a bug or have a suggestion?
-- 💬 [Community Discussions](https://github.com/nicasa-project/nicasa-support/discussions) - Get help from the community
+- 🐛 [Report Issues](https://github.com/your-org/gomoku/issues) - Found a bug or have a suggestion?
+- 💬 [Community Discussions](https://github.com/your-org/gomoku/discussions) - Get help from the community
 
 ## Quick Links
 
@@ -33,7 +33,7 @@ Once you're familiar with the basics:
 | Troubleshooting | [guide/troubleshooting.md](guide/troubleshooting.md) |
 | FAQ | [guide/faq.md](guide/faq.md) |
 
-| Set Default Viewer | [Set Nicasa as Your Default Image Viewer](guide/set-default-image-viewer.md) |
+| Set Default Viewer | [Set Gomoku as Your Default SGF Viewer](guide/set-default-image-viewer.md) |
 
 ---
 

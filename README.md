@@ -1,20 +1,28 @@
-# Nicasa Support
+# Gomoku Documentation
 
-This repository contains the technical support documentation for **Nicasa**, a smooth, modern image-viewing application for desktop.
+This repository hosts documentation for the **Gomoku** project. The site has been adapted to serve the Gomoku project's documentation and uses the custom domain `gomoku.w3cub.com`.
 
-## About Nicasa
+## Project Source
 
-Nicasa brings a smooth, modern image-viewing experience to your desktop. It provides fast, intuitive navigation through your image collections with a clean, responsive interface.
+The local project used as the source for this site is located at:
+
+/Users/terry/nuecms-workspace/gomoku
+
+To use the Gomoku project's documentation as the site source, you can either copy its `docs/` contents into this repository's `docs/` folder or create a symlink:
+
+```bash
+rm -rf docs
+ln -s /Users/terry/nuecms-workspace/gomoku/docs docs
+```
 
 ## Documentation
 
-This site is built with [VitePress](https://vitepress.dev/) and contains comprehensive guides for users and developers.
+This site is built with [VitePress](https://vitepress.dev/) and contains guides for the Gomoku project.
 
 ### Getting Help
 
-- **Submit Issues**: Report bugs or request features at [GitHub Issues](https://github.com/nicasa-project/nicasa-support/issues)
-- **Documentation**: Browse the full documentation at [nicasa.w3cub.com](https://nicasa.w3cub.com)
-- **Wiki**: Additional resources in the GitHub Wiki
+- **Submit Issues**: Report bugs or request features at the Gomoku repository issues (e.g. `https://github.com/your-org/gomoku/issues`)
+- **Documentation**: Browse the full documentation at https://gomoku.w3cub.com
 
 ## Development
 
@@ -51,7 +59,7 @@ pnpm docs:preview
 
 ## Deployment
 
-This documentation site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch.
+This documentation site can be deployed to GitHub Pages; the workflow includes a step to add a `CNAME` for the custom domain `gomoku.w3cub.com`.
 
 ### Manual Deployment
 
@@ -59,22 +67,7 @@ To deploy manually:
 
 1. Build the site: `pnpm docs:build`
 2. The built files will be in `docs/.vitepress/dist`
-3. Deploy to your hosting platform
-
-### GitHub Pages Setup
-
-The repository includes a GitHub Actions workflow that automatically:
-
-- Builds the documentation on every push to `main`
-- Deploys to GitHub Pages
-- Makes the site available at `https://nicasa.w3cub.com` (custom domain)
-
-To enable GitHub Pages:
-
-1. Go to repository Settings > Pages
-2. Select "GitHub Actions" as the source
-3. Configure custom domain to `nicasa.w3cub.com`
-4. Ensure DNS records are properly configured
+3. Deploy to your hosting platform or push to `gh-pages`
 
 ## Contributing
 
@@ -87,6 +80,4 @@ We welcome contributions to improve the documentation:
 
 ## License
 
-This documentation is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0).
-
-You may share this material with attribution, but commercial use and derivative works are not permitted.
+Documentation may be redistributed according to the repository LICENSE.

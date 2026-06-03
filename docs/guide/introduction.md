@@ -1,28 +1,28 @@
 # Introduction
 
-## About Nicasa
+## About Gomoku
 
-Nicasa is a modern desktop image viewer and screenshot tool designed for speed, simplicity, and powerful editing capabilities. Built exclusively for macOS, Nicasa brings a smooth, modern image-viewing experience to your desktop.
+Gomoku is a classic five-in-a-row board game. This site provides documentation, guides, and tools for the Gomoku project including rules, game play, analysis, and deployment of web or native clients.
 
 ## Key Features
 
-### 🖼️ **Better Way to View Images**
-Open images instantly with a clean and focused interface. No distractions, no clutter — just your content, beautifully presented the moment you open it.
+### 🎯 **Play & Learn Gomoku**
+Quickly start games, learn rules, and practice with analysis tools.
 
-### 📸 **Screenshot & Capture**
-Capture any part of your screen in seconds. With fast, precise screenshot tools built right into Nicasa, saving and sharing visual ideas has never been easier.
+### 🤖 **Analysis & AI Opponent**
+Play against an AI opponent, analyze positions, and review games with built-in tools.
 
-### 🤖 **AI Image Editor**
-Enhance and refine your images with powerful AI tools. From quick adjustments to intelligent editing, Nicasa helps you transform images effortlessly.
+### 📚 **Guides & Tutorials**
+Step-by-step guides for beginners and advanced players: rules, strategies, and annotated games.
 
-### 🔍 **Transparent Overlay Mode**
-A powerful tool for designers and artists: pin an image above all windows with adjustable transparency — perfect for tracing, reference work, and UI comparison.
+### 🌐 **Web & Extension Integration**
+Information about web clients, integrations, and optional browser extensions (if applicable).
 
-### 🌐 **Chrome Extension Integration**
-Seamlessly connect with the Nicasa Chrome extension to view all images on any website in one place. Instantly extract, browse, and open images directly in Nicasa for a faster and more immersive viewing experience.
+### 🌐 **Browser Integration (Optional)**
+If a browser extension or web client exists for Gomoku, it will be documented here. Browser integrations are optional and not required for core gameplay.
 
-### 🎨 **Smooth & Intuitive Design**
-Powered by next-generation technology, Nicasa delivers a polished experience with fluid transitions, crisp rendering, and thoughtful interaction design.
+### 🎨 **Clean Interface**
+A minimal and focused interface to keep the attention on the board and the game.
 
 ## System Requirements
 
@@ -33,8 +33,8 @@ Powered by next-generation technology, Nicasa delivers a polished experience wit
 
 ## Supported Languages
 
-Nicasa supports a wide range of languages, including English, Chinese (Simplified), Chinese (Traditional), Japanese, French, Korean, German, Spanish, Italian, Vietnamese, Thai, Hindi, Turkish, Russian, Portuguese, Dutch, German (Switzerland), Finnish, Malay, Greek, Norwegian, Indonesian, Hungarian, Danish, and Ukrainian.
+Gomoku supports a wide range of languages, including English, Chinese (Simplified), Chinese (Traditional), Japanese, French, Korean, German, Spanish, Italian, Vietnamese, Thai, Hindi, Turkish, Russian, Portuguese, Dutch, Finnish, Malay, Greek, Norwegian, Indonesian, Hungarian, Danish, and Ukrainian.
 
 ## Getting Started
 
-If you're new to Nicasa, start with the [Installation Guide](/guide/installation) to get the application running on your Mac.
+If you're new to Gomoku, start with the [Installation Guide](/guide/installation) to get the application running on your Mac.

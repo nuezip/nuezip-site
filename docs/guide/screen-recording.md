@@ -1,81 +1,48 @@
-# Screen Recording Permission Guide (macOS)
+# macOS Permissions Guide
 
-## Why Does Nicasa Need Screen Recording Permission?
+Gomoku may request a small set of macOS permissions for specific features. This page explains what they are and how to manage them.
 
-On macOS, screenshot and screen capture applications must be granted Screen Recording permission in order to read pixels from the display.
+## Local Network (required for LAN play)
 
-Starting from macOS 10.15 Catalina, Apple introduced stricter privacy protections. Any application that captures screen content — including screenshots — must be explicitly approved by the user.
+When you first host or join a LAN game, macOS will prompt to allow Local Network access. Granting this permission lets Gomoku discover and communicate with peers on the same Wi‑Fi network.
 
-This applies to all apps, including those downloaded from the Mac App Store.
+Manage it at: **System Settings → Privacy & Security → Local Network**
 
-**Without this permission, Nicasa cannot capture screenshots or record screen content.**
+If you accidentally denied the permission, toggle it on in the settings and restart Gomoku.
 
-## How to Enable Screen Recording Permission
+## Files and Folders (read/write game records)
 
-Follow these steps:
+Gomoku asks for Files & Folders access when you open or save game records (SGF) or export logs. Grant access to the directories you want Gomoku to read.
 
-1. Open **System Settings**
-2. Go to **Privacy & Security**
-3. Select **Screen Recording**
-4. Find **Nicasa** in the list and check the box
+Manage it at: **System Settings → Privacy & Security → Files and Folders**
 
-If the app was already running, restart Nicasa after enabling the permission.
+## Screen Recording / Accessibility (optional)
 
-## If the Permission Prompt Did Not Appear
+Some auxiliary features (for example, overlay helpers or advanced capture tools) may request Screen Recording or Accessibility permissions. These are optional and only needed if you enable the related feature in the app.
 
-The permission dialog usually appears the first time the app attempts to capture the screen.
+Manage them at:
 
-If you did not see the prompt, it may be because:
+- **Screen Recording**: System Settings → Privacy & Security → Screen Recording
+- **Accessibility**: System Settings → Privacy & Security → Accessibility
 
-- The permission request was previously denied
-- The permission state is cached by macOS
-- The app attempted capture before the dialog could appear
+### Resetting a permission with Terminal
 
-In this case, you may need to reset the permission.
-
-## Reset Screen Recording Permission
-
-You can reset the permission using the following command in Terminal:
+If a permission dialog was dismissed or the state is inconsistent, you can reset macOS permission prompts for an app using `tccutil`. Replace the bundle id if different:
 
 ```bash
-tccutil reset ScreenCapture com.nicasa.nue
+# Reset ScreenCapture prompts for Gomoku
+tccutil reset ScreenCapture com.w3cub.gomoku
+
+# Reset Local Network prompts (resets all local network prompts)
+tccutil reset LocalNetwork
 ```
 
-After running the command:
+After running `tccutil`, restart the app and trigger the feature again to reprompt.
 
-1. Restart Nicasa
-2. Trigger the screenshot feature again
-3. macOS should display the permission dialog again
+## Troubleshooting
 
-## If Reset Still Does Not Work
+- If LAN games are not discovered, ensure Local Network permission is allowed and that devices are on the same network (no AP/client isolation).
+- If saving/opening SGF files fails, check Files & Folders permission and try saving to `Documents` first.
+- If the app still behaves unexpectedly after changing permissions, try quitting and reopening Gomoku.
 
-In rare cases, macOS may keep an invalid permission state.
-
-If resetting the permission does not resolve the issue, try the following steps:
-
-1. Quit Nicasa
-2. Delete Nicasa from your Applications folder
-3. Reinstall the latest version from the Mac App Store
-4. Launch the app again
-5. When macOS asks for Screen Recording permission, select **Allow**
-
-Reinstalling the app can force macOS to recreate the permission entry.
-
-## Alternative Manual Fix
-
-You can also manually toggle the permission:
-
-1. Open **System Settings**
-2. Go to **Privacy & Security**
-3. Open **Screen Recording**
-4. Uncheck Nicasa, then check it again
-5. Restart Nicasa
-
-## Security Note
-
-Granting Screen Recording permission does not allow Nicasa to control your system.
-
-It only allows the application to capture screen pixels for screenshot and capture features.
-
-You can revoke this permission at any time in:
-**System Settings → Privacy & Security → Screen Recording**
+If you need help locating where logs or application data are stored, see `docs/macos-sandbox-paths.md` in the project documentation.

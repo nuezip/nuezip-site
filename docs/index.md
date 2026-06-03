@@ -2,18 +2,18 @@
 layout: home
 
 hero:
-  name: "Nicasa"
-  text: "See every image, instantly."
-  tagline: "A native macOS app and Chrome extension built for fast, focused image browsing. Mac app requires purchase, Chrome extension is free."
+  name: "Gomoku"
+  text: "Play Gomoku — rules, guides, and tools."
+  tagline: "Official documentation and guides for the Gomoku project."
   image:
     src: /hero-illustration.svg
-    alt: Nicasa Image Viewer Illustration
+    alt: Gomoku Illustration
   actions:
     - theme: brand
-      text: Purchase for macOS
-      link: /guide/installation
+      text: Get Started
+      link: /guide/introduction
     - theme: alt
-      text: Free Chrome Extension
+      text: Play Online (demo)
       link: /guide/installation
 
 features:
@@ -23,8 +23,8 @@ features:
       alt: Eye
       width: "24"
       height: "24"
-    title: Instant Image Viewing
-    details: Open any image in milliseconds. No loading screens, no waiting. Just the image.
+    title: Fast, Casual Play
+    details: Quick matches and straightforward rules to get you playing in seconds.
     link: /guide/usage
     linkText: See how it works
   - icon:
@@ -33,8 +33,8 @@ features:
       alt: Layers
       width: "24"
       height: "24"
-    title: Smart Image Extraction
-    details: Detect and surface every image on any webpage with a single click.
+    title: Smarter Play Analysis
+    details: Tools for move suggestions, analysis, and replaying games.
     link: /guide/usage
     linkText: Learn more
   - icon:
@@ -43,8 +43,8 @@ features:
       alt: Sparkles
       width: "24"
       height: "24"
-    title: AI Image Enhancement
-    details: Sharpen, upscale, or denoise images using on-device processing. No cloud required.
+    title: AI Opponent & Analysis
+    details: Optional AI opponent and position analysis to practice and study.
     link: /guide/usage
     linkText: Learn more
   - icon:
@@ -53,8 +53,8 @@ features:
       alt: Camera
       width: "24"
       height: "24"
-    title: Screenshot & Capture
-    details: Capture full pages, selections, or individual elements with pixel precision.
+    title: Save & Share Games
+    details: Save, export, and share game records with friends or study groups.
     link: /guide/usage
     linkText: Learn more
   - icon:
@@ -63,10 +63,10 @@ features:
       alt: Frame
       width: "24"
       height: "24"
-    title: Distraction-Free Interface
-    details: A clean, minimal UI that keeps your focus entirely on the images.
+    title: Clean Game UI
+    details: A minimal interface focused on the board and your moves.
     link: /guide/introduction
-    linkText: About Nicasa
+    linkText: About Gomoku
   - icon:
       light: /icons/zap.svg
       dark: /icons/zap-dark.svg
@@ -74,8 +74,8 @@ features:
       width: "24"
       height: "24"
     title: Fast Performance
-    details: Built on native macOS APIs for smooth, low-latency performance on Apple Silicon.
+    details: Lightweight and responsive play across supported platforms.
     link: /guide/introduction
-    linkText: About Nicasa
+    linkText: About Gomoku
 ---
 
