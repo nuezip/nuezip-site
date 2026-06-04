@@ -40,7 +40,7 @@ If macOS prevents opening the app (Gatekeeper), open **System Settings → Priva
 
 When you launch Gomoku for the first time, you may be prompted to grant the following permissions:
 
-- **Local Network**: Required for LAN (局域网) play so other devices on your Wi‑Fi can discover and join games
+- **Local Network**: Required for LAN play so other devices on your Wi‑Fi can discover and join games
 - **Files and Folders**: To save and open game records (SGF) and settings
 - **Accessibility / Screen Recording**: Optional; only needed if you enable auxiliary features that capture the screen or use overlay helpers
 

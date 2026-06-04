@@ -1,53 +1,53 @@
 # FAQ
 
-### 什么是 Gomoku？
+Q: What is Gomoku?
 
-Gomoku 是一款面向 macOS 的五子棋/棋谱查看与联机对弈应用，支持人机对战、联机对战与本地保存对局（`.sgf`）。
+A: Gomoku is a macOS-first board game app for five-in-a-row play. It supports human vs human, human vs AI, LAN play, and local saving of game records (`.sgf`).
 
-### 支持哪些 macOS 版本？
+Q: Which macOS versions are supported?
 
-建议使用 macOS Monterey (12) 及以上。某些旧系统可能无法获得最佳体验。
+A: Gomoku runs on modern macOS releases; Monterey (12) and later are recommended.
 
-### 如何下载安装？
+Q: How do I download and install Gomoku?
 
-从项目的 Releases 页面下载签名的发行包，或直接通过项目提供的安装说明进行安装。开发者构建可参考仓库中的 README。
+A: Download the signed release from the project Releases page or install from the Mac App Store (if available). See the repository README for developer builds.
 
-### 如何进行联机对局（LAN Play）？
+Q: How do I play over LAN?
 
-打开应用的“联机 / 局域网”页面，创建房间或加入可见房间。确保授予 Local Network 权限并且所有设备在同一 Wi‑Fi 网络中。
+A: Open the "Online / LAN" page in the app, create a room or join a visible room. Ensure Local Network permission is granted and all devices are on the same Wi‑Fi network.
 
-### 如何保存或导出对局？
+Q: How do I save or export games?
 
-使用应用内的保存/导出功能将对局保存为 `.sgf` 文件，默认保存位置可在导出时选择。
+A: Use the in-app Save or Export to create `.sgf` files. Choose the folder when exporting.
 
-### 如何将 Gomoku 设为默认打开 `.sgf` 文件的应用？
+Q: How do I set Gomoku as the default app for `.sgf` files?
 
-请参见文档“将 Gomoku 设为默认 SGF 查看器”的说明，在 Finder 的 Get Info 面板中修改默认打开应用。
+A: See the "Set Gomoku as the default SGF viewer" guide for Finder instructions (Get Info → Open with → Change All).
 
-### 是否会上传我的数据？
+Q: Does Gomoku upload my data?
 
-Gomoku 采用本地优先设计，默认不向外发送个人数据。联机对弈仅在本地网络内传输对局数据。详见隐私政策页。
+A: Gomoku is offline-first and does not upload personal data by default. LAN play transmits game data only to peers on your local network. See the Privacy Policy for details.
 
-### 如何更新应用？
+Q: How do I update the app?
 
-从 Releases 页面下载新版本或使用应用内更新机制（如有）。
+A: Download the latest release or update through the Mac App Store (if you installed via the App Store).
 
-### 如何报告问题或请求新功能？
+Q: How do I report bugs or request features?
 
-在项目仓库打开 issue，并附上你的 macOS 版本、Gomoku 版本、复现步骤以及日志（如有）。
+A: Open an issue in the project repository and include your macOS version, Gomoku version, reproduction steps, and logs if available.
 
-### 日志和保存数据存放在哪里？
+Q: Where are logs and saved games stored?
 
-对于沙盒/商店版本，应用数据和日志通常位于：
+A: For sandboxed (App Store) builds:
 
 ```
 ~/Library/Containers/com.w3cub.gomoku/Data/Library/Application Support/com.w3cub.gomoku/
 ```
 
-开发构建的日志可能打印到控制台或放置在项目的 `src-tauri` 目录下。
+Development builds may log to the console or `src-tauri` directory.
 
-### 可以和 AI 对弈吗？
+Q: Can I play against an AI?
 
-可以。Gomoku 包含 AI 对手并提供多档难度，可在对局设置中选择。
+A: Yes. Gomoku includes an AI opponent with multiple difficulty levels available in the game setup.
 
-如果这些问题没有覆盖到你的疑问，请在项目仓库创建 issue 或查看完整文档页面。
+If you need more answers, please open an issue in the repository or consult the full documentation.
