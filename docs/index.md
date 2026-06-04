@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Gomoku"
   text: "Play Gomoku — rules, guides, and tools."
-  tagline: "Official documentation and guides for the Gomoku project."
+  tagline: "Quick start · Smart analysis & AI opponent · LAN play · SGF export"
   image:
     src: /hero-illustration.png
     alt: Gomoku Illustration
