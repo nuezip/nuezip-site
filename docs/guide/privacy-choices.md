@@ -11,7 +11,7 @@ If you believe Gomoku holds personal data about you and wish to request access, 
 
 ## How to submit
 
-- Open an issue in the project repository: `https://github.com/your-org/gomoku/issues`
+- Open an issue in the project repository: `https://github.com/gomoku-app/gomoku-site/issues`
 - Or contact the maintainers via the project contact method on the repository
 
 ## Response time
@@ -28,5 +28,5 @@ If you are exercising jurisdictional rights (for example under CCPA/CPRA), descr
 
 ## Contact
 
-If you have questions about this process, open an issue at `https://github.com/your-org/gomoku/issues`.
+If you have questions about this process, open an issue at `https://github.com/gomoku-app/gomoku-site/issues`.
 

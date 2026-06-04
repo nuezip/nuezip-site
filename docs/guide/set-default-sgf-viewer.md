@@ -22,4 +22,3 @@ If Gomoku does not appear in the **Open with** menu:
 To change the default again, repeat the steps above and select a different app, then **Change All…**.
 
 This will make opening `.sgf` files in Finder double‑click open them directly in Gomoku.
-

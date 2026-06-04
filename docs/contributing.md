@@ -105,12 +105,12 @@ This project follows a code of conduct. By participating, you agree to:
 - Focus on constructive feedback
 - Accept responsibility for mistakes
 
-See [CODE_OF_CONDUCT.md](https://github.com/your-org/gomoku/blob/main/CODE_OF_CONDUCT.md) for details.
+See [CODE_OF_CONDUCT.md](https://github.com/gomoku-app/gomoku-site/blob/main/CODE_OF_CONDUCT.md) for details.
 
 ## Questions?
 
 If you have questions about contributing:
--- Check existing [issues](https://github.com/your-org/gomoku/issues) and [discussions](https://github.com/your-org/gomoku/discussions)
+-- Check existing [issues](https://github.com/gomoku-app/gomoku-site/issues) and [discussions](https://github.com/gomoku-app/gomoku-site/discussions)
 - Create a new issue if needed
 - Contact the maintainers
 

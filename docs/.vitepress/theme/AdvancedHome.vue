@@ -175,8 +175,8 @@
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Community</h4>
-              <a href="https://github.com/your-org/gomoku" class="footer-link">GitHub</a>
-              <a href="https://github.com/your-org/gomoku/blob/main/CHANGELOG.md" class="footer-link">Changelog</a>
+              <a href="https://github.com/gomoku-app/gomoku-site" class="footer-link">GitHub</a>
+              <a href="https://github.com/gomoku-app/gomoku-site/blob/main/CHANGELOG.md" class="footer-link">Changelog</a>
             </div>
           </div>
         </div>

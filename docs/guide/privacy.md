@@ -30,4 +30,4 @@ If you believe Gomoku holds personal data about you and wish to request access, 
 
 ## Contact
 
-For privacy questions or requests, open an issue at the project repository (https://github.com/your-org/gomoku) or contact the maintainers.
+For privacy questions or requests, open an issue at the project repository (https://github.com/gomoku-app/gomoku-site) or contact the maintainers.

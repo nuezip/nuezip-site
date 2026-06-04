@@ -37,6 +37,6 @@ We may update these Terms from time to time. Continued use after changes constit
 
 ## Contact
 
-For questions about these Terms, open an issue at the project repository: `https://github.com/your-org/gomoku/issues`.
+For questions about these Terms, open an issue at the project repository: `https://github.com/gomoku-app/gomoku-site/issues`.
 
 *Last updated: 2026-04-16*

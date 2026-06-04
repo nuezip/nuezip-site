@@ -27,7 +27,7 @@ This site is built with [VitePress](https://vitepress.dev/) and contains guides 
 
 ### Getting Help
 
-- **Submit Issues**: Report bugs or request features at the Gomoku repository issues (e.g. `https://github.com/your-org/gomoku/issues`)
+- **Submit Issues**: Report bugs or request features at the Gomoku repository issues (e.g. `https://github.com/gomoku-app/gomoku-site/issues`)
 - **Documentation**: Browse the full documentation at https://gomoku.w3cub.com
 
 ## Development

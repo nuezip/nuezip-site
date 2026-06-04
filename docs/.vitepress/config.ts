@@ -48,21 +48,21 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/introduction' },
       { text: 'FAQ', link: '/guide/faq' },
-      { text: 'Changelog', link: 'https://github.com/your-org/gomoku/blob/main/CHANGELOG.md' },
-      { text: 'Repository', link: 'https://github.com/your-org/gomoku' },
+      { text: 'Changelog', link: 'https://github.com/gomoku-app/gomoku-site/blob/main/CHANGELOG.md' },
+      { text: 'Repository', link: 'https://github.com/gomoku-app/gomoku-site' },
     ],
     sidebar: [
       {
         text: 'Guide',
         items: [
-          { text: 'Introduction', link: '/guide/introduction' },
-          { text: 'Installation', link: '/guide/installation' },
-          { text: 'Usage', link: '/guide/usage' },
-          { text: 'Set Default SGF Viewer', link: '/guide/set-default-image-viewer' },
-          { text: '局域网联机（LAN Play）', link: '/guide/finder-sync' },
-          { text: 'Screen Recording Permission', link: '/guide/screen-recording' },
-          { text: 'Troubleshooting', link: '/guide/troubleshooting' },
-          { text: 'FAQ', link: '/guide/faq' }
+              { text: 'Introduction', link: '/guide/introduction' },
+              { text: 'Installation', link: '/guide/installation' },
+              { text: 'Usage', link: '/guide/usage' },
+              { text: 'Set Default SGF Viewer', link: '/guide/set-default-sgf-viewer' },
+              { text: 'LAN Play', link: '/guide/lan-play' },
+              { text: 'Permissions', link: '/guide/screen-recording' },
+              { text: 'Troubleshooting', link: '/guide/troubleshooting' },
+              { text: 'FAQ', link: '/guide/faq' }
         ]
       },
       {
@@ -75,7 +75,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-org/gomoku' }
+      { icon: 'github', link: 'https://github.com/gomoku-app' }
     ],
     footer: {
       message: 'Built with ❤️',
@@ -104,7 +104,7 @@ export default defineConfig({
             { text: 'About', link: '/guide/introduction' },
             { text: 'Privacy Policy', link: '/guide/privacy' },
             { text: 'Terms of Service', link: '/guide/terms' },
-            { text: 'GitHub', link: 'https://github.com/your-org' }
+            { text: 'GitHub', link: 'https://github.com/gomoku-app' }
           ]
         }
       ]

@@ -4,7 +4,7 @@ Thank you for your interest in contributing to the Gomoku documentation! This re
 
 ## Ways to Contribute
 
-- **Report Issues**: Found a bug in the documentation or have a suggestion? [Open an issue](https://github.com/your-org/gomoku/issues)
+- **Report Issues**: Found a bug in the documentation or have a suggestion? [Open an issue](https://github.com/gomoku-app/gomoku-site/issues)
 - **Improve Documentation**: Fix typos, clarify instructions, or add missing information
 - **Add Guides**: Create new guides for common issues or features
 - **Translate**: Help translate the documentation to other languages
@@ -61,4 +61,4 @@ This project follows a code of conduct to ensure a welcoming environment for all
 
 ## Questions?
 
-If you have questions about contributing, feel free to [open an issue](https://github.com/your-org/gomoku/issues) or contact the maintainers.
+If you have questions about contributing, feel free to [open an issue](https://github.com/gomoku-app/gomoku-site/issues) or contact the maintainers.
