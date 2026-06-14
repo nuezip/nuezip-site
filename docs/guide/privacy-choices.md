@@ -1,32 +1,33 @@
 # Privacy Choices
 
-If you believe Gomoku holds personal data about you and wish to request access, deletion, or portability, use the steps below.
+PetReminder is an offline-first application. Because all your data is stored locally on your device, we do not collect, sell, or share your personal information.
 
-## What to include in your request
+## Data We Hold
 
-- Your name
-- Contact email
-- Description of the request (access, deletion, portability, or opt-out)
-- Any identifiers that help locate records (for example, a support ticket ID)
+PetReminder stores all data locally on your Mac:
+- Reminder settings and schedules
+- App preferences and configuration
+- Purchased pet data (downloaded `.catpet` files)
+- Debug logs (if enabled)
 
-## How to submit
+None of this data is uploaded to any server.
 
-- Open an issue in the project repository: `https://github.com/gomoku-app/gomoku-site/issues`
-- Or contact the maintainers via the project contact method on the repository
+## Your Rights
 
-## Response time
+Since PetReminder does not collect or store personal data on our servers, there is no personal data for us to access, delete, or transfer. All your data can be managed directly within the app or by removing the app's container folder:
 
-We aim to acknowledge and respond to valid requests within 30 days. If more time is required, we will provide an estimated timeframe.
+```bash
+rm -rf ~/Library/Containers/com.w3cub.reminder
+```
 
-## If we do not hold personal data
+## Do Not Sell
 
-Gomoku is an offline-first app; unless you explicitly used a cloud or sharing feature that uploads data, most requests will be answered with a confirmation that no personal data is held.
-
-## Do Not Sell / Opt-out
-
-If you are exercising jurisdictional rights (for example under CCPA/CPRA), describe the circumstances in your request and we will respond accordingly.
+PetReminder does not sell any personal information. We do not use third-party analytics or advertising services.
 
 ## Contact
 
-If you have questions about this process, open an issue at `https://github.com/gomoku-app/gomoku-site/issues`.
+If you have questions about privacy choices, open an issue at:
+`https://github.com/reminder-app/reminder/issues`
+
+Or email us at: reminder@w3cub.com
 

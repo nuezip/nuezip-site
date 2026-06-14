@@ -1,6 +1,6 @@
 # Contributing
 
-We welcome contributions to improve the Gomoku documentation! Whether you're fixing a typo, adding a new guide, or improving existing content, your help is appreciated.
+We welcome contributions to improve the PetReminder documentation! Whether you're fixing a typo, adding a new guide, or improving existing content, your help is appreciated.
 
 ## Ways to Contribute
 
@@ -34,8 +34,8 @@ We welcome contributions to improve the Gomoku documentation! Whether you're fix
 1. **Fork the repository** on GitHub
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/gomoku.git
-   cd gomoku
+   git clone https://github.com/YOUR_USERNAME/pet-reminder-site.git
+   cd pet-reminder-site
    ```
 3. **Install dependencies**:
    ```bash
@@ -80,7 +80,7 @@ We welcome contributions to improve the Gomoku documentation! Whether you're fix
 - Write in active voice when possible
 - Be inclusive and welcoming
 - Use consistent formatting
-- Include code examples when helpful
+- Include screenshots when helpful
 
 ### File Structure
 - Documentation pages go in `docs/`

@@ -1,40 +1,44 @@
 # Guide
 
-Welcome to the Gomoku Support Guide! This section contains documentation to help you get the most out of Gomoku.
+Welcome to the PetReminder User Guide! This section contains everything you need to know about using PetReminder on your Mac.
 
 ## Getting Started
 
-If you're new to Gomoku, start here:
+New to PetReminder? Start here:
 
-- **[Introduction](guide/introduction.md)** - Learn what Gomoku is and its key features
-- **[Installation](guide/installation.md)** - Install Gomoku on your Mac
-- **[Usage](guide/usage.md)** - Basic usage guide and keyboard shortcuts
- - **[Import SGF](guide/import-sgf.md)** - How to import and open `.sgf` game records
+- **[Introduction](guide/introduction.md)** — Learn what PetReminder is and its key features
+- **[Installation](guide/installation.md)** — Download and install PetReminder on your Mac
+- **[Usage](guide/usage.md)** — How to create reminders and interact with your pets
 
-## Advanced Topics
+## Pets & Customization
 
-Once you're familiar with the basics:
+Make PetReminder your own:
 
-- **[Troubleshooting](guide/troubleshooting.md)** - Solutions to common issues
-- **[FAQ](guide/faq.md)** - Frequently asked questions and answers
+- **[Pets & IAP](guide/pets.md)** — Available pet breeds and how to purchase premium pets
+- **[Customize](guide/customize.md)** — Adjust pet appearance, behavior, sounds, and more
+- **[Permissions](guide/permissions.md)** — Understand macOS permissions PetReminder uses
 
-## Need Help?
+## Help & Support
 
-- 📖 [Full Documentation](/) - Back to main documentation
-- 🐛 [Report Issues](https://github.com/gomoku-app/gomoku-site/issues) - Found a bug or have a suggestion?
-- 💬 [Community Discussions](https://github.com/gomoku-app/gomoku-site/discussions) - Get help from the community
+- **[Troubleshooting](guide/troubleshooting.md)** — Solutions to common issues
+- **[FAQ](guide/faq.md)** — Frequently asked questions
+
+## Legal
+
+- **[Privacy Policy](guide/privacy.md)** — How we handle your data
+- **[Terms of Service](guide/terms.md)** — Terms governing your use of PetReminder
 
 ## Quick Links
 
 | Topic | Link |
 |-------|------|
-| Installation | [guide/installation.md](guide/installation.md) |
-| Basic Usage | [guide/usage.md](guide/usage.md) |
+| Download & Install | [guide/installation.md](guide/installation.md) |
+| Create Reminders | [guide/usage.md](guide/usage.md) |
+| Premium Pets | [guide/pets.md](guide/pets.md) |
+| Customization | [guide/customize.md](guide/customize.md) |
 | Troubleshooting | [guide/troubleshooting.md](guide/troubleshooting.md) |
 | FAQ | [guide/faq.md](guide/faq.md) |
 
-| Set Default Viewer | [Import SGF](guide/import-sgf.md) |
-
 ---
 
-*Last updated: April 24, 2026*
+*Last updated: June 14, 2026*

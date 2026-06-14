@@ -1,53 +1,53 @@
 # FAQ
 
-Q: What is Gomoku?
+Q: What is PetReminder?
 
-A: Gomoku is a macOS-first board game app for five-in-a-row play. It supports human vs human, human vs AI, LAN play, and local saving of game records (`.sgf`).
+A: PetReminder is a macOS desktop app that shows cute pets on your screen when reminders are due. It helps you stay on top of important tasks with adorable animal companions.
 
 Q: Which macOS versions are supported?
 
-A: Gomoku runs on modern macOS releases; Monterey (12) and later are recommended.
+A: PetReminder runs on macOS Monterey (12) and later, optimized for Apple Silicon (M-series).
 
-Q: How do I download and install Gomoku?
+Q: How do I download and install PetReminder?
 
-A: Download the signed release from the project Releases page or install from the Mac App Store (if available). See the repository README for developer builds.
+A: Download from the [Mac App Store](https://apps.apple.com/app/id6771268165) or grab the latest release from [GitHub Releases](https://github.com/reminder-app/reminder/releases).
 
-Q: How do I play over LAN?
+Q: Is PetReminder free?
 
-A: Open the "Online / LAN" page in the app, create a room or join a visible room. Ensure Local Network permission is granted and all devices are on the same Wi‑Fi network.
+A: The base app is free to download. Some premium pets are available via in-app purchase.
 
-Q: How do I save or export games?
+Q: What pets are available?
 
-A: Use the in-app Save or Export to create `.sgf` files. Choose the folder when exporting.
+A: Currently includes free default pet plus premium breeds: **Ragdoll Cat**, **British Shorthair Cat**, **Shiba Inu**, **Corgi**, and **Husky**. More coming soon!
 
-Q: How do I set Gomoku as the default app for `.sgf` files?
+Q: How do I purchase a premium pet?
 
-A: See the "Set Gomoku as the default SGF viewer" guide for Finder instructions (Get Info → Open with → Change All).
+A: Open PetReminder → **Pets** tab, browse available pets, and tap "Purchase" to unlock via in-app purchase.
 
-Q: Does Gomoku upload my data?
+Q: Does PetReminder work offline?
 
-A: Gomoku is offline-first and does not upload personal data by default. LAN play transmits game data only to peers on your local network. See the Privacy Policy for details.
+A: Yes. Reminders and pet animations work fully offline. Only pet downloads from IAP require an internet connection.
+
+Q: Does PetReminder upload my data?
+
+A: No. PetReminder is offline-first. All your reminders and settings are stored locally. No data is uploaded to external servers.
 
 Q: How do I update the app?
 
-A: Download the latest release or update through the Mac App Store (if you installed via the App Store).
+A: Update through the Mac App Store (recommended) or download the latest release from GitHub.
 
 Q: How do I report bugs or request features?
 
-A: Open an issue in the project repository and include your macOS version, Gomoku version, reproduction steps, and logs if available.
+A: Open an issue in the [project repository](https://github.com/reminder-app/reminder) and include your macOS version, PetReminder version, reproduction steps, and logs if available.
 
-Q: Where are logs and saved games stored?
+Q: Where are logs and data stored?
 
 A: For sandboxed (App Store) builds:
 
 ```
-~/Library/Containers/com.w3cub.gomoku/Data/Library/Application Support/com.w3cub.gomoku/
+~/Library/Containers/com.w3cub.reminder/Data/Library/Application Support/com.w3cub.reminder/
 ```
 
 Development builds may log to the console or `src-tauri` directory.
-
-Q: Can I play against an AI?
-
-A: Yes. Gomoku includes an AI opponent with multiple difficulty levels available in the game setup.
 
 If you need more answers, please open an issue in the repository or consult the full documentation.

@@ -1,50 +1,45 @@
 # Installation
 
-Gomoku is available for macOS through the Mac App Store. The app costs $4.99 and provides a one-time purchase for full access to all features.
+PetReminder is available for macOS through the Mac App Store.
 
 ## Download Options
 
-- **Mac App Store**: [Download Gomoku](https://apps.apple.com/app/id6771268165) - $4.99
-
 ### Mac App Store (Recommended)
+
+- **Download**: [PetReminder on the Mac App Store](https://apps.apple.com/app/id6771268165)
 
 The Mac App Store version provides automatic updates and seamless integration with macOS.
 
-- **Price**: $4.99 (one-time purchase)
-- **App Store ID**: 6771268165
-- **Link**: https://apps.apple.com/app/id6771268165
-
 ### GitHub Releases (Alternative)
 
-If you prefer to download directly, you can get the app from GitHub Releases. Note that this version does not receive automatic updates.
+If you prefer to download directly, you can get the app from [GitHub Releases](https://github.com/reminder-app/reminder/releases). Note that this version does not receive automatic updates.
 
 ## Installation Steps
 
-### Mac App Store Installation (Recommended)
+### Mac App Store
 
-1. Click the "Download Gomoku" link above or search for "Gomoku" in the Mac App Store
-2. Click "Get" or "Buy" to purchase the app ($4.99)
+1. Click the download link above or search for "PetReminder" in the Mac App Store
+2. Click "Get" to download the app
 3. The app will automatically download and install
-4. Launch Gomoku from your Applications folder or Launchpad
+4. Launch PetReminder from your Applications folder or Launchpad
 
-### GitHub Releases Installation
+### GitHub Releases
 
 1. Download the latest `.dmg` from the Releases page
 2. Double-click the downloaded `.dmg` to open it
-3. Drag the `Gomoku.app` icon into your `Applications` folder
-4. Eject the mounted image and open `Gomoku` from `Applications`
+3. Drag the `PetReminder.app` icon into your `Applications` folder
+4. Eject the mounted image and open `PetReminder` from `Applications`
 
-If macOS prevents opening the app (Gatekeeper), open **System Settings → Privacy & Security** and click **Open Anyway** for Gomoku, or right-click the app and choose **Open**.
+If macOS prevents opening the app (Gatekeeper), open **System Settings → Privacy & Security** and click **Open Anyway** for PetReminder, or right-click the app and choose **Open**.
 
 ## First Launch
 
-When you launch Gomoku for the first time, you may be prompted to grant the following permissions:
+When you launch PetReminder for the first time, you may be prompted to grant:
 
-- **Local Network**: Required for LAN play so other devices on your Wi‑Fi can discover and join games
-- **Files and Folders**: To save and open game records (SGF) and settings
-- **Accessibility / Screen Recording**: Optional; only needed if you enable auxiliary features that capture the screen or use overlay helpers
+- **Notifications**: Required for reminder alerts
+- **Files and Folders**: To save settings and purchased pet data
 
-Grant permissions when prompted. You can modify these permissions at any time in **System Settings → Privacy & Security**.
+Grant permissions when prompted. You can modify these at any time in **System Settings → Privacy & Security**.
 
 ## Updates
 
@@ -53,17 +48,16 @@ Grant permissions when prompted. You can modify these permissions at any time in
 
 ## Uninstall
 
-To uninstall Gomoku:
+To uninstall PetReminder:
 
-1. Quit Gomoku
-2. Drag `Gomoku.app` from `Applications` to the Trash
+1. Quit PetReminder
+2. Drag `PetReminder.app` from `Applications` to the Trash
 3. (Optional) Remove app data and logs:
 
 ```bash
-rm -rf ~/Library/Containers/com.w3cub.gomoku
-rm -rf ~/Library/Logs/gomoku
+rm -rf ~/Library/Containers/com.w3cub.reminder
+rm -rf ~/Library/Logs/reminder
 ```
-
 
 ## System Requirements
 
@@ -76,8 +70,7 @@ rm -rf ~/Library/Logs/gomoku
 
 If you encounter issues during installation:
 
-- **macOS blocks the app**: Open **System Settings → Privacy & Security** and click **Open Anyway** for Gomoku
-- **LAN issues**: Ensure all devices are on the same Wi‑Fi network and that **Local Network** permission was granted
-- **Notarization warning**: Download a signed/notarized build from the Mac App Store or GitHub Releases
+- **macOS blocks the app**: Open **System Settings → Privacy & Security** and click **Open Anyway** for PetReminder
+- **Notarization warning**: Download a signed/notarized build from the Mac App Store
 
-For more help, visit the [Troubleshooting guide](./troubleshooting.md) or open an issue on the project repository.
+For more help, visit the [Troubleshooting guide](./troubleshooting.md).

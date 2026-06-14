@@ -5,8 +5,8 @@
       <div class="nav-container">
         <div class="nav-brand">
           <VPLink href="/" class="brand-link">
-            <img src="/logo.png" alt="Gomoku Logo" class="brand-logo" />
-            <span class="brand-text">Gomoku</span>
+            <img src="/logo.png" alt="PetReminder Logo" class="brand-logo" />
+            <span class="brand-text">PetReminder</span>
           </VPLink>
         </div>
         <div class="nav-links">
@@ -24,23 +24,22 @@
             <p class="hero-subtitle">{{ data.hero.text }}</p>
             <p class="hero-description">{{ data.hero.tagline }}</p>
             <div class="hero-actions">
-              <!-- 使用 HomeActions 组件 -->
               <HomeActions />
             </div>
           </div>
           <div class="hero-visual">
             <div class="floating-elements">
               <div class="floating-card card-1">
-                <div class="card-icon">♟️</div>
-                <div class="card-text">Board Game</div>
+                <div class="card-icon">🐱</div>
+                <div class="card-text">Cute Desktop Pets</div>
               </div>
               <div class="floating-card card-2">
-                <div class="card-icon">⚡</div>
-                <div class="card-text">Responsive Play</div>
+                <div class="card-icon">⏰</div>
+                <div class="card-text">Smart Reminders</div>
               </div>
               <div class="floating-card card-3">
-                <div class="card-icon">🎯</div>
-                <div class="card-text">AI Analysis</div>
+                <div class="card-icon">🎨</div>
+                <div class="card-text">Customizable</div>
               </div>
             </div>
             <div class="hero-image">
@@ -57,7 +56,7 @@
       <div class="features-container">
         <div class="section-header">
           <h2 class="section-title">Key Features</h2>
-          <p class="section-subtitle">Everything you need to play, review, and analyze Gomoku</p>
+          <p class="section-subtitle">Everything you need to stay on track with cute companions</p>
         </div>
         <div class="features-grid">
           <div v-for="(feature, index) in data.features" :key="feature.title"
@@ -75,47 +74,24 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-      <div class="testimonials-container">
+    <!-- Pets Preview Section -->
+    <section class="pets-section">
+      <div class="pets-container">
         <div class="section-header">
-          <h2 class="section-title">Loved by Players</h2>
-          <p class="section-subtitle">Real feedback from our community</p>
+          <h2 class="section-title">Meet Our Pets</h2>
+          <p class="section-subtitle">Adorable companions that appear when you need them most</p>
         </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">Gomoku makes it easy to play and review games — fast and pleasant experience.</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">A</div>
-              <div class="author-info">
-                <div class="author-name">Alex Johnson</div>
-                <div class="author-role">Designer</div>
-              </div>
+        <div class="pets-grid">
+          <div class="pet-card" v-for="pet in pets" :key="pet.name">
+            <div class="pet-emoji">{{ pet.emoji }}</div>
+            <div class="pet-info">
+              <h3 class="pet-name">{{ pet.name }}</h3>
+              <p class="pet-desc">{{ pet.desc }}</p>
             </div>
           </div>
-          <div class="testimonial-card">
-            <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">The analysis tools helped me improve my opening — great for practice.</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">S</div>
-              <div class="author-info">
-                <div class="author-name">Sarah Chen</div>
-                <div class="author-role">Photographer</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">Clean interface keeps the focus on the board and the game.</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">M</div>
-              <div class="author-info">
-                <div class="author-name">Mike Rodriguez</div>
-                <div class="author-role">Developer</div>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="pets-cta">
+          <a href="/guide/pets" class="btn btn-primary">Explore All Pets</a>
         </div>
       </div>
     </section>
@@ -125,7 +101,7 @@
       <div class="faq-container">
         <div class="section-header">
           <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">Quick answers for macOS players</p>
+          <p class="section-subtitle">Quick answers for macOS users</p>
         </div>
         <div class="faq-grid">
           <div v-for="faq in faqs" :key="faq.question" class="faq-item">
@@ -142,11 +118,11 @@
     <section class="cta-section">
       <div class="cta-container">
         <div class="cta-content">
-          <h2 class="cta-title">Ready to Play Gomoku?</h2>
-          <p class="cta-description">Start a game, play AI, or join friends on your local network.</p>
+          <h2 class="cta-title">Ready for a Cute Reminder?</h2>
+          <p class="cta-description">Download PetReminder and let adorable pets accompany your important moments.</p>
           <div class="cta-actions">
             <a href="/guide/installation" class="btn btn-primary">Get Started</a>
-            <a href="/guide/usage" class="btn btn-secondary">How to Play</a>
+            <a href="/guide/usage" class="btn btn-secondary">How to Use</a>
           </div>
         </div>
       </div>
@@ -157,15 +133,15 @@
       <div class="footer-container">
         <div class="footer-content">
           <div class="footer-brand">
-            <div class="footer-logo">Gomoku</div>
-            <p class="footer-tagline">Play. Analyze. Improve.</p>
+            <div class="footer-logo">PetReminder</div>
+            <p class="footer-tagline">Never forget, always accompanied.</p>
           </div>
           <div class="footer-links">
             <div class="footer-column">
               <h4 class="footer-heading">Product</h4>
-              <a href="/guide/installation" class="footer-link">Mac App</a>
+              <a href="/guide/installation" class="footer-link">Download</a>
               <a href="/guide/usage" class="footer-link">Features</a>
-              <a href="/guide/installation" class="footer-link">Installation</a>
+              <a href="/guide/pets" class="footer-link">Pets & IAP</a>
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Support</h4>
@@ -175,13 +151,13 @@
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Community</h4>
-              <a href="https://github.com/gomoku-app/gomoku-site" class="footer-link">GitHub</a>
-              <a href="https://github.com/gomoku-app/gomoku-site/blob/main/CHANGELOG.md" class="footer-link">Changelog</a>
+              <a href="https://github.com/reminder-app/reminder" class="footer-link">GitHub</a>
+              <a href="https://github.com/reminder-app/reminder/releases" class="footer-link">Releases</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 Gomoku Project. Built with ❤️ for players.</p>
+          <p class="footer-copyright">© 2026 PetReminder Project. Built with ❤️ for pet lovers.</p>
         </div>
       </div>
     </footer>
@@ -200,38 +176,43 @@ interface Props {
 
 defineProps<Props>()
 
-
-// Feature colors for icons
 const featureColors = [
-  '#3b82f6', // blue
-  '#10b981', // green
-  '#f59e0b', // yellow
-  '#ef4444', // red
+  '#f97316', // orange - reminds of pets
+  '#10b981', // green  
   '#8b5cf6', // purple
-  '#06b6d4'  // cyan
+  '#ec4899', // pink
+  '#3b82f6', // blue
+  '#f59e0b'  // amber
 ]
 
-// FAQ data
+const pets = [
+  { name: '布偶猫', emoji: '🐱', desc: 'Elegant Ragdoll cat with graceful movements' },
+  { name: '英短猫', emoji: '🐱', desc: 'Chubby British Shorthair, cute and healing' },
+  { name: '柴犬', emoji: '🐕', desc: 'Playful Shiba Inu, full of energy' },
+  { name: '柯基', emoji: '🐕', desc: 'Lively Corgi, short legs big personality' },
+  { name: '哈士奇', emoji: '🐺', desc: 'Handsome Husky with expressive looks' },
+]
+
 const faqs = [
   {
-    question: "Is Gomoku free?",
-    answer: "Check the installation page for current distribution and pricing (GitHub Releases are typically free; an App Store build may have a price)."
+    question: "Is PetReminder free?",
+    answer: "The base app is free to download. Some premium pets are available via in-app purchase to support development."
   },
   {
-    question: "Does Gomoku work offline?",
-    answer: "Yes. Core gameplay and analysis work offline. LAN play requires a local network connection."
+    question: "Does PetReminder work offline?",
+    answer: "Yes. Reminders and pet animations work fully offline. Only pet downloads from IAP require an internet connection."
   },
   {
-    question: "Is my game data uploaded anywhere?",
-    answer: "No. Game records and logs are stored locally. LAN play transmits moves only to peers on your local network."
+    question: "What pets are available?",
+    answer: "Currently includes cats (Ragdoll, British Shorthair) and dogs (Shiba Inu, Corgi, Husky). More pets are planned!"
   },
   {
     question: "Which macOS versions are supported?",
-    answer: "Gomoku supports macOS 12 Monterey and later, and is optimized for Apple Silicon (M-series)."
+    answer: "PetReminder supports macOS 12 Monterey and later, optimized for Apple Silicon (M-series)."
   },
   {
-    question: "What permissions does Gomoku need?",
-    answer: "Gomoku may request Local Network access for LAN play and Files & Folders permission to save or open game records. Screen Recording/Accessibility are optional for auxiliary features."
+    question: "What permissions does PetReminder need?",
+    answer: "PetReminder runs with minimal permissions. Notifications are required for reminders. Optional permissions for custom features."
   }
 ]
 </script>
@@ -634,79 +615,80 @@ const faqs = [
   color: #333333;
 }
 
-/* Testimonials Section */
-.testimonials-section {
+/* Pets Preview Section */
+.pets-section {
   padding: 120px 0;
-  background: #f8f9fa;
+  background: #fff7ed;
 }
 
-.testimonials-container {
+.dark .pets-section {
+  background: #1a1208;
+}
+
+.pets-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.testimonials-grid {
+.pets-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
 }
 
-.testimonial-card {
+.pet-card {
   background: white;
-  padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
-  position: relative;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
 }
 
-.testimonial-quote {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+.dark .pet-card {
+  background: #2a2010;
+  border-color: #3a3020;
+}
+
+.pet-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-color: #f97316;
+}
+
+.pet-emoji {
   font-size: 4rem;
-  color: #e5e5e5;
-  font-family: serif;
+  margin-bottom: 16px;
   line-height: 1;
 }
 
-.testimonial-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333333;
-  margin: 0 0 30px;
-  padding-left: 40px;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.author-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.author-info .author-name {
+.pet-name {
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1a1a1a;
-  margin-bottom: 4px;
+  margin: 0 0 8px;
 }
 
-.author-info .author-role {
+.dark .pet-name {
+  color: #f0e6d0;
+}
+
+.pet-desc {
   font-size: 0.9rem;
   color: #666666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dark .pet-desc {
+  color: #b0a090;
+}
+
+.pets-cta {
+  text-align: center;
 }
 
 /* FAQ Section */

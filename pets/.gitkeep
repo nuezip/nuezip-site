@@ -1,0 +1,29 @@
+# IAP Pet Download Files
+
+Place downloaded `.catpet` files in this directory for deployment.
+
+These files are copied into the built site during deployment (see `deploy.sh`) so users can download premium pets via the website.
+
+## Directory Structure
+
+```
+pets/
+├── .gitkeep
+├── ragdoll/
+│   └── pet.catpet
+├── british/
+│   └── pet.catpet
+├── shiba/
+│   └── pet.catpet
+├── corgi/
+│   └── pet.catpet
+└── husky/
+    └── pet.catpet
+```
+
+## Usage
+
+1. Download IAP pet `.catpet` files from the macOS App Store build
+2. Place them in the corresponding subdirectory
+3. Run `pnpm docs:build` and deploy
+4. The deploy script will automatically copy the `pets/` folder to the built site

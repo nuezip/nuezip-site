@@ -1,12 +1,10 @@
 {
-  "name": "gomoku-docs",
+  "name": "pet-reminder-docs",
   "version": "1.0.0",
   "type": "module",
-  "description": "Documentation for the Gomoku project",
+  "description": "Official website for PetReminder — macOS reminder app with desktop pets",
   "main": "index.js",
-  "homepage": "https://gomoku.w3cub.com",
-  "appStoreId": "6771268165",
-  "appStoreConnectUrl": "https://appstoreconnect.apple.com/apps/6771268165/distribution/info",
+  "homepage": "https://reminder.w3cub.com",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -14,8 +12,8 @@
     "docs:deploy": "./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["gomoku", "documentation", "game", "board"],
-  "author": "Gomoku Project",
+  "keywords": ["pet-reminder", "reminder", "desktop-pet", "macos", "tauri"],
+  "author": "PetReminder Project",
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.6.4"

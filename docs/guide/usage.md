@@ -1,125 +1,92 @@
 # Usage Guide
 
-> NOTE: This documentation site has been adapted for the Gomoku project. Project source path: `/Users/terry/nuecms-workspace/gomoku`.
+## Creating Reminders
 
-## Basic Navigation
+### Add a New Reminder
 
-### Opening Images
+1. Open PetReminder
+2. Click the **+** button or press `Cmd+N`
+3. Enter a title and message for your reminder
+4. Set the date and time
+5. Choose a pet to accompany this reminder (default pet if none selected)
+6. Click **Save**
 
-- **File Menu**: Click File > Open to select individual images
-- **Folder View**: Click File > Open Folder to browse an entire directory
--- **Drag & Drop**: Drag files directly onto the application window
--- **Browser integration**: If a browser extension exists for Gomoku, install it from the browser store to enable web integrations
-## Finder Sync Extension
+### Recurring Reminders
 
-### Quick Image Processing from Finder
+- Set frequency: daily, weekly, monthly, or custom intervals
+- Choose specific days of the week
+- Set an end date or no end date
 
-The Finder Sync Extension example below was written for an image tool; for Gomoku adapt it to the project's quick actions. Example placeholder:
+### Managing Reminders
 
-1. Select one or more items in Finder
-2. Click the Gomoku toolbar button
-3. Choose a quick action from the menu
-4. Gomoku (or the associated tool) will open and process the selected items
+- **View**: All reminders are shown in a list with their schedule and assigned pet
+- **Edit**: Click any reminder to modify its settings
+- **Delete**: Swipe or right-click a reminder to remove it
+- **Toggle**: Enable or disable a reminder without deleting it
 
-### Supported Formats
+## When a Reminder Fires
 
-The extension works with: JPG, PNG, GIF, BMP, WebP, SVG, TIFF, and ICO files.
-### Thumbnail View
+When a reminder is triggered:
 
-The main interface shows thumbnails of your images:
+1. A desktop pet appears on your screen
+2. The pet walks around, sits, or performs unique animations
+3. The reminder message is displayed with the pet
+4. You can dismiss the pet by clicking on it or pressing `Esc`
 
-- **Click**: Select an image
-- **Double-click**: Open in full view
-- **Right-click**: Access context menu with options
+## Pet Interaction
 
-### Full View Mode
+### Default Pet
+- A free default pet comes with the app
+- Watch it move, sit, and react when you interact
 
-When viewing an image in full screen:
+### Changing Pets
+1. Open **Settings** → **Pet**
+2. Select from your available pets
+3. The selected pet will appear for future reminders
 
-- **Zoom**: Use mouse wheel or zoom controls
-- **Pan**: Click and drag to move around zoomed images
-- **Navigation**: Use arrow keys or on-screen buttons to go to next/previous image
+### Purchasing Pets
+See the [Pets & IAP guide](/guide/pets) for details on available premium pets.
 
-## Screenshot Feature
+## Customization
 
-### Taking Screenshots
+### Pet Appearance
+- Some pets have customizable colors or patterns
+- Adjust animation speed and idle behavior
 
-1. Click the screenshot button in the toolbar or use keyboard shortcut
-2. Select the area you want to capture
-3. The screenshot will open in Gomoku for editing
+### Sound Settings
+- Enable/disable pet sound effects
+- Adjust volume independently from system volume
+- Choose from different sound themes
 
-### Screen Recording Permission
-
-For screenshot or recording functionality on macOS, the related application needs Screen Recording permission:
-
-1. Go to System Settings > Privacy & Security > Screen Recording
-2. Check the box next to the application
-3. Restart the application if necessary
-
-## AI Image Editor
-
-### AI Editor Overview
-
-Gomoku may provide analysis or AI-assisted features. Replace this section with project-specific details such as move suggestions, board analysis, or AI opponents.
-
-### Inpainting Tool
-
-(Placeholder) Replace tools section with Gomoku-specific utilities.
-
-## Transparent Overlay Mode
-
-Perfect for designers and artists (placeholder):
-
-1. Open a board or resource in Gomoku
-2. Enable overlay or reference mode if available
-3. Adjust settings as needed
-4. Use for tracing, reference work, or comparison
+### Notification Style
+- Choose between banner, alert, or silent notifications
+- Configure whether the pet appears in full-screen mode
 
 ## Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
-| `Cmd+O` | Open file |
-| `Cmd+Shift+O` | Open folder |
-| `Space` | Next image |
-| `Shift+Space` | Previous image |
-| `Cmd+F` | Toggle fullscreen |
+| `Cmd+N` | New reminder |
+| `Cmd+,` | Open settings |
 | `Cmd+W` | Close window |
 | `Cmd+Q` | Quit application |
-| `Delete` | Delete current image |
-| `Cmd+S` | Take screenshot |
-| `Cmd+E` | Open AI editor |
-| `Cmd+T` | Toggle overlay mode |
-
-## Chrome Extension Integration
-
-### Installation
-
-1. If a browser extension exists for Gomoku, document installation here and remove this placeholder.
-
-### Usage
-
-1. Visit any website where the extension applies
-2. Click the extension icon
-3. Use the provided features to interact with web content
+| `Esc` | Dismiss pet |
+| `Space` | Pause/resume reminder |
 
 ## Settings
 
-Access settings through Gomoku > Preferences (or the equivalent application settings):
+Access settings through **PetReminder → Settings** or press `Cmd+,`:
 
-- **General**: Default folder, language, theme
-- **Interface**: Display and interaction settings
-- **Tools**: Analysis, AI or game tools preferences
-- **Integrations**: Browser or system integrations
+- **General**: Language, launch at login, theme
+- **Reminders**: Default reminder settings, notification preferences
+- **Pet**: Choose pet, customize appearance and behavior
+- **Sound**: Pet sound effects and volume
 - **Privacy**: Data collection preferences
-
-## Supported Formats
-
-Supported formats / platforms depend on the Gomoku project. Replace this list with game clients, export formats (SGF), or platform requirements.
 
 ## Tips and Tricks
 
--- Use search or filters to find games, boards, or saved records
--- Create collections or rooms to organize matches
--- Use analysis tools to mark notable positions
--- Export or share game records (SGF, JSON) as needed
+- Use descriptive reminder messages — the pet will display them
+- Assign different pets to different types of reminders
+- Enable "Launch at Login" to never miss a reminder
+- Try different pet combinations for various moods
+- Check the [Pets & IAP guide](/guide/pets) to see all available breeds

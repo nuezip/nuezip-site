@@ -1,33 +1,47 @@
 # Privacy Policy
 
-Gomoku is designed as an offline-first application. This page explains what (if any) data the app collects and how it is used.
+PetReminder is designed as an offline-first application. Your privacy is important to us.
 
 ## Local-first design
 
-- Game records (saved replays / SGF files), settings, and logs are stored locally on your Mac. They are not uploaded by default.
-- LAN play transmits moves and room metadata only to peers on your local network while a match is in progress.
+- All your reminders, settings, and purchased pet data are stored locally on your Mac.
+- PetReminder does not upload your data to any external servers.
+- No account or registration is required to use the app.
 
 ## What we do not collect
 
 - We do not collect personal files, images, or browsing history.
-- We do not send your game records or private data to external servers unless you explicitly use a cloud or sharing feature that performs an upload (not enabled by default).
+- We do not track your activity or behavior.
+- We do not send your reminder data or personal information to external servers.
+- We do not include third-party analytics or advertising SDKs.
+
+## What data is stored locally
+
+The following data is stored only on your device:
+- **Reminders**: Titles, messages, schedules, and assigned pet preferences
+- **Settings**: App configuration, language preference, theme choice
+- **Purchased pets**: Downloaded `.catpet` files from in-app purchases
+- **Logs**: Debug logs for troubleshooting (can be deleted at any time)
 
 ## Permissions used by the app
 
-- **Local Network**: Required to discover and join LAN games on your Wi‑Fi network. You will be prompted by macOS the first time this is needed.
-- **Files and Folders**: Required to read/open and save game records (SGF) and user settings.
-- **Screen Recording / Accessibility**: Optional; only requested if you enable auxiliary features that require them.
+- **Notifications**: Required to show reminder alerts and trigger pet appearance.
+- **Files and Folders**: Required to save settings and downloaded pet data.
 
-You can manage these permissions in **System Settings → Privacy & Security**.
+You can manage these permissions in **System Settings → Privacy & Security** at any time.
+
+## In-App Purchases
+
+In-app purchases are processed by Apple via the App Store. PetReminder does not receive or store your payment information. Purchase receipts are stored locally to verify ownership.
 
 ## Third-party services
 
-Gomoku does not include third-party analytics or advertising by default. If the project adds optional cloud or sharing integrations in the future, they will be documented and disclosed here.
+PetReminder does not include any third-party analytics, advertising, or tracking services.
 
 ## Privacy requests
 
-If you believe Gomoku holds personal data about you and wish to request access, deletion, or portability, please open an issue in the project repository or contact the maintainers. Typical responses will confirm whether any personal data is held and how to remove it.
+Since PetReminder stores all data locally on your device, we do not hold any personal data on our servers. If you have questions about privacy, please contact us.
 
 ## Contact
 
-For privacy questions or requests, open an issue at the project repository (https://github.com/gomoku-app/gomoku-site) or contact the maintainers.
+For privacy questions, open an issue at the project repository (https://github.com/reminder-app/reminder) or contact us at reminder@w3cub.com.

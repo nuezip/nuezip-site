@@ -1,10 +1,10 @@
-# Contributing to Gomoku Documentation
+# Contributing to PetReminder Documentation
 
-Thank you for your interest in contributing to the Gomoku documentation! This repository contains the official documentation for the Gomoku project.
+Thank you for your interest in contributing to the PetReminder documentation! This repository contains the official website for the PetReminder macOS app.
 
 ## Ways to Contribute
 
-- **Report Issues**: Found a bug in the documentation or have a suggestion? [Open an issue](https://github.com/gomoku-app/gomoku-site/issues)
+- **Report Issues**: Found a bug in the documentation or have a suggestion? [Open an issue](https://github.com/reminder-app/reminder/issues)
 - **Improve Documentation**: Fix typos, clarify instructions, or add missing information
 - **Add Guides**: Create new guides for common issues or features
 - **Translate**: Help translate the documentation to other languages
@@ -12,7 +12,7 @@ Thank you for your interest in contributing to the Gomoku documentation! This re
 ## Getting Started
 
 1. Fork this repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/gomoku.git`
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/pet-reminder-site.git`
 3. Install dependencies: `pnpm install`
 4. Start development server: `pnpm docs:dev`
 5. Make your changes
@@ -27,8 +27,8 @@ Thank you for your interest in contributing to the Gomoku documentation! This re
 - Use clear, concise language
 - Write in active voice when possible
 - Use headings and subheadings to organize content
-- Include code examples where helpful
-- Use consistent formatting
+- Use screenshots where helpful for user guidance
+- Keep content consumer-friendly (no technical jargon)
 
 ### File Structure
 

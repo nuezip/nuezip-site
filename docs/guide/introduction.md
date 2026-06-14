@@ -1,40 +1,44 @@
 # Introduction
 
-## About Gomoku
+## About PetReminder
 
-Gomoku is a classic five-in-a-row board game. This site provides documentation, guides, and tools for the Gomoku project including rules, game play, analysis, and deployment of web or native clients.
+PetReminder is a macOS desktop application that brings cute pets to your screen when reminders are due. Set custom reminders, and when the time comes, an adorable cat or dog appears on your desktop to keep you company, making sure you never miss important moments.
+
+PetReminder is lightweight, native, and optimized for macOS — built for performance and low resource usage.
 
 ## Key Features
 
-### 🎯 **Play & Learn Gomoku**
-Quickly start games, learn rules, and practice with analysis tools.
+### 🐱 **Desktop Pet Companions**
+When a reminder fires, a cute pet appears on your desktop. Watch them interact, play, and keep you company.
 
-### 🤖 **Analysis & AI Opponent**
-Play against an AI opponent, analyze positions, and review games with built-in tools.
+### ⏰ **Smart Reminders**
+Customize reminder times and messages. Flexible scheduling for daily tasks, special events, and recurring needs.
 
-### 📚 **Guides & Tutorials**
-Step-by-step guides for beginners and advanced players: rules, strategies, and annotated games.
+### 🎨 **Customizable Pets**
+Adjust pet appearance, behaviors, and sound effects. Make each pet uniquely yours.
 
-### 🌐 **Web & Extension Integration**
-Information about web clients, integrations, and optional browser extensions (if applicable).
+### 🛍️ **Premium Pets (IAP)**
+Unlock additional pet breeds through in-app purchase:
+- **Ragdoll Cat** — Elegant and graceful
+- **British Shorthair Cat** — Chubby and adorable
+- **Shiba Inu** — Playful and lively
+- **Corgi** — Energetic with short legs
+- **Husky** — Expressive and handsome
 
-### 🌐 **Browser Integration (Optional)**
-If a browser extension or web client exists for Gomoku, it will be documented here. Browser integrations are optional and not required for core gameplay.
-
-### 🎨 **Clean Interface**
-A minimal and focused interface to keep the attention on the board and the game.
+### 🎯 **Native Performance**
+Optimized for macOS with minimal resource usage. PetReminder runs smoothly in the background without slowing down your Mac.
 
 ## System Requirements
 
-- **Operating System**: macOS 10.13 or later
+- **Operating System**: macOS Monterey (12) or later
+- **CPU**: Apple Silicon (M-series) or Intel (64-bit)
 - **Memory**: 4GB RAM minimum, 8GB recommended
-- **Storage**: 54.5 MB for installation
-- **Display**: 1280x720 minimum resolution
+- **Storage**: ~200 MB for installation
 
 ## Supported Languages
 
-Gomoku supports a wide range of languages, including English, Chinese (Simplified), Chinese (Traditional), Japanese, French, Korean, German, Spanish, Italian, Vietnamese, Thai, Hindi, Turkish, Russian, Portuguese, Dutch, Finnish, Malay, Greek, Norwegian, Indonesian, Hungarian, Danish, and Ukrainian.
+PetReminder supports English and Chinese (Simplified), with more languages planned.
 
 ## Getting Started
 
-If you're new to Gomoku, start with the [Installation Guide](/guide/installation) to get the application running on your Mac.
+If you're new to PetReminder, start with the [Installation Guide](/guide/installation) to get the application running on your Mac.

@@ -1,34 +1,21 @@
-# Gomoku Documentation
+# PetReminder Website
 
-This repository hosts documentation for the **Gomoku** project. The site has been adapted to serve the Gomoku project's documentation and uses the custom domain `gomoku.w3cub.com`.
+This repository hosts the official website for **PetReminder** — a macOS reminder app with cute desktop pets that appear when it's time to take action. The site uses the custom domain `reminder.w3cub.com`.
 
 ## Project Source
 
 The local project used as the source for this site is located at:
 
-/Users/terry/nuecms-workspace/gomoku
-
-To use the Gomoku project's documentation as the site source, you can either copy its `docs/` contents into this repository's `docs/` folder or create a symlink:
-
-```bash
-rm -rf docs
-ln -s /Users/terry/nuecms-workspace/gomoku/docs docs
-```
-
-## App Store
-
-- **App Store ID**: `6771268165`
-- **Public App Store link**: https://apps.apple.com/app/id6771268165
-- **App Store Connect (developer)**: https://appstoreconnect.apple.com/apps/6771268165/distribution/info
+/Users/terry/nuecms-workspace/reminder
 
 ## Documentation
 
-This site is built with [VitePress](https://vitepress.dev/) and contains guides for the Gomoku project.
+This site is built with [VitePress](https://vitepress.dev/) and contains guides, FAQs, and information about PetReminder for macOS users.
 
 ### Getting Help
 
-- **Submit Issues**: Report bugs or request features at the Gomoku repository issues (e.g. `https://github.com/gomoku-app/gomoku-site/issues`)
-- **Documentation**: Browse the full documentation at https://gomoku.w3cub.com
+- **Submit Issues**: Report bugs or request features at the project repository
+- **Documentation**: Browse the full documentation at https://reminder.w3cub.com
 
 ## Development
 
@@ -65,7 +52,7 @@ pnpm docs:preview
 
 ## Deployment
 
-This documentation site can be deployed to GitHub Pages; the workflow includes a step to add a `CNAME` for the custom domain `gomoku.w3cub.com`.
+This site can be deployed to GitHub Pages; the workflow includes a step to add a `CNAME` for the custom domain `reminder.w3cub.com`.
 
 ### Manual Deployment
 
@@ -73,7 +60,12 @@ To deploy manually:
 
 1. Build the site: `pnpm docs:build`
 2. The built files will be in `docs/.vitepress/dist`
-3. Deploy to your hosting platform or push to `gh-pages`
+3. Copy any IAP pet files into the dist `pets/` directory
+4. Deploy to your hosting platform or push to `gh-pages`
+
+## IAP Pet Files
+
+The `pets/` directory stores downloadable `.catpet` files for in-app purchase pets. These files are copied into the build during deployment so users can download purchased pets.
 
 ## Contributing
 

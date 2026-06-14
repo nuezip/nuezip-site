@@ -12,11 +12,9 @@ export default {
     const isHomePage = route.path === '/'
 
     if (isHomePage) {
-      // For homepage, completely replace with AdvancedHome component
       return h(AdvancedHome, { data: useData().frontmatter.value })
     }
 
-    // For other pages, use default layout but hide sidebar
     return h(DefaultTheme.Layout, {
       sidebar: false
     }, {

@@ -2,18 +2,18 @@
 layout: home
 
 hero:
-  name: "Gomoku"
-  text: "Play Gomoku — rules, guides, and tools."
-  tagline: "Quick start · Smart analysis & AI opponent · LAN play · SGF export"
+  name: "PetReminder"
+  text: "Cute desktop pets for your reminders"
+  tagline: "When reminders are due, adorable pets appear to keep you company. Never forget important things again!"
   image:
     src: /hero-illustration.png
-    alt: Gomoku Illustration
+    alt: PetReminder Illustration
   actions:
     - theme: brand
       text: Get Started
       link: /guide/introduction
     - theme: alt
-      text: Play Online (demo)
+      text: Download
       link: /guide/installation
 
 features:
@@ -23,18 +23,18 @@ features:
       alt: Eye
       width: "24"
       height: "24"
-    title: Fast, Casual Play
-    details: Quick matches and straightforward rules to get you playing in seconds.
+    title: Smart Reminders
+    details: Set custom reminders with flexible schedules. Never miss important moments again.
     link: /guide/usage
-    linkText: See how it works
+    linkText: Learn more
   - icon:
       light: /icons/layers.svg
       dark: /icons/layers-dark.svg
       alt: Layers
       width: "24"
       height: "24"
-    title: Smarter Play Analysis
-    details: Tools for move suggestions, analysis, and replaying games.
+    title: Desktop Pet Companions
+    details: When a reminder fires, a cute pet appears on your desktop to accompany you.
     link: /guide/usage
     linkText: Learn more
   - icon:
@@ -43,18 +43,18 @@ features:
       alt: Sparkles
       width: "24"
       height: "24"
-    title: AI Opponent & Analysis
-    details: Optional AI opponent and position analysis to practice and study.
-    link: /guide/usage
-    linkText: Learn more
+    title: Multiple Pet Breeds
+    details: Choose from various cats and dogs. More pets available via in-app purchase.
+    link: /guide/pets
+    linkText: View pets
   - icon:
       light: /icons/camera.svg
       dark: /icons/camera-dark.svg
       alt: Camera
       width: "24"
       height: "24"
-    title: Save & Share Games
-    details: Save, export, and share game records with friends or study groups.
+    title: Customizable Behavior
+    details: Customize pet appearance, behavior, and sound effects to your liking.
     link: /guide/usage
     linkText: Learn more
   - icon:
@@ -63,19 +63,19 @@ features:
       alt: Frame
       width: "24"
       height: "24"
-    title: Clean Game UI
-    details: A minimal interface focused on the board and your moves.
+    title: Native macOS App
+    details: A lightweight, native macOS app with full Apple Silicon support. Runs smoothly on any Mac.
     link: /guide/introduction
-    linkText: About Gomoku
+    linkText: About PetReminder
   - icon:
       light: /icons/zap.svg
       dark: /icons/zap-dark.svg
       alt: Zap
       width: "24"
       height: "24"
-    title: Fast Performance
-    details: Lightweight and responsive play across supported platforms.
+    title: Fast & Lightweight
+    details: Optimized for performance. Minimal resource usage, maximum cuteness.
     link: /guide/introduction
-    linkText: About Gomoku
+    linkText: About PetReminder
 ---
 

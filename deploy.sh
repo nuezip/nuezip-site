@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Deploy script for Gomoku documentation
+# Deploy script for PetReminder documentation
 
 set -e
 
@@ -22,7 +22,7 @@ cd temp_deploy
 
 # Check if dist directory exists
 if [ ! -d "../docs/.vitepress/dist" ]; then
-        echo "❌ Build failed - dist directory not found"
+        echo "❌ Build failed - dist directory found"
         exit 1
 fi
 
@@ -48,9 +48,16 @@ rm -rf `find . -maxdepth 1 ! -name .git ! -name .`
 echo "📋 Copying built files..."
 cp -rf ../../docs/.vitepress/dist/* .
 
+# Copy IAP download files if they exist
+echo "📦 Copying IAP pet files..."
+if [ -d "../../pets" ]; then
+    cp -rf ../../pets ./
+    echo "✅ Pet files copied"
+fi
+
 # Add CNAME file for custom domain
 echo "🌐 Adding CNAME file..."
-echo "gomoku.w3cub.com" > CNAME
+echo "reminder.w3cub.com" > CNAME
 
 # Add and commit
 echo "📝 Committing changes..."
@@ -58,7 +65,7 @@ git add -A .
 if git diff --staged --quiet; then
         echo "ℹ️  No changes to commit"
 else
-        git commit -m "Deploy Gomoku documentation
+        git commit -m "Deploy PetReminder website
 
 Built from $(git -C .. rev-parse --short HEAD)
 Deployed on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
@@ -77,4 +84,4 @@ cd ../..
 rm -rf temp_deploy
 
 echo "🎉 Deployment completed successfully!"
-echo "📖 Documentation available at: https://gomoku.w3cub.com/"
+echo "📖 Documentation available at: https://reminder.w3cub.com/"
