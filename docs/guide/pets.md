@@ -4,12 +4,14 @@ PetReminder comes with a free default pet, and you can unlock more adorable bree
 
 ## Free Pet
 
-The base app includes a cute default pet cat that will keep you company. It's completely free — no purchase needed.
+The base app includes a cute default pet cat (Tugou) that will keep you company. It's completely free — no purchase needed.
 
 ## Premium Pets
 
-### 🐱 Ragdoll Cat
+### Ragdoll Cat
 **¥18**
+
+![Ragdoll Cat](/pets/ragdoll_500.png)
 
 Elegant and graceful, the Ragdoll Cat has a calm temperament and loves to lounge around. Its unique animations and gentle sounds make every reminder a pleasant moment.
 
@@ -17,8 +19,10 @@ Elegant and graceful, the Ragdoll Cat has a calm temperament and loves to lounge
 - Gentle meowing sounds
 - Elegant coat pattern
 
-### 🐱 British Shorthair Cat
+### British Shorthair Cat
 **¥12**
+
+![British Shorthair](/pets/british_500.png)
 
 Chubby and adorable, the British Shorthair is the perfect cuddly companion. Its round face and plush body will warm your heart every day.
 
@@ -26,8 +30,10 @@ Chubby and adorable, the British Shorthair is the perfect cuddly companion. Its 
 - Soft purring sounds
 - Distinctive round face with big eyes
 
-### 🐕 Shiba Inu
+### Shiba Inu
 **¥299**
+
+![Shiba Inu](/pets/shibainu_500.png)
 
 Playful and lively, the Shiba Inu brings energy to your desktop. Full of personality and charm, it's always ready to brighten your day.
 
@@ -35,8 +41,10 @@ Playful and lively, the Shiba Inu brings energy to your desktop. Full of persona
 - Energetic sound effects
 - Expressive face with iconic Shiba smile
 
-### 🐕 Corgi
+### Corgi
 **¥299**
+
+![Corgi](/pets/corgi_500.png)
 
 Energetic with short little legs, the Corgi is pure joy in a small package. Watch its stubby legs waddle across your screen!
 
@@ -44,14 +52,25 @@ Energetic with short little legs, the Corgi is pure joy in a small package. Watc
 - Cheerful barking sounds
 - Adorable short legs and fluffy bottom
 
-### 🐕 Husky
+### Husky
 **¥399**
+
+![Husky](/pets/husky_500.png)
 
 Expressive and handsome, the Husky brings the drama. Known for its "talking" behavior, this breed will make you smile with its quirky personality.
 
 - Unique animations: howling, talking, dramatic flop
 - Vocal sound effects (Husky "talking")
 - Stunning coat and striking blue eyes
+
+### Tugou (Free)
+![Tugou](/pets/tugou_500.png)
+
+Loyal and spirited, Tugou is the free default pet that comes with PetReminder. A faithful companion that's always ready to keep you company.
+
+- Unique animations: tail wag, happy jump, head tilt
+- Friendly bark sounds
+- Loyal and affectionate personality
 
 ## Bundles
 

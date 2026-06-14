@@ -83,7 +83,9 @@
         </div>
         <div class="pets-grid">
           <div class="pet-card" v-for="pet in pets" :key="pet.name">
-            <div class="pet-emoji">{{ pet.emoji }}</div>
+            <div class="pet-image">
+              <img :src="withBase(pet.image)" :alt="pet.name" class="pet-img" />
+            </div>
             <div class="pet-info">
               <h3 class="pet-name">{{ pet.name }}</h3>
               <p class="pet-desc">{{ pet.desc }}</p>
@@ -186,11 +188,12 @@ const featureColors = [
 ]
 
 const pets = [
-  { name: '布偶猫', emoji: '🐱', desc: 'Elegant Ragdoll cat with graceful movements' },
-  { name: '英短猫', emoji: '🐱', desc: 'Chubby British Shorthair, cute and healing' },
-  { name: '柴犬', emoji: '🐕', desc: 'Playful Shiba Inu, full of energy' },
-  { name: '柯基', emoji: '🐕', desc: 'Lively Corgi, short legs big personality' },
-  { name: '哈士奇', emoji: '🐺', desc: 'Handsome Husky with expressive looks' },
+  { name: 'Ragdoll Cat', image: '/pets/ragdoll_optimized.png', desc: 'Elegant and graceful, with gentle animations' },
+  { name: 'British Shorthair', image: '/pets/british_optimized.png', desc: 'Chubby and adorable, a cuddly companion' },
+  { name: 'Shiba Inu', image: '/pets/shibainu_optimized.png', desc: 'Playful and lively, full of personality' },
+  { name: 'Corgi', image: '/pets/corgi_optimized.png', desc: 'Energetic with short legs and big charm' },
+  { name: 'Husky', image: '/pets/husky_optimized.png', desc: 'Expressive and handsome, with quirky charm' },
+  { name: 'Tugou', image: '/pets/tugou_optimized.png', desc: 'Loyal and spirited, a faithful friend' },
 ]
 
 const faqs = [
@@ -659,10 +662,19 @@ const faqs = [
   border-color: #f97316;
 }
 
-.pet-emoji {
-  font-size: 4rem;
+.pet-image {
   margin-bottom: 16px;
-  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.pet-img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+  border-radius: 16px;
 }
 
 .pet-name {
