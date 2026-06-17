@@ -2,8 +2,8 @@
   {
     "id": "nicasa",
     "name": "Nicasa",
-    "description": "AI 图像处理工具",
-    "description_en": "AI Image Processing Tool",
+    "description": "AI 图像查看工具",
+    "description_en": "AI Image Viewer Tool",
     "bundleId": "com.nicasa.nue",
     "appStoreUrl": "https://apps.apple.com/us/app/nicasa/id6756032669",
     "logo": "https://reminder.w3cub.com/sister-apps/nicasa.png"
