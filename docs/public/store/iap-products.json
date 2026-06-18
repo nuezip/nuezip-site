@@ -1,0 +1,159 @@
+{
+  "version": 2,
+  "updated_at": "2026-06-18T12:23:01Z",
+  "products": [
+    {
+      "id": "corgi",
+      "name": "柯基",
+      "description": "活泼开朗的彭布罗克威尔士柯基，拥有独特的动作和声音特效",
+      "price": 3.99,
+      "currency": "USD",
+      "type": "pet",
+      "featured": true,
+      "previews": [],
+      "download_url": "https://reminder.w3cub.com/pets/corgi/pet.catpet",
+      "file_hash": "sha256:bcbdd8d76d47b588cb6cc658b125356d9e5910d1a15c0081438ea246f6aed50a",
+      "file_size": 4689945,
+      "apple_product_id": "com.reminder.pet.corgi",
+      "version": "1.0.0",
+      "localized": {
+        "ja": {
+          "name": "コーギー",
+          "description": "元気いっぱいのペンブローク・ウェルシュ・コーギー、ユニークなアクションとサウンドエフェクト"
+        },
+        "en": {
+          "name": "Corgi",
+          "description": "A cheerful Pembroke Welsh Corgi with unique animations and sound effects"
+        }
+      }
+    },
+    {
+      "id": "husky",
+      "name": "哈士奇",
+      "description": "精力充沛的西伯利亚哈士奇，拥有独特的动作和声音特效",
+      "price": 3.99,
+      "currency": "USD",
+      "type": "pet",
+      "featured": true,
+      "previews": [],
+      "download_url": "https://reminder.w3cub.com/pets/husky/pet.catpet",
+      "file_hash": "sha256:34348260cad9d4ce0751efaee18faf2c1feb3e228773236e83649d59b872291c",
+      "file_size": 4393522,
+      "apple_product_id": "com.reminder.pet.husky",
+      "version": "1.0.0",
+      "localized": {
+        "en": {
+          "name": "Husky",
+          "description": "A spirited Siberian Husky with unique animations and sound effects"
+        },
+        "ja": {
+          "name": "ハスキー",
+          "description": "元気いっぱいのシベリアンハスキー、ユニークなアクションとサウンドエフェクト"
+        }
+      }
+    },
+    {
+      "id": "ragdoll",
+      "name": "布偶猫",
+      "description": "优雅高贵的布偶猫，拥有独特的动作和声音特效",
+      "price": 3.99,
+      "currency": "USD",
+      "type": "pet",
+      "featured": true,
+      "previews": [
+        "https://reminder.w3cub.com/pets/ragdoll/preview_1.webp",
+        "https://reminder.w3cub.com/pets/ragdoll/preview_2.webp"
+      ],
+      "download_url": "https://reminder.w3cub.com/pets/ragdoll/pet.catpet",
+      "file_hash": "sha256:d39470f18895598cdc05dec08d49c834abcc145ef8cce781141f133547b8a3f9",
+      "file_size": 2595477,
+      "apple_product_id": "com.reminder.pet.ragdoll",
+      "version": "1.0.0",
+      "localized": {
+        "ja": {
+          "name": "ラグドール",
+          "description": "優雅で気品あふれるラグドール、ユニークなアクションとサウンドエフェクト"
+        },
+        "en": {
+          "name": "Ragdoll Cat",
+          "description": "An elegant Ragdoll cat with unique animations and sound effects"
+        }
+      }
+    },
+    {
+      "id": "shibainu",
+      "name": "柴犬",
+      "description": "机灵独立的柴犬，拥有独特的动作和声音特效",
+      "price": 3.99,
+      "currency": "USD",
+      "type": "pet",
+      "featured": true,
+      "previews": [],
+      "download_url": "https://reminder.w3cub.com/pets/shibainu/pet.catpet",
+      "file_hash": "sha256:4bc52375b71c38b69386268df58efbde9fbeaa13021662365a77010076de4873",
+      "file_size": 4421144,
+      "apple_product_id": "com.reminder.pet.shibainu",
+      "version": "1.0.0",
+      "localized": {
+        "en": {
+          "name": "Shiba Inu",
+          "description": "A spirited Shiba Inu with unique animations and sound effects"
+        },
+        "ja": {
+          "name": "柴犬",
+          "description": "活発で独立心あふれる柴犬、ユニークなアクションとサウンドエフェクト"
+        }
+      }
+    },
+    {
+      "id": "tugou",
+      "name": "土狗",
+      "description": "忠诚机警的中华田园犬，拥有独特的动作和声音特效",
+      "price": 2.99,
+      "currency": "USD",
+      "type": "pet",
+      "featured": false,
+      "previews": [],
+      "download_url": "https://reminder.w3cub.com/pets/tugou/pet.catpet",
+      "file_hash": "sha256:5526a688a05ff425fab40672ef58a8768ef0022cb41b2552923b07bf51321a61",
+      "file_size": 4557832,
+      "apple_product_id": "com.reminder.pet.tugou",
+      "version": "1.0.0",
+      "localized": {
+        "ja": {
+          "name": "チャイニーズ・ドッグ",
+          "description": "忠実で警戒心あふれるチャイニーズ・ドッグ、ユニークなアクションとサウンドエフェクト"
+        },
+        "en": {
+          "name": "Chinese Native Dog",
+          "description": "A loyal Chinese native dog with unique animations and sound effects"
+        }
+      }
+    },
+    {
+      "id": "pack.all_pets",
+      "name": "全部宠物包",
+      "description": "解锁商城全部付费宠物",
+      "price": 19.99,
+      "currency": "USD",
+      "type": "bundle",
+      "featured": false,
+      "previews": [],
+      "download_url": "",
+      "file_hash": "",
+      "file_size": 0,
+      "apple_product_id": "com.reminder.pack.all",
+      "version": "1.0.0",
+      "localized": {
+        "en": {
+          "name": "All Pets Pack",
+          "description": "Unlock all premium pets in the shop"
+        },
+        "ja": {
+          "name": "全ペットパック",
+          "description": "ショップの全てのプレミアムペットをアンロック"
+        }
+      }
+    }
+  ]
+}
