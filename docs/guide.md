@@ -1,22 +1,20 @@
 # Guide
 
-Welcome to the PetReminder User Guide! This section contains everything you need to know about using PetReminder on your Mac.
+Welcome to the NueZip User Guide! This section contains everything you need to know about using NueZip on your Mac.
 
 ## Getting Started
 
-New to PetReminder? Start here:
+New to NueZip? Start here:
 
-- **[Introduction](guide/introduction.md)** — Learn what PetReminder is and its key features
-- **[Installation](guide/installation.md)** — Download and install PetReminder on your Mac
-- **[Usage](guide/usage.md)** — How to create reminders and interact with your pets
+- **[Introduction](guide/introduction.md)** — Learn what NueZip is and its key features
+- **[Installation](guide/installation.md)** — Download and install NueZip on your Mac
+- **[Usage](guide/usage.md)** — How to compress, extract, and manage archives
 
-## Pets & Customization
+## Formats & Setup
 
-Make PetReminder your own:
-
-- **[Pets & IAP](guide/pets.md)** — Available pet breeds and how to purchase premium pets
-- **[Customize](guide/customize.md)** — Adjust pet appearance, behavior, sounds, and more
-- **[Permissions](guide/permissions.md)** — Understand macOS permissions PetReminder uses
+- **[Supported Formats](guide/formats.md)** — Complete format compatibility matrix
+- **[Permissions](guide/permissions.md)** — Understand macOS permissions NueZip uses
+- **[Customize](guide/customize.md)** — Adjust app preferences and behavior
 
 ## Help & Support
 
@@ -26,7 +24,8 @@ Make PetReminder your own:
 ## Legal
 
 - **[Privacy Policy](guide/privacy.md)** — How we handle your data
-- **[Terms of Service](guide/terms.md)** — Terms governing your use of PetReminder
+- **[Privacy Choices](guide/privacy-choices.md)** — Your privacy rights
+- **[Terms of Service](guide/terms.md)** — Terms governing your use of NueZip
 
 ## Quick Links
 

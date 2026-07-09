@@ -1,51 +1,50 @@
 # macOS Permissions
 
-PetReminder may request a few macOS permissions to provide the best experience. This page explains what each permission is for and how to manage them.
-
-## Notifications
-
-When a reminder fires, PetReminder displays a notification. macOS will prompt you to allow notifications the first time a reminder triggers.
-
-**What it's used for**: Showing reminder alerts and pet appearance notifications.
-
-**Manage**: System Settings → **Notifications** → **PetReminder**
-
-You can customize:
-- Alert style (banners, alerts, or none)
-- Show on lock screen
-- Show in Notification Center
-- Sound
+NueZip may request a few macOS permissions to provide the best experience. This page explains what each permission is for and how to manage them.
 
 ## Files and Folders
 
-PetReminder stores your reminders, settings, and downloaded pet data locally.
+To access archives anywhere on your system, NueZip needs file access permission.
 
-**What it's used for**: Saving reminder data on your Mac and storing purchased pet files.
+**What it's used for**: Reading archive files, extracting contents, and creating new archives.
 
 **Manage**: System Settings → **Privacy & Security** → **Files and Folders**
 
-Grant access when prompted during first launch for the best experience.
+Grant access when prompted during first launch. You can manage or revoke access at any time.
 
-## Accessibility (Optional)
+## Finder Extension
 
-Some pet interaction features may request Accessibility permission in future updates (for example, click-through pet behavior).
+NueZip includes a Finder extension that adds right-click context menu options.
 
-**What it's used for**: Allowing pets to receive mouse events on your desktop.
+**What it's used for**: Right-click archive files to extract, compress, or open with NueZip directly from Finder.
 
-**Manage**: System Settings → **Privacy & Security** → **Accessibility**
+**Enable**: System Settings → **Privacy & Security** → **Extensions** → **Finder Extensions** → Enable **NueZip**
 
-This permission is optional and only needed if you enable related features.
+## Notifications
+
+NueZip may show notifications for long-running operations (batch extraction, large archive compression).
+
+**What it's used for**: Alerting you when a background operation completes.
+
+**Manage**: System Settings → **Notifications** → **NueZip**
+
+## Full Disk Access (Optional)
+
+For extracting archives to system-protected locations, NueZip may request Full Disk Access.
+
+**What it's used for**: Writing extracted files to locations outside your user folder.
+
+**Manage**: System Settings → **Privacy & Security** → **Full Disk Access**
+
+This permission is optional and only needed if you work with system-wide locations.
 
 ## Resetting a Permission with Terminal
 
 If a permission dialog was dismissed or the state is inconsistent, you can reset macOS permission prompts using `tccutil`:
 
 ```bash
-# Reset Notifications prompts for PetReminder
-tccutil reset Accessibility com.w3cub.reminder
-
-# To see what was reset
-tccutil reset All com.w3cub.reminder
+# Reset permissions for NueZip
+tccutil reset All com.nuezip.app
 ```
 
 After running `tccutil`, restart the app and trigger the feature again to be reprompted.

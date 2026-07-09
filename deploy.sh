@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Deploy script for PetReminder documentation
+# Deploy script for NueZip documentation
 
 set -e
 

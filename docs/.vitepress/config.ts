@@ -2,9 +2,9 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // base: '/',
-  title: 'PetReminder',
-  titleTemplate: 'PetReminder — :title',
-  description: 'PetReminder — macOS reminder app with cute desktop pets.',
+  title: 'NueZip',
+  titleTemplate: 'NueZip — :title',
+  description: 'NueZip — Professional archive manager for macOS. Compress, extract, and manage ZIP, RAR, 7Z, TAR and more.',
   lastUpdated: true,
   head: [
     // Favicons
@@ -12,34 +12,34 @@ export default defineConfig({
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
     
     // Theme and viewport
-    ['meta', { name: 'theme-color', content: '#f97316' }],
+    ['meta', { name: 'theme-color', content: '#2563eb' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     
     // SEO
-    ['meta', { name: 'keywords', content: 'pet-reminder, reminder, desktop-pet, macos, productivity, pet-app' }],
-    ['meta', { name: 'author', content: 'PetReminder Project' }],
+    ['meta', { name: 'keywords', content: 'nuezip, archive, compression, macos, zip, rar, 7z, extract, compress, file-manager' }],
+    ['meta', { name: 'author', content: 'NueZip Project' }],
     
     // Open Graph / Facebook
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'PetReminder' }],
-    ['meta', { property: 'og:url', content: 'https://reminder.w3cub.com/' }],
-    ['meta', { property: 'og:title', content: 'PetReminder — Cute desktop pets for your reminders' }],
-    ['meta', { property: 'og:description', content: 'When reminders are due, cute desktop pets appear to keep you company. Never forget important things again!' }],
-    ['meta', { property: 'og:image', content: 'https://reminder.w3cub.com/preview.png' }],
+    ['meta', { property: 'og:site_name', content: 'NueZip' }],
+    ['meta', { property: 'og:url', content: 'https://nuezip.w3cub.com/' }],
+    ['meta', { property: 'og:title', content: 'NueZip — Professional Archive Manager for macOS' }],
+    ['meta', { property: 'og:description', content: 'Compress, extract, and manage all major archive formats on macOS. Native, fast, and secure.' }],
+    ['meta', { property: 'og:image', content: 'https://nuezip.w3cub.com/preview.png' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:image:alt', content: 'PetReminder Preview' }],
+    ['meta', { property: 'og:image:alt', content: 'NueZip Preview' }],
     
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:url', content: 'https://reminder.w3cub.com/' }],
-    ['meta', { name: 'twitter:title', content: 'PetReminder — Cute desktop pets for your reminders' }],
-    ['meta', { name: 'twitter:description', content: 'When reminders are due, cute desktop pets appear to keep you company. Never forget important things again!' }],
-    ['meta', { name: 'twitter:image', content: 'https://reminder.w3cub.com/preview.png' }],
-    ['meta', { name: 'twitter:image:alt', content: 'PetReminder Preview' }],
+    ['meta', { name: 'twitter:url', content: 'https://nuezip.w3cub.com/' }],
+    ['meta', { name: 'twitter:title', content: 'NueZip — Professional Archive Manager for macOS' }],
+    ['meta', { name: 'twitter:description', content: 'Compress, extract, and manage all major archive formats on macOS. Native, fast, and secure.' }],
+    ['meta', { name: 'twitter:image', content: 'https://nuezip.w3cub.com/preview.png' }],
+    ['meta', { name: 'twitter:image:alt', content: 'NueZip Preview' }],
   ],
   themeConfig: {
-    siteTitle: 'PetReminder',
+    siteTitle: 'NueZip',
     logo: '/logo.png',
     search: {
       provider: 'local'
@@ -47,9 +47,9 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/introduction' },
-      { text: 'Pets', link: '/guide/pets' },
+      { text: 'Formats', link: '/guide/formats' },
       { text: 'FAQ', link: '/guide/faq' },
-      { text: 'Repository', link: 'https://github.com/petreminder/reminder' },
+      { text: 'GitHub', link: 'https://github.com/nuezip/nuezip' },
     ],
     sidebar: [
       {
@@ -58,9 +58,8 @@ export default defineConfig({
               { text: 'Introduction', link: '/guide/introduction' },
               { text: 'Installation', link: '/guide/installation' },
               { text: 'Usage', link: '/guide/usage' },
-              { text: 'Pets & IAP', link: '/guide/pets' },
+              { text: 'Supported Formats', link: '/guide/formats' },
               { text: 'Permissions', link: '/guide/permissions' },
-              { text: 'Customize', link: '/guide/customize' },
               { text: 'Troubleshooting', link: '/guide/troubleshooting' },
               { text: 'FAQ', link: '/guide/faq' }
         ]
@@ -75,18 +74,19 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/petreminder/reminder' }
+      { icon: 'github', link: 'https://github.com/nuezip/nuezip' }
     ],
     footer: {
-      message: 'Built with ❤️ for pet lovers',
-      copyright: 'Copyright © 2026 PetReminder Project. All rights reserved.',
+      message: 'Built for macOS — simple, fast, and reliable.',
+      copyright: 'Copyright © 2026 NueZip Project. All rights reserved.',
       items: [
         {
           text: 'Product',
           items: [
             { text: 'About', link: '/guide/introduction' },
             { text: 'Features', link: '/#features' },
-            { text: 'Installation', link: '/guide/installation' }
+            { text: 'Installation', link: '/guide/installation' },
+            { text: 'Formats', link: '/guide/formats' }
           ]
         },
         {
@@ -95,7 +95,7 @@ export default defineConfig({
             { text: 'Documentation', link: '/guide/introduction' },
             { text: 'FAQ', link: '/guide/faq' },
             { text: 'Troubleshooting', link: '/guide/troubleshooting' },
-            { text: 'Contact', link: 'mailto:reminder@w3cub.com' }
+            { text: 'Contact', link: 'mailto:nuezip@w3cub.com' }
           ]
         },
         {
@@ -104,7 +104,7 @@ export default defineConfig({
             { text: 'About', link: '/guide/introduction' },
             { text: 'Privacy Policy', link: '/guide/privacy' },
             { text: 'Terms of Service', link: '/guide/terms' },
-            { text: 'GitHub', link: 'https://github.com/petreminder/reminder' }
+            { text: 'GitHub', link: 'https://github.com/nuezip/nuezip' }
           ]
         }
       ]

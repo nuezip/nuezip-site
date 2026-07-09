@@ -1,32 +1,70 @@
-# Troubleshooting (PetReminder on macOS)
+# Troubleshooting
 
-This page collects common problems for macOS users and how to resolve them.
+This page collects common problems for NueZip on macOS and how to resolve them.
 
 ## Application won't start or crashes on launch
 
-Symptoms: PetReminder does not open, crashes immediately, or shows an unexpected error.
+Symptoms: NueZip does not open, crashes immediately, or shows an unexpected error.
 
 Steps to try:
 
-1. Ensure your macOS version meets the minimum requirements (Monterey 12+ recommended).
+1. Ensure your macOS version meets the minimum requirements (macOS 14 Sonoma+).
 2. Quit and relaunch the app.
 3. Reboot your Mac.
-4. If the app was downloaded from GitHub Releases, try downloading a newer build or the notarized build.
-5. If problems persist, collect logs (see below) and open an issue on the project repository.
+4. If the app was downloaded from GitHub Releases, try downloading the latest build or the notarized version.
+5. If problems persist, collect logs (see below) and open an issue.
 
-## Pet not appearing on reminders
+## Cannot open a RAR archive
 
-Symptoms: Reminder fires but no pet appears.
+Symptoms: NueZip fails to open a `.rar` file, or shows an error.
 
 Checklist:
 
-1. Ensure **Notifications** permission is granted (System Settings → Privacy & Security → Notifications).
-2. Check that a pet is selected in Settings → Pet.
-3. Try restarting the app after changing pet settings.
+1. Ensure the RAR file is not corrupted. Try opening it with another tool like The Unarchiver.
+2. Multi-volume RAR archives must have all parts present (`.part1.rar`, `.part2.rar`, etc.).
+3. Password-protected RAR archives require the correct password.
+4. RAR5 format is supported. If you have an older RAR format, please report it.
 
-## IAP purchase not showing
+## Extraction fails with password error
 
-Symptoms: You purchased a pet but it's not available in the app.
+Symptoms: Extraction fails with "Wrong password" or decryption error.
+
+Checklist:
+
+1. Verify the password is correct — passwords are case-sensitive.
+2. Ensure the correct encryption type is supported (AES-256 for ZIP).
+3. Try re-entering the password from the password manager.
+
+## Finder Extension not showing
+
+Symptoms: Right-clicking an archive in Finder shows no NueZip options.
+
+Checklist:
+
+1. Enable the extension: System Settings → Privacy & Security → Extensions → Finder Extensions → Enable **NueZip**.
+2. Restart Finder: Right-click Finder in Activity Monitor → Relaunch, or run `killall Finder` in Terminal.
+3. Reinstall the app if the extension still doesn't appear.
+
+## License / purchase not showing
+
+Symptoms: You purchased NueZip but it still shows as trial.
+
+Checklist:
+
+1. Ensure you are signed in to the same Apple ID used for the purchase.
+2. Restore purchases: NueZip → Settings → License → Restore Purchases.
+3. Contact support if the issue persists.
+
+## How to collect debug logs
+
+To help diagnose issues, collect debug logs from NueZip:
+
+```bash
+# Copy logs to Desktop for sharing
+cp -r ~/Library/Containers/com.nuezip.app/Data/Library/Application\ Support/com.nuezip.app/Logs ~/Desktop/NueZip-Logs
+```
+
+Then open an issue on [GitHub Issues](https://github.com/nuezip/nuezip/issues) and attach the logs.
 
 Fixes:
 

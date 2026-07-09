@@ -1,33 +1,36 @@
 # Contributing
 
-We welcome contributions to improve the PetReminder documentation! Whether you're fixing a typo, adding a new guide, or improving existing content, your help is appreciated.
+We welcome contributions to improve NueZip! Whether you're fixing a bug, adding a feature, translating, or improving documentation, your help is appreciated.
 
 ## Ways to Contribute
 
-### Documentation Improvements
-- Fix typos or grammatical errors
-- Clarify confusing instructions
-- Add missing information
-- Update outdated content
-- Improve formatting and readability
+### Bug Reports
+- Check existing [issues](https://github.com/nuezip/nuezip/issues) first
+- Include macOS version, NueZip version, and steps to reproduce
+- Attach sample archives if possible (minimal size)
 
-### New Content
-- Create guides for common issues
-- Add tutorials or examples
-- Translate documentation to other languages
-- Write FAQ entries
+### Feature Requests
+- Describe the feature and the use case
+- Explain why it would benefit NueZip users
+- Check if it aligns with the offline-first, native macOS philosophy
 
-### Technical Contributions
-- Improve the build process
-- Add new features to the documentation site
-- Fix bugs in the deployment workflow
+### Translations
+- NueZip supports multiple languages via i18n JSON files
+- Contribute translations for missing or incomplete languages
+- See `NueZip/Resources/i18n/` for existing translations
+
+### Code Contributions
+- The project is written in **Swift 6 + SwiftUI**
+- Fork the repository and submit a pull request
+- Follow Clean Architecture patterns used in the codebase
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18 or later
-- pnpm package manager
-- Git
+- Node.js 18 or later (for site)
+- pnpm package manager (for site)
+- Xcode 16+ (for app development)
+- macOS 14 Sonoma+
 
 ### Development Setup
 

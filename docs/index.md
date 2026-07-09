@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "PetReminder"
-  text: "Cute desktop pets for your reminders"
-  tagline: "When reminders are due, adorable pets appear to keep you company. Never forget important things again!"
+  name: "NueZip"
+  text: "Professional Archive Manager for macOS"
+  tagline: "Compress, extract, and manage all major archive formats. Native, fast, and secure — built for macOS."
   image:
     src: /hero-illustration.png
-    alt: PetReminder Illustration
+    alt: NueZip Screenshot
   actions:
     - theme: brand
       text: Get Started
@@ -18,43 +18,23 @@ hero:
 
 features:
   - icon:
-      light: /icons/eye.svg
-      dark: /icons/eye-dark.svg
-      alt: Eye
-      width: "24"
-      height: "24"
-    title: Smart Reminders
-    details: Set custom reminders with flexible schedules. Never miss important moments again.
-    link: /guide/usage
-    linkText: Learn more
-  - icon:
       light: /icons/layers.svg
       dark: /icons/layers-dark.svg
       alt: Layers
       width: "24"
       height: "24"
-    title: Desktop Pet Companions
-    details: When a reminder fires, a cute pet appears on your desktop to accompany you.
-    link: /guide/usage
-    linkText: Learn more
+    title: Multi-Format Support
+    details: Supports RAR, ZIP, 7-Zip, TAR, GZIP, BZIP2 and more. Open and create archives in any popular format.
+    link: /guide/formats
+    linkText: View formats
   - icon:
-      light: /icons/sparkles.svg
-      dark: /icons/sparkles-dark.svg
-      alt: Sparkles
+      light: /icons/zap.svg
+      dark: /icons/zap-dark.svg
+      alt: Zap
       width: "24"
       height: "24"
-    title: Multiple Pet Breeds
-    details: Choose from various cats and dogs. More pets available via in-app purchase.
-    link: /guide/pets
-    linkText: View pets
-  - icon:
-      light: /icons/camera.svg
-      dark: /icons/camera-dark.svg
-      alt: Camera
-      width: "24"
-      height: "24"
-    title: Customizable Behavior
-    details: Customize pet appearance, behavior, and sound effects to your liking.
+    title: Dual-Engine Fast Extraction
+    details: Intelligent engine selection for optimal speed. Extract archives faster with format-optimized backends.
     link: /guide/usage
     linkText: Learn more
   - icon:
@@ -63,19 +43,39 @@ features:
       alt: Frame
       width: "24"
       height: "24"
-    title: Native macOS App
-    details: A lightweight, native macOS app with full Apple Silicon support. Runs smoothly on any Mac.
+    title: Native macOS Experience
+    details: Built with Swift 6 + SwiftUI. Full Apple Silicon support, minimal resource usage, seamless system integration.
     link: /guide/introduction
-    linkText: About PetReminder
+    linkText: About NueZip
   - icon:
-      light: /icons/zap.svg
-      dark: /icons/zap-dark.svg
-      alt: Zap
+      light: /icons/sparkles.svg
+      dark: /icons/sparkles-dark.svg
+      alt: Sparkles
       width: "24"
       height: "24"
-    title: Fast & Lightweight
-    details: Optimized for performance. Minimal resource usage, maximum cuteness.
-    link: /guide/introduction
-    linkText: About PetReminder
+    title: Batch Operations
+    details: Batch compress, extract, convert, and encrypt multiple files at once. Save time on repetitive tasks.
+    link: /guide/usage
+    linkText: Learn more
+  - icon:
+      light: /icons/eye.svg
+      dark: /icons/eye-dark.svg
+      alt: Eye
+      width: "24"
+      height: "24"
+    title: Password & Encryption
+    details: Create password-protected archives with AES encryption. Built-in password manager for convenient access.
+    link: /guide/usage
+    linkText: Learn more
+  - icon:
+      light: /icons/camera.svg
+      dark: /icons/camera-dark.svg
+      alt: Camera
+      width: "24"
+      height: "24"
+    title: Advanced Tools
+    details: Archive repair, format conversion, performance benchmark, archive search, and file info viewer.
+    link: /guide/usage
+    linkText: Explore tools
 ---
 

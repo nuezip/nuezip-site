@@ -1,44 +1,60 @@
 # Introduction
 
-## About PetReminder
+## About NueZip
 
-PetReminder is a macOS desktop application that brings cute pets to your screen when reminders are due. Set custom reminders, and when the time comes, an adorable cat or dog appears on your desktop to keep you company, making sure you never miss important moments.
+NueZip is a professional archive manager for macOS, designed for speed, reliability, and ease of use. Whether you need to compress files, extract archives, convert formats, or manage password-protected archives, NueZip handles it all with a native macOS experience.
 
-PetReminder is lightweight, native, and optimized for macOS — built for performance and low resource usage.
+Built with Swift 6 and SwiftUI, NueZip takes full advantage of Apple Silicon and macOS technologies to deliver a fast, lightweight, and secure archive management tool.
 
 ## Key Features
 
-### 🐱 **Desktop Pet Companions**
-When a reminder fires, a cute pet appears on your desktop. Watch them interact, play, and keep you company.
+### 📦 **Multi-Format Support**
+NueZip supports all major archive formats:
+- **RAR** — Read-only with multi-volume support
+- **ZIP** — Universal compression with AES encryption
+- **7-Zip** — High-compression ratio with LZMA2
+- **TAR** — Archive bundling with optional GZIP/BZIP2
+- **GZIP / BZIP2** — Standalone compression formats
 
-### ⏰ **Smart Reminders**
-Customize reminder times and messages. Flexible scheduling for daily tasks, special events, and recurring needs.
+### ⚡ **Fast Extraction**
+Dual-engine architecture selects the optimal backend for each format, ensuring the fastest possible extraction speeds.
 
-### 🎨 **Customizable Pets**
-Adjust pet appearance, behaviors, and sound effects. Make each pet uniquely yours.
+### 🔐 **Password Protection & Encryption**
+Create password-protected archives with industry-standard encryption. Built-in password manager stores credentials securely in your local keychain.
 
-### 🛍️ **Premium Pets (IAP)**
-Unlock additional pet breeds through in-app purchase:
-- **Ragdoll Cat** — Elegant and graceful
-- **British Shorthair Cat** — Chubby and adorable
-- **Shiba Inu** — Playful and lively
-- **Corgi** — Energetic with short legs
-- **Husky** — Expressive and handsome
+### 📋 **Batch Operations**
+Process multiple files at once:
+- **Batch Compress** — Compress multiple items into individual archives
+- **Batch Extract** — Extract multiple archives simultaneously
+- **Batch Convert** — Convert archives between formats in bulk
+- **Batch Encrypt** — Apply password protection to multiple archives
 
-### 🎯 **Native Performance**
-Optimized for macOS with minimal resource usage. PetReminder runs smoothly in the background without slowing down your Mac.
+### 🛠️ **Advanced Tools**
+- **Archive Repair** — Fix corrupted RAR and ZIP archives
+- **Format Conversion** — Convert between any supported formats
+- **Performance Benchmark** — Test compression speed and rating
+- **Archive Search** — Find files within archives by name
+- **File Info Viewer** — View detailed metadata for archive entries
+- **Volume/Split Support** — Create multi-volume archives
+
+### 🖥️ **Native macOS Experience**
+- **Swift 6 + SwiftUI** — Modern, responsive interface
+- **Apple Silicon Native** — Optimized for M-series chips
+- **Finder Integration** — Right-click context menu extension
+- **Drag & Drop** — Quick access via menu bar drop panel
+- **Minimal Resource Usage** — Lightweight background operation
 
 ## System Requirements
 
-- **Operating System**: macOS Monterey (12) or later
+- **Operating System**: macOS 14 Sonoma or later
 - **CPU**: Apple Silicon (M-series) or Intel (64-bit)
 - **Memory**: 4GB RAM minimum, 8GB recommended
-- **Storage**: ~200 MB for installation
+- **Storage**: ~50 MB for installation
 
 ## Supported Languages
 
-PetReminder supports English and Chinese (Simplified), with more languages planned.
+NueZip supports English, Chinese (Simplified), Chinese (Traditional), Japanese, Korean, and many other languages.
 
 ## Getting Started
 
-If you're new to PetReminder, start with the [Installation Guide](/guide/installation) to get the application running on your Mac.
+If you're new to NueZip, start with the [Installation Guide](/guide/installation) to get the application running on your Mac.

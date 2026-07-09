@@ -1,11 +1,11 @@
 {
-  "name": "pet-reminder-docs",
+  "name": "nuezip-site",
   "version": "1.0.0",
   "type": "module",
-  "description": "Official website for PetReminder — macOS reminder app with desktop pets",
+  "description": "Official website for NueZip — Professional archive manager for macOS",
   "main": "index.js",
   "packageManager": "pnpm@10.26.0",
-  "homepage": "https://reminder.w3cub.com",
+  "homepage": "https://nuezip.w3cub.com",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -13,8 +13,8 @@
     "docs:deploy": "./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["pet-reminder", "reminder", "desktop-pet", "macos"],
-  "author": "PetReminder Project",
+  "keywords": ["nuezip", "archive", "compression", "macos", "zip", "rar", "7z", "file-manager"],
+  "author": "NueZip Project",
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.6.4"

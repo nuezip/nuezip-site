@@ -1,51 +1,53 @@
 # FAQ
 
-Q: What is PetReminder?
+Q: What is NueZip?
 
-A: PetReminder is a macOS desktop app that shows cute pets on your screen when reminders are due. It helps you stay on top of important tasks with adorable animal companions.
+A: NueZip is a professional archive manager for macOS, supporting compression and extraction of multiple archive formats including RAR, ZIP, 7-Zip, TAR, GZIP, and BZIP2.
 
 Q: Which macOS versions are supported?
 
-A: PetReminder runs on macOS Monterey (12) and later, optimized for Apple Silicon (M-series).
+A: NueZip requires macOS 14 Sonoma or later, and is optimized for Apple Silicon (M-series) chips.
 
-Q: How do I download and install PetReminder?
+Q: How do I download and install NueZip?
 
-A: Download from the [Mac App Store](https://apps.apple.com/app/id6776577400).
+A: Download from the [Mac App Store](https://apps.apple.com/app/nuezip) (recommended) or grab the latest release from [GitHub Releases](https://github.com/nuezip/nuezip/releases).
 
-Q: Is PetReminder free?
+Q: Is NueZip free?
 
-A: The base app is free to download. Some premium pets are available via in-app purchase.
+A: NueZip offers a free trial with core features. A one-time purchase unlocks the full feature set including batch operations, archive repair, and advanced encryption.
 
-Q: What pets are available?
+Q: What formats are supported?
 
-A: Currently includes free default pet plus premium breeds: **Ragdoll Cat**, **British Shorthair Cat**, **Shiba Inu**, **Corgi**, and **Husky**. More coming soon!
+A: **Read**: RAR, ZIP, 7-Zip, TAR, GZIP, BZIP2, XZ, Zstandard\
+**Write (compress)**: ZIP, 7-Zip, TAR, GZIP, BZIP2, XZ, Zstandard\
+See [Introduction](/guide/introduction) for the full format matrix.
 
-Q: How do I purchase a premium pet?
+Q: Can NueZip create RAR archives?
 
-A: Open PetReminder → **Pets** tab, browse available pets, and tap "Purchase" to unlock via in-app purchase.
+A: No. NueZip can **read** RAR archives (including multi-volume and repaired archives), but RAR compression is not supported due to licensing restrictions.
 
-Q: Does PetReminder work offline?
+Q: Is NueZip safe for confidential files?
 
-A: Yes. Reminders and pet animations work fully offline. Only pet downloads from IAP require an internet connection.
+A: Yes. NueZip operates entirely offline. All operations run locally on your Mac. AES-256 encryption is available for password-protected ZIP archives.
 
-Q: Does PetReminder upload my data?
+Q: Does NueZip upload my files to the cloud?
 
-A: No. PetReminder is offline-first. All your reminders and settings are stored locally. No data is uploaded to external servers.
+A: No. NueZip is a fully offline application. Your files are never uploaded anywhere. No internet connection is required for compression or extraction.
 
 Q: How do I update the app?
 
-A: Update through the Mac App Store (recommended) or download the latest release from GitHub.
+A: Update through the Mac App Store (automatic) or download the latest release from GitHub Releases.
 
 Q: How do I report bugs or request features?
 
-A: Open an issue in the [project repository](https://github.com/petreminder/reminder) and include your macOS version, PetReminder version, reproduction steps, and logs if available.
+A: Open an issue on the [GitHub repository](https://github.com/nuezip/nuezip/issues). Please include your macOS version, NueZip version, and steps to reproduce.
 
 Q: Where are logs and data stored?
 
 A: For sandboxed (App Store) builds:
 
 ```
-~/Library/Containers/com.w3cub.reminder/Data/Library/Application Support/com.w3cub.reminder/
+~/Library/Containers/com.nuezip.app/Data/Library/Application Support/com.nuezip.app/
 ```
 
 Development builds may log to the console or `src-tauri` directory.

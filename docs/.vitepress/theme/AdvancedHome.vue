@@ -5,8 +5,8 @@
       <div class="nav-container">
         <div class="nav-brand">
           <VPLink href="/" class="brand-link">
-            <img src="/logo.png" alt="PetReminder Logo" class="brand-logo" />
-            <span class="brand-text">PetReminder</span>
+            <img src="/logo.png" alt="NueZip Logo" class="brand-logo" />
+            <span class="brand-text">NueZip</span>
           </VPLink>
         </div>
         <div class="nav-links">
@@ -30,16 +30,22 @@
           <div class="hero-visual">
             <div class="floating-elements">
               <div class="floating-card card-1">
-                <div class="card-icon">🐱</div>
-                <div class="card-text">Cute Desktop Pets</div>
+                <div class="card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <div class="card-text">Multi-Format</div>
               </div>
               <div class="floating-card card-2">
-                <div class="card-icon">⏰</div>
-                <div class="card-text">Smart Reminders</div>
+                <div class="card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+                <div class="card-text">Fast Extraction</div>
               </div>
               <div class="floating-card card-3">
-                <div class="card-icon">🎨</div>
-                <div class="card-text">Customizable</div>
+                <div class="card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <div class="card-text">Password Secure</div>
               </div>
             </div>
             <div class="hero-image">
@@ -56,7 +62,7 @@
       <div class="features-container">
         <div class="section-header">
           <h2 class="section-title">Key Features</h2>
-          <p class="section-subtitle">Everything you need to stay on track with cute companions</p>
+          <p class="section-subtitle">Everything you need to manage archives efficiently on macOS</p>
         </div>
         <div class="features-grid">
           <div v-for="(feature, index) in data.features" :key="feature.title"
@@ -74,26 +80,43 @@
       </div>
     </section>
 
-    <!-- Pets Preview Section -->
-    <section class="pets-section">
-      <div class="pets-container">
+    <!-- Formats Preview Section -->
+    <section class="formats-section">
+      <div class="formats-container">
         <div class="section-header">
-          <h2 class="section-title">Meet Our Pets</h2>
-          <p class="section-subtitle">Adorable companions that appear when you need them most</p>
+          <h2 class="section-title">Supported Archive Formats</h2>
+          <p class="section-subtitle">Compress and extract all major archive formats</p>
         </div>
-        <div class="pets-grid">
-          <div class="pet-card" v-for="pet in pets" :key="pet.name">
-            <div class="pet-image">
-              <img :src="withBase(pet.image)" :alt="pet.name" class="pet-img" />
+        <div class="formats-grid">
+          <div class="format-card" v-for="fmt in formats" :key="fmt.name">
+            <div class="format-icon" :style="{ backgroundColor: fmt.color }">
+              <span class="format-ext">{{ fmt.ext }}</span>
             </div>
-            <div class="pet-info">
-              <h3 class="pet-name">{{ pet.name }}</h3>
-              <p class="pet-desc">{{ pet.desc }}</p>
+            <div class="format-info">
+              <h3 class="format-name">{{ fmt.name }}</h3>
+              <p class="format-desc">{{ fmt.desc }}</p>
             </div>
           </div>
         </div>
-        <div class="pets-cta">
-          <a href="/guide/pets" class="btn btn-primary">Explore All Pets</a>
+        <div class="formats-cta">
+          <a href="/guide/formats" class="btn btn-primary">View Full Format Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-section">
+      <div class="how-container">
+        <div class="section-header">
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">Simple and intuitive, just like macOS should be</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card" v-for="(step, index) in steps" :key="index">
+            <div class="step-number">{{ step.num }}</div>
+            <h3 class="step-title">{{ step.title }}</h3>
+            <p class="step-desc">{{ step.desc }}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -120,8 +143,8 @@
     <section class="cta-section">
       <div class="cta-container">
         <div class="cta-content">
-          <h2 class="cta-title">Ready for a Cute Reminder?</h2>
-          <p class="cta-description">Download PetReminder and let adorable pets accompany your important moments.</p>
+          <h2 class="cta-title">Ready to Simplify Archive Management?</h2>
+          <p class="cta-description">Download NueZip and experience fast, native archive management on macOS.</p>
           <div class="cta-actions">
             <a href="/guide/installation" class="btn btn-primary">Get Started</a>
             <a href="/guide/usage" class="btn btn-secondary">How to Use</a>
@@ -135,15 +158,15 @@
       <div class="footer-container">
         <div class="footer-content">
           <div class="footer-brand">
-            <div class="footer-logo">PetReminder</div>
-            <p class="footer-tagline">Never forget, always accompanied.</p>
+            <div class="footer-logo">NueZip</div>
+            <p class="footer-tagline">Simple, fast, and reliable archive management.</p>
           </div>
           <div class="footer-links">
             <div class="footer-column">
               <h4 class="footer-heading">Product</h4>
               <a href="/guide/installation" class="footer-link">Download</a>
               <a href="/guide/usage" class="footer-link">Features</a>
-              <a href="/guide/pets" class="footer-link">Pets & IAP</a>
+              <a href="/guide/formats" class="footer-link">Formats</a>
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Support</h4>
@@ -153,13 +176,13 @@
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Community</h4>
-              <a href="https://github.com/petreminder/reminder" class="footer-link">GitHub</a>
-              <a href="https://github.com/petreminder/reminder/releases" class="footer-link">Releases</a>
+              <a href="https://github.com/nuezip/nuezip" class="footer-link">GitHub</a>
+              <a href="https://github.com/nuezip/nuezip/releases" class="footer-link">Releases</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 PetReminder Project. Built with ❤️ for pet lovers.</p>
+          <p class="footer-copyright">© 2026 NueZip Project. Built for macOS.</p>
         </div>
       </div>
     </footer>
@@ -179,43 +202,49 @@ interface Props {
 defineProps<Props>()
 
 const featureColors = [
-  '#f97316', // orange - reminds of pets
-  '#10b981', // green  
-  '#8b5cf6', // purple
-  '#ec4899', // pink
-  '#3b82f6', // blue
-  '#f59e0b'  // amber
+  '#2563eb', // blue
+  '#7c3aed', // violet
+  '#059669', // emerald
+  '#d97706', // amber
+  '#dc2626', // red
+  '#0891b2'  // cyan
 ]
 
-const pets = [
-  { name: 'Ragdoll Cat', image: '/pets/ragdoll_optimized.png', desc: 'Elegant and graceful, with gentle animations' },
-  { name: 'British Shorthair', image: '/pets/british_optimized.png', desc: 'Chubby and adorable, a cuddly companion' },
-  { name: 'Shiba Inu', image: '/pets/shibainu_optimized.png', desc: 'Playful and lively, full of personality' },
-  { name: 'Corgi', image: '/pets/corgi_optimized.png', desc: 'Energetic with short legs and big charm' },
-  { name: 'Husky', image: '/pets/husky_optimized.png', desc: 'Expressive and handsome, with quirky charm' },
-  { name: 'Tugou', image: '/pets/tugou_optimized.png', desc: 'Loyal and spirited, a faithful friend' },
+const formats = [
+  { name: 'ZIP', ext: '.zip', desc: 'Universal ZIP format with AES-256 encryption', color: '#7c3aed' },
+  { name: 'RAR', ext: '.rar', desc: 'Read-only with multi-volume support', color: '#2563eb' },
+  { name: '7-Zip', ext: '.7z', desc: 'High-compression 7Z format with LZMA2', color: '#059669' },
+  { name: 'TAR', ext: '.tar', desc: 'TAR bundling with optional GZIP/BZIP2 compression', color: '#d97706' },
+  { name: 'GZIP', ext: '.gz', desc: 'Standalone GZIP compression support', color: '#dc2626' },
+  { name: 'BZIP2', ext: '.bz2', desc: 'Standalone BZIP2 compression support', color: '#0891b2' },
+]
+
+const steps = [
+  { num: '01', title: 'Install NueZip', desc: 'Download from the Mac App Store or GitHub. Launch and grant necessary permissions.' },
+  { num: '02', title: 'Open Any Archive', desc: 'Double-click any archive file, or use the Finder context menu to extract directly.' },
+  { num: '03', title: 'Compress & Manage', desc: 'Create new archives, batch process files, encrypt with passwords, and more.' },
 ]
 
 const faqs = [
   {
-    question: "Is PetReminder free?",
-    answer: "The base app is free to download. Some premium pets are available via in-app purchase to support development."
+    question: "Is NueZip free?",
+    answer: "NueZip is a paid app available on the Mac App Store. A trial version may be available for testing."
   },
   {
-    question: "Does PetReminder work offline?",
-    answer: "Yes. Reminders and pet animations work fully offline. Only pet downloads from IAP require an internet connection."
-  },
-  {
-    question: "What pets are available?",
-    answer: "Currently includes cats (Ragdoll, British Shorthair) and dogs (Shiba Inu, Corgi, Husky). More pets are planned!"
+    question: "What formats does NueZip support?",
+    answer: "NueZip supports RAR, ZIP, 7-Zip, TAR, GZIP, and BZIP2 formats for both compression and extraction."
   },
   {
     question: "Which macOS versions are supported?",
-    answer: "PetReminder supports macOS 12 Monterey and later, optimized for Apple Silicon (M-series)."
+    answer: "NueZip supports macOS 14 Sonoma and later, optimized for Apple Silicon (M-series)."
   },
   {
-    question: "What permissions does PetReminder need?",
-    answer: "PetReminder runs with minimal permissions. Notifications are required for reminders. Optional permissions for custom features."
+    question: "Does NueZip work offline?",
+    answer: "Yes. All archive operations work fully offline. No internet connection is required for compression or extraction."
+  },
+  {
+    question: "Is my data secure?",
+    answer: "Yes. NueZip runs entirely locally on your Mac with no data uploads. Password-protected archives use industry-standard encryption."
   }
 ]
 </script>
@@ -356,7 +385,7 @@ const faqs = [
   margin: 0 0 20px;
   line-height: 1.1;
   color: #000000;
-  background: linear-gradient(135deg, #000000 0%, #333333 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -397,16 +426,16 @@ const faqs = [
 }
 
 .btn-primary {
-  background: #000000;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   color: #ffffff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
   border: none;
 }
 
 .btn-primary:hover {
-  background: #333333;
+  background: linear-gradient(135deg, #1d4ed8 0%, #6d28d9 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
 }
 
 .btn-secondary {
@@ -493,6 +522,9 @@ const faqs = [
 
 .card-icon {
   font-size: 18px;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
 }
 
 .hero-image {
@@ -618,89 +650,178 @@ const faqs = [
   color: #333333;
 }
 
-/* Pets Preview Section */
-.pets-section {
+/* Formats Preview Section */
+.formats-section {
   padding: 120px 0;
-  background: #fff7ed;
+  background: #f0f4ff;
 }
 
-.dark .pets-section {
-  background: #1a1208;
+.dark .formats-section {
+  background: #0f172a;
 }
 
-.pets-container {
+.formats-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.pets-grid {
+.formats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
   margin-bottom: 48px;
 }
 
-.pet-card {
+.format-card {
   background: white;
   border-radius: 20px;
   padding: 32px 24px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border: 1px solid #f0f0f0;
   transition: all 0.3s ease;
 }
 
-.dark .pet-card {
-  background: #2a2010;
-  border-color: #3a3020;
+.dark .format-card {
+  background: #1e293b;
+  border-color: #334155;
 }
 
-.pet-card:hover {
-  transform: translateY(-6px);
+.format-card:hover {
+  transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  border-color: #f97316;
+  border-color: #2563eb;
 }
 
-.pet-image {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-}
-
-.pet-img {
-  max-width: 120px;
-  max-height: 120px;
-  object-fit: contain;
+.format-icon {
+  width: 64px;
+  height: 64px;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-.pet-name {
+.format-ext {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.format-info {
+  flex: 1;
+}
+
+.format-name {
   font-size: 1.2rem;
   font-weight: 600;
   color: #1a1a1a;
-  margin: 0 0 8px;
+  margin: 0 0 4px;
 }
 
-.dark .pet-name {
-  color: #f0e6d0;
+.dark .format-name {
+  color: #f1f5f9;
 }
 
-.pet-desc {
+.format-desc {
   font-size: 0.9rem;
   color: #666666;
   margin: 0;
   line-height: 1.5;
 }
 
-.dark .pet-desc {
-  color: #b0a090;
+.dark .format-desc {
+  color: #94a3b8;
 }
 
-.pets-cta {
+.formats-cta {
   text-align: center;
+}
+
+/* How It Works Section */
+.how-section {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.how-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.step-card {
+  text-align: center;
+  padding: 40px 24px;
+  background: #f8fafc;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.dark .step-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.step-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+}
+
+.dark .step-title {
+  color: #f1f5f9;
+}
+
+.step-desc {
+  font-size: 1rem;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.dark .step-desc {
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* FAQ Section */
@@ -777,7 +898,7 @@ const faqs = [
 /* CTA Section */
 .cta-section {
   padding: 120px 0;
-  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #6d28d9 50%, #7c3aed 100%);
   color: #ffffff;
 }
 

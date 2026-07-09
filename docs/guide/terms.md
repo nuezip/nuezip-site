@@ -1,24 +1,24 @@
 # Terms of Service
 
-These Terms govern your use of PetReminder. By downloading, installing, or using PetReminder, you agree to these Terms. If you do not agree, do not use the application.
+These Terms govern your use of NueZip. By downloading, installing, or using NueZip, you agree to these Terms. If you do not agree, do not use the application.
 
 ## License and Use
 
-PetReminder is provided under the license terms included with each release. You are granted a limited, non-exclusive, non-transferable license to use the application on your Mac in accordance with the license terms.
+NueZip is provided under the license terms included with each release. You are granted a limited, non-exclusive, non-transferable license to use the application on your Mac in accordance with the license terms.
 
-## Local Features and Data
+## Local-Only Operation
 
-PetReminder is an offline-first application. Reminders, settings, and purchased pet data are stored locally on your device.
+NueZip is a fully offline application. All archive operations are performed locally on your device. No files, metadata, or personal data are transmitted to external servers.
 
-## In-App Purchases
+## Purchases
 
-Premium pets are available via in-app purchase (IAP) through the Mac App Store. All purchases are processed by Apple. PetReminder does not handle payment information. Purchase restoration is supported for reinstalls and multi-device use.
+A full-feature license is available via one-time purchase through the Mac App Store. All purchases are processed by Apple. NueZip does not handle payment information. Purchase restoration is supported for reinstalls.
 
 ## User Responsibilities
 
-- Use PetReminder lawfully and in compliance with applicable rules.
+- Use NueZip lawfully and in compliance with applicable rules.
 - Do not attempt to decompile, reverse engineer, or modify the app in violation of the license.
-- Respect the intellectual property rights of the pet designs and assets.
+- Do not use NueZip to bypass copyright protections or DRM on archives.
 
 ## Privacy
 
@@ -26,7 +26,7 @@ Please review the [Privacy Policy](/guide/privacy) for information about data pr
 
 ## No Warranty
 
-PetReminder is provided "as is" without warranties of any kind. To the fullest extent permitted by law, the maintainers disclaim all warranties, whether express, implied, statutory or otherwise, including merchantability and fitness for a particular purpose.
+NueZip is provided "as is" without warranties of any kind. To the fullest extent permitted by law, the maintainers disclaim all warranties, whether express, implied, statutory or otherwise, including merchantability and fitness for a particular purpose.
 
 ## Limitation of Liability
 

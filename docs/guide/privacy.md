@@ -1,47 +1,51 @@
 # Privacy Policy
 
-PetReminder is designed as an offline-first application. Your privacy is important to us.
+NueZip is designed as a fully offline-first application. Your privacy is our priority.
 
-## Local-first design
+## Local-Only Design
 
-- All your reminders, settings, and purchased pet data are stored locally on your Mac.
-- PetReminder does not upload your data to any external servers.
+- All archive operations — compression, extraction, conversion, encryption — run entirely on your Mac.
+- NueZip does not upload your files or data to any external servers.
 - No account or registration is required to use the app.
+- No internet connection is required for normal operation.
 
-## What we do not collect
+## What We Do Not Collect
 
-- We do not collect personal files, images, or browsing history.
-- We do not track your activity or behavior.
-- We do not send your reminder data or personal information to external servers.
-- We do not include third-party analytics or advertising SDKs.
+- We do not collect your files, documents, or archive contents.
+- We do not track your activity, browsing behavior, or usage patterns.
+- We do not send any file metadata or personal information to external servers.
+- We do not include third-party analytics, advertising, or tracking SDKs.
+- We do not have any telemetry system.
 
-## What data is stored locally
+## What Data Is Stored Locally
 
 The following data is stored only on your device:
-- **Reminders**: Titles, messages, schedules, and assigned pet preferences
-- **Settings**: App configuration, language preference, theme choice
-- **Purchased pets**: Downloaded `.catpet` files from in-app purchases
+- **App settings**: Theme, language preference, compression preferences
+- **License key**: If purchased (stored securely in the local keychain)
+- **Recent files list**: Recently opened archives for quick access
+- **Password records**: Stored in your local keychain if you choose to save them
 - **Logs**: Debug logs for troubleshooting (can be deleted at any time)
 
-## Permissions used by the app
+## Permissions Used by the App
 
-- **Notifications**: Required to show reminder alerts and trigger pet appearance.
-- **Files and Folders**: Required to save settings and downloaded pet data.
+- **Files and Folders**: Required to read archive files and extract contents.
+- **Finder Extension**: Optional, adds right-click context menu items in Finder.
+- **Notifications**: Optional, for completion alerts on long-running tasks.
 
 You can manage these permissions in **System Settings → Privacy & Security** at any time.
 
-## In-App Purchases
+## In-App Purchases / License
 
-In-app purchases are processed by Apple via the App Store. PetReminder does not receive or store your payment information. Purchase receipts are stored locally to verify ownership.
+License purchases are processed by Apple via the Mac App Store. NueZip does not receive or store your payment information. License receipts are stored locally to verify ownership.
 
-## Third-party services
+## Third-Party Services
 
-PetReminder does not include any third-party analytics, advertising, or tracking services.
+NueZip does not include any third-party analytics, advertising, or tracking services. The app is fully self-contained.
 
-## Privacy requests
+## Privacy Requests
 
-Since PetReminder stores all data locally on your device, we do not hold any personal data on our servers. If you have questions about privacy, please contact us.
+Since NueZip stores all data locally on your device, we do not hold any personal data on our servers. If you have questions about privacy, please contact us.
 
 ## Contact
 
-For privacy questions, open an issue at the project repository (https://github.com/petreminder/reminder) or contact us at reminder@w3cub.com.
+For privacy questions, open an issue at [GitHub Issues](https://github.com/nuezip/nuezip/issues) or email us.

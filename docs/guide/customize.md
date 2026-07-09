@@ -1,52 +1,77 @@
 # Customization
 
-Make PetReminder truly yours by customizing your pets and reminder experience. This guide covers everything you can personalize.
+Make NueZip truly yours by customizing your archive management experience. This guide covers everything you can personalize.
 
-## Pet Appearance
+## General Preferences
 
-### Changing Pets
-1. Open **PetReminder → Settings** (or press `Cmd+,`)
-2. Click the **Pet** tab
-3. Select from your available pets
-4. The selected pet will appear for future reminders
+Open **NueZip → Settings** (or press `Cmd+,`) to access all customization options.
 
-### Pet-Specific Options
-Some premium pets have unique customization options:
+### Appearance
+- **Theme**: Choose between Light, Dark, or System (follows macOS appearance)
+- **Icon Style**: Set monochrome or full-color menu bar icon
+- **Language**: Select from supported languages (English, 中文, 日本語, 한국어, and more)
 
-- **Color variants**: Some pets offer different coat colors or patterns
-- **Animation speed**: Adjust how fast your pet moves
-- **Size**: Make your pet larger or smaller on screen
+## Compression Defaults
 
-## Behavior Settings
+Set your preferred compression defaults:
 
-Customize how your pet behaves when it appears:
+| Setting | Options | Description |
+|---------|---------|-------------|
+| **Default Format** | ZIP, 7z, TAR, GZIP, BZIP2, XZ | Archive format for quick compression |
+| **Compression Level** | Store, Fast, Normal, Maximum, Ultra | Trade-off between speed and ratio |
+| **Encryption** | None, AES-128, AES-256 | Default encryption for ZIP/7z archives |
+| **Volume Size** | Custom (MB) | Default split size for multi-volume archives |
 
-- **Idle behavior**: Choose what your pet does when waiting (sit, walk, play)
-- **Interaction response**: How your pet reacts to mouse clicks and movement
-- **Auto-dismiss**: Set a timer for the pet to disappear automatically
-- **Multiple pets**: Select different pets for different types of reminders
+### Example Configuration
 
-## Sound Settings
+For everyday use:
+- **Format**: ZIP
+- **Level**: Normal
+- **Encryption**: AES-256 (for sensitive files)
+- **Volume**: Off
 
-Control pet sound effects independently from your system volume:
+For archiving:
+- **Format**: 7-Zip
+- **Level**: Ultra
+- **Encryption**: AES-256
+- **Volume**: 4.7 GB (to fit on DVD)
 
-- **Enable/disable**: Turn pet sounds on or off
-- **Volume slider**: Adjust pet sound volume
-- **Sound themes**: Choose from different sound theme packs
-- **Mute on focus**: Automatically lower pet sounds when you're in a meeting
+## Extraction Preferences
 
-## Notification Style
+Customize extraction behavior:
 
-Customize how reminders appear:
+- **Extract to subfolder by default**: Auto-create a named folder when extracting
+- **Open folder after extraction**: Reveal extracted contents in Finder
+- **Overwrite behavior**: Ask, Always overwrite, or Skip existing files
+- **Preserve file dates**: Keep original timestamps from the archive
 
-| Style | Description |
-|-------|-------------|
-| **Banner** | Brief notification that auto-dismisses |
-| **Alert** | Stays on screen until you dismiss it |
-| **Silent** | Pet appears without notification sound |
+## Finder Extension
 
-- **Full-screen mode**: Choose whether pets appear when you're in full-screen apps
-- **Do Not Disturb**: Respect macOS Focus modes
+Manage the Finder context menu integration:
+
+- **Enable/Disable**: Turn right-click menu items on or off
+- **Quick actions**: Choose which actions appear in the context menu
+  - Extract Here
+  - Extract to Folder
+  - Compress to ZIP
+  - Compress with Options
+
+Manage these in: **System Settings → Privacy & Security → Extensions → Finder Extensions**
+
+## Menu Bar (Tray) Icon
+
+Customize the menu bar drop panel:
+
+- **Show in menu bar**: Enable/disable the tray icon
+- **Auto-close panel**: Close drop panel after extraction
+- **Recent archives**: Number of recent items to show
+- **Quit on close**: Whether the app stays in the background
+
+## Notifications
+
+- **Show completion alerts**: Notify when long operations finish
+- **Show error alerts**: Display notifications for failed operations
+- **Sound**: Play a sound when operations complete
 
 ## General Settings
 
