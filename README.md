@@ -1,6 +1,6 @@
 # PetReminder Website
 
-This repository hosts the official website for **PetReminder** — a macOS reminder app with cute desktop pets that appear when it's time to take action. The site uses the custom domain `reminder.w3cub.com`.
+This repository hosts the official website for **PetReminder** — a macOS reminder app with cute desktop pets that appear when it's time to take action. The site uses the custom domain `nuezip.w3cub.com`.
 
 ## Project Source
 
@@ -15,7 +15,7 @@ This site is built with [VitePress](https://vitepress.dev/) and contains guides,
 ### Getting Help
 
 - **Submit Issues**: Report bugs or request features at the project repository
-- **Documentation**: Browse the full documentation at https://reminder.w3cub.com
+- **Documentation**: Browse the full documentation at https://nuezip.w3cub.com
 
 ## Development
 
@@ -52,7 +52,7 @@ pnpm docs:preview
 
 ## Deployment
 
-This site can be deployed to GitHub Pages; the workflow includes a step to add a `CNAME` for the custom domain `reminder.w3cub.com`.
+This site can be deployed to GitHub Pages; the workflow includes a step to add a `CNAME` for the custom domain `nuezip.w3cub.com`.
 
 ### Manual Deployment
 
