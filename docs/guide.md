@@ -33,7 +33,6 @@ New to NueZip? Start here:
 |-------|------|
 | Download & Install | [guide/installation.md](guide/installation.md) |
 | Create Reminders | [guide/usage.md](guide/usage.md) |
-| Premium Pets | [guide/pets.md](guide/pets.md) |
 | Customization | [guide/customize.md](guide/customize.md) |
 | Troubleshooting | [guide/troubleshooting.md](guide/troubleshooting.md) |
 | FAQ | [guide/faq.md](guide/faq.md) |
