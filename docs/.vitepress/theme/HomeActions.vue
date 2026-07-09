@@ -5,7 +5,7 @@ import { withBase } from 'vitepress'
 <template>
   <div class="home-badge-row">
     <a
-      href="https://apps.apple.com/app/nuezip" target="_blank" rel="noopener noreferrer"
+      href="https://apps.apple.com/app/id6785846417" target="_blank" rel="noopener noreferrer"
       class="store-badge-link"
       aria-label="Download NueZip on the Mac App Store"
     >
@@ -16,11 +16,6 @@ import { withBase } from 'vitepress'
         width="156"
         height="46"
       />
-    </a>
-    <a
-      href="/guide/installation" class="btn-primary-link"
-    >
-      <span class="btn-text">Other Downloads</span>
     </a>
   </div>
 </template>

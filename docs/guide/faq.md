@@ -10,7 +10,7 @@ A: NueZip requires macOS 14 Sonoma or later, and is optimized for Apple Silicon 
 
 Q: How do I download and install NueZip?
 
-A: Download from the [Mac App Store](https://apps.apple.com/app/nuezip) (recommended) or grab the latest release from [GitHub Releases](https://github.com/nuezip/nuezip/releases).
+A: Download from the [Mac App Store](https://apps.apple.com/app/id6785846417) (recommended) or grab the latest release from [GitHub Releases](https://github.com/nuezip/nuezip/releases).
 
 Q: Is NueZip free?
 

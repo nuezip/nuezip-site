@@ -6,7 +6,7 @@ NueZip is available for macOS through the Mac App Store.
 
 ### Mac App Store (Recommended)
 
-- **Download**: [NueZip on the Mac App Store](https://apps.apple.com/app/nuezip)
+- **Download**: [NueZip on the Mac App Store](https://apps.apple.com/app/id6785846417)
 
 The Mac App Store version provides automatic updates and seamless integration with macOS.
 

@@ -356,7 +356,7 @@ const faqs = [
 /* Hero Section */
 .hero-section {
   padding: 120px 0 100px;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -384,8 +384,7 @@ const faqs = [
   font-weight: 800;
   margin: 0 0 20px;
   line-height: 1.1;
-  color: #000000;
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #000000 0%, #333333 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -426,31 +425,26 @@ const faqs = [
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  background: #000000;
   color: #ffffff;
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
   border: none;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #1d4ed8 0%, #6d28d9 100%);
+  background: #1a1a1a;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
   border-color: #ffffff;
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* HomeActions 组件样式 */
@@ -786,10 +780,7 @@ const faqs = [
 .step-number {
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #2563eb;
   margin-bottom: 16px;
   line-height: 1;
 }
@@ -898,7 +889,7 @@ const faqs = [
 /* CTA Section */
 .cta-section {
   padding: 120px 0;
-  background: linear-gradient(135deg, #1e40af 0%, #6d28d9 50%, #7c3aed 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   color: #ffffff;
 }
 
