@@ -43,8 +43,8 @@ We may update these Terms from time to time. Continued use after changes constit
 ## Contact
 
 For questions about these Terms, open an issue at the project repository:
-`https://github.com/petreminder/reminder/issues`
+`https://github.com/nuezip/nuezip/issues`
 
-Or email us at: reminder@w3cub.com
+Or email us at: nuezip@w3cub.com
 
 *Last updated: June 14, 2026*
