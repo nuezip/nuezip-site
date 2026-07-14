@@ -44,7 +44,7 @@ If a permission dialog was dismissed or the state is inconsistent, you can reset
 
 ```bash
 # Reset permissions for NueZip
-tccutil reset All com.nuezip.app
+tccutil reset All com.w3cub.nuezip
 ```
 
 After running `tccutil`, restart the app and trigger the feature again to be reprompted.

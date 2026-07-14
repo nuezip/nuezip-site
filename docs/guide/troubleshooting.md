@@ -61,7 +61,7 @@ To help diagnose issues, collect debug logs from NueZip:
 
 ```bash
 # Copy logs to Desktop for sharing
-cp -r ~/Library/Containers/com.nuezip.app/Data/Library/Application\ Support/com.nuezip.app/Logs ~/Desktop/NueZip-Logs
+cp -r ~/Library/Containers/com.w3cub.nuezip/Data/Library/Application\ Support/com.w3cub.nuezip/Logs ~/Desktop/NueZip-Logs
 ```
 
 Then open an issue on [GitHub Issues](https://github.com/nuezip/nuezip/issues) and attach the logs.

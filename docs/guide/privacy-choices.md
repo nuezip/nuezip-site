@@ -17,7 +17,7 @@ None of this data is uploaded to any server.
 Since NueZip does not collect or store personal data on our servers, there is no personal data for us to access, delete, or transfer. All your data can be managed directly within the app or by removing the app's container folder:
 
 ```bash
-rm -rf ~/Library/Containers/com.nuezip.app
+rm -rf ~/Library/Containers/com.w3cub.nuezip
 ```
 
 ## Do Not Sell

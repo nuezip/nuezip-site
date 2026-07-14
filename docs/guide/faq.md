@@ -47,7 +47,7 @@ Q: Where are logs and data stored?
 A: For sandboxed (App Store) builds:
 
 ```
-~/Library/Containers/com.nuezip.app/Data/Library/Application Support/com.nuezip.app/
+~/Library/Containers/com.w3cub.nuezip/Data/Library/Application Support/com.w3cub.nuezip/
 ```
 
 Development builds may log to the console or `src-tauri` directory.
