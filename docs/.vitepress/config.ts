@@ -50,6 +50,7 @@ export default defineConfig({
       { text: 'Formats', link: '/guide/formats' },
       { text: 'FAQ', link: '/guide/faq' },
       { text: 'GitHub', link: 'https://github.com/nuezip/nuezip' },
+      { text: 'Product Hunt', link: 'https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility' },
     ],
     sidebar: [
       {

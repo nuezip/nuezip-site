@@ -178,6 +178,7 @@
               <h4 class="footer-heading">Community</h4>
               <a href="https://github.com/nuezip/nuezip" class="footer-link">GitHub</a>
               <a href="https://github.com/nuezip/nuezip/releases" class="footer-link">Releases</a>
+              <a href="https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility" class="footer-link" target="_blank" rel="noopener noreferrer">Product Hunt</a>
             </div>
           </div>
         </div>
