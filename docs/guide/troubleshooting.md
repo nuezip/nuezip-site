@@ -61,17 +61,10 @@ To help diagnose issues, collect debug logs from NueZip:
 
 ```bash
 # Copy logs to Desktop for sharing
-cp -r ~/Library/Containers/com.w3cub.nuezip/Data/Library/Application\ Support/com.w3cub.nuezip/Logs ~/Desktop/NueZip-Logs
+cp ~/Library/Containers/com.w3cub.nuezip/Data/Library/Logs/NueZip/nuezip.log ~/Desktop/NueZip-Logs
 ```
 
 Then open an issue on [GitHub Issues](https://github.com/nuezip/nuezip/issues) and attach the logs.
-
-Fixes:
-
-1. Ensure you're signed into the same Apple ID used for purchase.
-2. Go to **Pets** tab and tap **Restore Purchases**.
-3. If still missing, try restarting the app.
-4. Contact support if the issue persists — include your purchase receipt.
 
 ## Permission-related issues
 
@@ -82,42 +75,42 @@ If a feature prompts for permission but doesn't work after granting it:
 
 ## Performance issues
 
-If the app is slow or the pet animation is laggy:
+If the app is slow or unresponsive:
 
 1. Close other heavy applications.
-2. Reduce animation quality in Settings → Pet.
-3. Disable sound effects if they cause stutter.
+2. Try extracting a smaller archive to isolate the issue.
+3. Restart the app if performance degrades over time.
 
 ## View logs
 
 To troubleshoot crashes or issues, application logs are the most useful artifact. In sandboxed (App Store) builds, check:
 
 ```
-~/Library/Containers/com.w3cub.reminder/Data/Library/Logs/reminder/reminder.log
+~/Library/Containers/com.w3cub.nuezip/Data/Library/Logs/NueZip/nuezip.log
 ```
 
-When running a development build, logs may be in the project directory (`./src-tauri/reminder.log`) or printed to the console.
+
 
 ## Resetting the app
 
 To reset settings and clear local data:
 
-1. Quit PetReminder
-2. Remove the container (be careful—this deletes all reminders and settings):
+1. Quit NueZip
+2. Remove the container (be careful—this deletes all settings):
 
 ```bash
-rm -rf ~/Library/Containers/com.w3cub.reminder
+rm -rf ~/Library/Containers/com.w3cub.nuezip
 ```
 
-3. Reopen PetReminder and reconfigure.
+3. Reopen NueZip and reconfigure.
 
 ## Report an issue
 
 When opening an issue, include:
 
 - macOS version (Apple menu → About This Mac)
-- PetReminder version (PetReminder → About)
+- NueZip version (NueZip → About)
 - Steps to reproduce
-- Logs (attach `reminder.log` if available)
+- Logs (see [View logs](#view-logs) section for how to collect them)
 
 This helps maintainers identify and fix the problem faster.
