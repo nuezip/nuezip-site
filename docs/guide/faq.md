@@ -50,6 +50,6 @@ A: For sandboxed (App Store) builds:
 ~/Library/Containers/com.w3cub.nuezip/Data/Library/Application Support/com.w3cub.nuezip/
 ```
 
-Development builds may log to the console or `src-tauri` directory.
+Development builds may write logs to the console.
 
 If you need more answers, please open an issue in the repository or consult the full documentation.

@@ -51,8 +51,7 @@ After running `tccutil`, restart the app and trigger the feature again to be rep
 
 ## Troubleshooting
 
-- If pets don't appear on reminders, check **Notifications** permission is granted.
-- If purchased pets aren't downloading, check **Files and Folders** permission.
-- After changing permissions, always quit and reopen PetReminder for changes to take effect.
+- If notifications don't appear, check the **Notifications** permission is granted.
+- After changing permissions, always quit and reopen NueZip for the changes to take effect.
 
 For more help, visit the [Troubleshooting guide](./troubleshooting.md).

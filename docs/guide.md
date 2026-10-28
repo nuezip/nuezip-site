@@ -32,7 +32,7 @@ New to NueZip? Start here:
 | Topic | Link |
 |-------|------|
 | Download & Install | [guide/installation.md](guide/installation.md) |
-| Create Reminders | [guide/usage.md](guide/usage.md) |
+| Manage Archives | [guide/usage.md](guide/usage.md) |
 | Customization | [guide/customize.md](guide/customize.md) |
 | Troubleshooting | [guide/troubleshooting.md](guide/troubleshooting.md) |
 | FAQ | [guide/faq.md](guide/faq.md) |

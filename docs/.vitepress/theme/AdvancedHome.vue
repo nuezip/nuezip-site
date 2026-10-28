@@ -1,10 +1,160 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { withBase, useData } from 'vitepress'
+import HomeActions from './HomeActions.vue'
+import { VPLink } from 'vitepress/theme'
+import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
+import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/VPSwitchAppearance.vue'
+import VPNavBarTranslations from 'vitepress/dist/client/theme-default/components/VPNavBarTranslations.vue'
+
+interface Props {
+  data: any
+}
+const props = defineProps<Props>()
+
+const { lang } = useData()
+
+// ── English defaults (used by the root / English homepage) ─────────
+const DEFAULT_FLOATING = ['Multi-Format', 'Fast Extraction', 'Password Secure']
+
+const DEFAULT_SECTIONS = {
+  featuresTitle: 'Key Features',
+  featuresSubtitle: 'Everything you need to manage archives efficiently on macOS',
+  formatsTitle: 'Supported Archive Formats',
+  formatsSubtitle: 'Compress and extract all major archive formats',
+  howTitle: 'How It Works',
+  howSubtitle: 'Simple and intuitive, just like macOS should be',
+  faqTitle: 'Frequently Asked Questions',
+  faqSubtitle: 'Quick answers for macOS users',
+}
+
+const DEFAULT_FORMATS = [
+  { name: 'ZIP', ext: '.zip', desc: 'Universal ZIP format with AES-256 encryption', color: '#7c3aed' },
+  { name: 'RAR', ext: '.rar', desc: 'Read-only with multi-volume support', color: '#2563eb' },
+  { name: '7-Zip', ext: '.7z', desc: 'High-compression 7Z format with LZMA2', color: '#059669' },
+  { name: 'TAR', ext: '.tar', desc: 'TAR bundling with optional GZIP/BZIP2 compression', color: '#d97706' },
+  { name: 'GZIP', ext: '.gz', desc: 'Standalone GZIP compression support', color: '#dc2626' },
+  { name: 'BZIP2', ext: '.bz2', desc: 'Standalone BZIP2 compression support', color: '#0891b2' },
+]
+
+const DEFAULT_STEPS = [
+  { num: '01', title: 'Install NueZip', desc: 'Download from the Mac App Store or GitHub. Launch and grant necessary permissions.' },
+  { num: '02', title: 'Open Any Archive', desc: 'Double-click any archive file, or use the Finder context menu to extract directly.' },
+  { num: '03', title: 'Compress & Manage', desc: 'Create new archives, batch process files, encrypt with passwords, and more.' },
+]
+
+const DEFAULT_FAQS = [
+  {
+    question: 'Is NueZip free?',
+    answer: 'NueZip is a paid app available on the Mac App Store. A trial version may be available for testing.',
+  },
+  {
+    question: 'What formats does NueZip support?',
+    answer: 'NueZip supports RAR, ZIP, 7-Zip, TAR, GZIP, and BZIP2 formats for both compression and extraction.',
+  },
+  {
+    question: 'Which macOS versions are supported?',
+    answer: 'NueZip supports macOS 14 Sonoma and later, optimized for Apple Silicon (M-series).',
+  },
+  {
+    question: 'Does NueZip work offline?',
+    answer: 'Yes. All archive operations work fully offline. No internet connection is required for compression or extraction.',
+  },
+  {
+    question: 'Is my data secure?',
+    answer: 'Yes. NueZip runs entirely locally on your Mac with no data uploads. Password-protected archives use industry-standard encryption.',
+  },
+]
+
+const DEFAULT_CTA = {
+  title: 'Ready to Simplify Archive Management?',
+  description: 'Download NueZip and experience fast, native archive management on macOS.',
+  primary: 'Get Started',
+  primaryLink: '/guide/installation',
+  secondary: 'How to Use',
+  secondaryLink: '/guide/usage',
+}
+
+const DEFAULT_FOOTER = {
+  tagline: 'Simple, fast, and reliable archive management.',
+  columns: [
+    {
+      heading: 'Product',
+      links: [
+        { text: 'Download', link: '/guide/installation' },
+        { text: 'Features', link: '/guide/usage' },
+        { text: 'Formats', link: '/guide/formats' },
+      ],
+    },
+    {
+      heading: 'Support',
+      links: [
+        { text: 'Guide', link: '/guide/introduction' },
+        { text: 'FAQ', link: '/guide/faq' },
+        { text: 'Troubleshooting', link: '/guide/troubleshooting' },
+      ],
+    },
+    {
+      heading: 'Community',
+      links: [
+        { text: 'GitHub', link: 'https://github.com/nuezip/nuezip' },
+        { text: 'Releases', link: 'https://github.com/nuezip/nuezip/releases' },
+        { text: 'Product Hunt', link: 'https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility' },
+      ],
+    },
+  ],
+  copyright: '© 2026 NueZip Project. Built for macOS.',
+}
+
+// All page content comes from the markdown frontmatter (`data.home`),
+// falling back to the English defaults above so the English site keeps
+// working unchanged.
+const home = computed(() => {
+  const d = props.data?.home || {}
+  return {
+    floatingCards: d.floatingCards || DEFAULT_FLOATING,
+    sections: d.sections || DEFAULT_SECTIONS,
+    formats: d.formats || DEFAULT_FORMATS,
+    formatsCtaText: d.formatsCtaText || 'View Full Format Details',
+    formatsCtaLink: d.formatsCtaLink || '/guide/formats',
+    steps: d.steps || DEFAULT_STEPS,
+    faqs: d.faqs || DEFAULT_FAQS,
+    cta: d.cta || DEFAULT_CTA,
+    footer: d.footer || DEFAULT_FOOTER,
+  }
+})
+
+const featureColors = [
+  '#2563eb', // blue
+  '#7c3aed', // violet
+  '#059669', // emerald
+  '#d97706', // amber
+  '#dc2626', // red
+  '#0891b2'  // cyan
+]
+
+// Prefix a root-relative internal link with the current locale segment.
+function lp(p: string): string {
+  if (!p) return p
+  if (/^https?:\/\//.test(p) || p.startsWith('mailto:')) return p
+  if (!lang.value || lang.value === 'en') return p
+  if (p.startsWith('/' + lang.value + '/')) return p
+  return '/' + lang.value + p
+}
+
+// Locale-aware home link for the brand logo.
+const homeLink = computed(() =>
+  !lang.value || lang.value === 'en' ? '/' : `/${lang.value}/`
+)
+</script>
+
 <template>
   <div class="advanced-home">
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-brand">
-          <VPLink href="/" class="brand-link">
+          <VPLink :href="homeLink" class="brand-link">
             <img src="/logo.png" alt="NueZip Logo" class="brand-logo" />
             <span class="brand-text">NueZip</span>
           </VPLink>
@@ -13,6 +163,7 @@
           <div class="nav-links">
             <VPNavBarMenu />
           </div>
+          <VPNavBarTranslations class="nav-lang" />
           <VPSwitchAppearance class="nav-appearance" />
         </div>
       </div>
@@ -32,23 +183,16 @@
           </div>
           <div class="hero-visual">
             <div class="floating-elements">
-              <div class="floating-card card-1">
+              <div
+                v-for="(card, i) in home.floatingCards"
+                :key="i"
+                class="floating-card"
+                :class="`card-${i + 1}`"
+              >
                 <div class="card-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
                 </div>
-                <div class="card-text">Multi-Format</div>
-              </div>
-              <div class="floating-card card-2">
-                <div class="card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-                </div>
-                <div class="card-text">Fast Extraction</div>
-              </div>
-              <div class="floating-card card-3">
-                <div class="card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                </div>
-                <div class="card-text">Password Secure</div>
+                <div class="card-text">{{ card }}</div>
               </div>
             </div>
             <div class="hero-image">
@@ -64,14 +208,14 @@
     <section class="features-section">
       <div class="features-container">
         <div class="section-header">
-          <h2 class="section-title">Key Features</h2>
-          <p class="section-subtitle">Everything you need to manage archives efficiently on macOS</p>
+          <h2 class="section-title">{{ home.sections.featuresTitle }}</h2>
+          <p class="section-subtitle">{{ home.sections.featuresSubtitle }}</p>
         </div>
         <div class="features-grid">
           <div v-for="(feature, index) in data.features" :key="feature.title"
                class="feature-card"
-               :style="{ animationDelay: `${(index as number) * 0.1}s` }">
-            <div class="feature-icon" :style="{ backgroundColor: featureColors[(index as number) % featureColors.length] }">
+               :style="{ animationDelay: `${index * 0.1}s` }">
+            <div class="feature-icon" :style="{ backgroundColor: featureColors[index % featureColors.length] }">
               <img :src="withBase(feature.icon.light)" :alt="feature.icon.alt"
                    :width="feature.icon.width" :height="feature.icon.height" />
             </div>
@@ -87,11 +231,11 @@
     <section class="formats-section">
       <div class="formats-container">
         <div class="section-header">
-          <h2 class="section-title">Supported Archive Formats</h2>
-          <p class="section-subtitle">Compress and extract all major archive formats</p>
+          <h2 class="section-title">{{ home.sections.formatsTitle }}</h2>
+          <p class="section-subtitle">{{ home.sections.formatsSubtitle }}</p>
         </div>
         <div class="formats-grid">
-          <div class="format-card" v-for="fmt in formats" :key="fmt.name">
+          <div class="format-card" v-for="fmt in home.formats" :key="fmt.name">
             <div class="format-icon" :style="{ backgroundColor: fmt.color }">
               <span class="format-ext">{{ fmt.ext }}</span>
             </div>
@@ -102,7 +246,7 @@
           </div>
         </div>
         <div class="formats-cta">
-          <a href="/guide/formats" class="btn btn-primary">View Full Format Details</a>
+          <a :href="lp(home.formatsCtaLink)" class="btn btn-primary">{{ home.formatsCtaText }}</a>
         </div>
       </div>
     </section>
@@ -111,11 +255,11 @@
     <section class="how-section">
       <div class="how-container">
         <div class="section-header">
-          <h2 class="section-title">How It Works</h2>
-          <p class="section-subtitle">Simple and intuitive, just like macOS should be</p>
+          <h2 class="section-title">{{ home.sections.howTitle }}</h2>
+          <p class="section-subtitle">{{ home.sections.howSubtitle }}</p>
         </div>
         <div class="steps-grid">
-          <div class="step-card" v-for="(step, index) in steps" :key="index">
+          <div class="step-card" v-for="(step, index) in home.steps" :key="index">
             <div class="step-number">{{ step.num }}</div>
             <h3 class="step-title">{{ step.title }}</h3>
             <p class="step-desc">{{ step.desc }}</p>
@@ -128,11 +272,11 @@
     <section class="faq-section">
       <div class="faq-container">
         <div class="section-header">
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">Quick answers for macOS users</p>
+          <h2 class="section-title">{{ home.sections.faqTitle }}</h2>
+          <p class="section-subtitle">{{ home.sections.faqSubtitle }}</p>
         </div>
         <div class="faq-grid">
-          <div v-for="faq in faqs" :key="faq.question" class="faq-item">
+          <div v-for="faq in home.faqs" :key="faq.question" class="faq-item">
             <details class="faq-details">
               <summary class="faq-question">{{ faq.question }}</summary>
               <div class="faq-answer">{{ faq.answer }}</div>
@@ -146,11 +290,11 @@
     <section class="cta-section">
       <div class="cta-container">
         <div class="cta-content">
-          <h2 class="cta-title">Ready to Simplify Archive Management?</h2>
-          <p class="cta-description">Download NueZip and experience fast, native archive management on macOS.</p>
+          <h2 class="cta-title">{{ home.cta.title }}</h2>
+          <p class="cta-description">{{ home.cta.description }}</p>
           <div class="cta-actions">
-            <a href="/guide/installation" class="btn btn-primary">Get Started</a>
-            <a href="/guide/usage" class="btn btn-secondary">How to Use</a>
+            <a :href="lp(home.cta.primaryLink)" class="btn btn-primary">{{ home.cta.primary }}</a>
+            <a :href="lp(home.cta.secondaryLink)" class="btn btn-secondary">{{ home.cta.secondary }}</a>
           </div>
         </div>
       </div>
@@ -162,97 +306,29 @@
         <div class="footer-content">
           <div class="footer-brand">
             <div class="footer-logo">NueZip</div>
-            <p class="footer-tagline">Simple, fast, and reliable archive management.</p>
+            <p class="footer-tagline">{{ home.footer.tagline }}</p>
           </div>
           <div class="footer-links">
-            <div class="footer-column">
-              <h4 class="footer-heading">Product</h4>
-              <a href="/guide/installation" class="footer-link">Download</a>
-              <a href="/guide/usage" class="footer-link">Features</a>
-              <a href="/guide/formats" class="footer-link">Formats</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Support</h4>
-              <a href="/guide/introduction" class="footer-link">Guide</a>
-              <a href="/guide/faq" class="footer-link">FAQ</a>
-              <a href="/guide/troubleshooting" class="footer-link">Troubleshooting</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Community</h4>
-              <a href="https://github.com/nuezip/nuezip" class="footer-link">GitHub</a>
-              <a href="https://github.com/nuezip/nuezip/releases" class="footer-link">Releases</a>
-              <a href="https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility" class="footer-link" target="_blank" rel="noopener noreferrer">Product Hunt</a>
+            <div class="footer-column" v-for="col in home.footer.columns" :key="col.heading">
+              <h4 class="footer-heading">{{ col.heading }}</h4>
+              <a
+                v-for="item in col.links"
+                :key="item.link"
+                :href="lp(item.link)"
+                class="footer-link"
+                :target="lp(item.link).startsWith('http') ? '_blank' : undefined"
+                :rel="lp(item.link).startsWith('http') ? 'noopener noreferrer' : undefined"
+              >{{ item.text }}</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 NueZip Project. Built for macOS.</p>
+          <p class="footer-copyright">{{ home.footer.copyright }}</p>
         </div>
       </div>
     </footer>
   </div>
 </template>
-
-<script setup lang="ts">
-import { withBase } from 'vitepress'
-import HomeActions from './HomeActions.vue'
-import { VPLink } from 'vitepress/theme'
-import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
-import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/VPSwitchAppearance.vue'
-
-interface Props {
-  data: any
-}
-
-defineProps<Props>()
-
-const featureColors = [
-  '#2563eb', // blue
-  '#7c3aed', // violet
-  '#059669', // emerald
-  '#d97706', // amber
-  '#dc2626', // red
-  '#0891b2'  // cyan
-]
-
-const formats = [
-  { name: 'ZIP', ext: '.zip', desc: 'Universal ZIP format with AES-256 encryption', color: '#7c3aed' },
-  { name: 'RAR', ext: '.rar', desc: 'Read-only with multi-volume support', color: '#2563eb' },
-  { name: '7-Zip', ext: '.7z', desc: 'High-compression 7Z format with LZMA2', color: '#059669' },
-  { name: 'TAR', ext: '.tar', desc: 'TAR bundling with optional GZIP/BZIP2 compression', color: '#d97706' },
-  { name: 'GZIP', ext: '.gz', desc: 'Standalone GZIP compression support', color: '#dc2626' },
-  { name: 'BZIP2', ext: '.bz2', desc: 'Standalone BZIP2 compression support', color: '#0891b2' },
-]
-
-const steps = [
-  { num: '01', title: 'Install NueZip', desc: 'Download from the Mac App Store or GitHub. Launch and grant necessary permissions.' },
-  { num: '02', title: 'Open Any Archive', desc: 'Double-click any archive file, or use the Finder context menu to extract directly.' },
-  { num: '03', title: 'Compress & Manage', desc: 'Create new archives, batch process files, encrypt with passwords, and more.' },
-]
-
-const faqs = [
-  {
-    question: "Is NueZip free?",
-    answer: "NueZip is a paid app available on the Mac App Store. A trial version may be available for testing."
-  },
-  {
-    question: "What formats does NueZip support?",
-    answer: "NueZip supports RAR, ZIP, 7-Zip, TAR, GZIP, and BZIP2 formats for both compression and extraction."
-  },
-  {
-    question: "Which macOS versions are supported?",
-    answer: "NueZip supports macOS 14 Sonoma and later, optimized for Apple Silicon (M-series)."
-  },
-  {
-    question: "Does NueZip work offline?",
-    answer: "Yes. All archive operations work fully offline. No internet connection is required for compression or extraction."
-  },
-  {
-    question: "Is my data secure?",
-    answer: "Yes. NueZip runs entirely locally on your Mac with no data uploads. Password-protected archives use industry-standard encryption."
-  }
-]
-</script>
 
 <style scoped>
 .advanced-home {
@@ -269,6 +345,7 @@ const faqs = [
   right: 0;
   background: var(--ah-navbar-bg);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--ah-navbar-border);
   z-index: 1000;
   transition: all 0.3s ease;
@@ -311,16 +388,15 @@ const faqs = [
   gap: 30px;
 }
 
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-  }
-}
-
 .nav-right {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.nav-lang {
+  display: flex;
+  align-items: center;
 }
 
 .nav-appearance {
@@ -328,45 +404,10 @@ const faqs = [
   align-items: center;
 }
 
-.dropdown-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--vp-c-text-2);
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: var(--ah-card-bg);
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  box-shadow: var(--ah-card-shadow);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.2s;
-}
-
-.nav-dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown-item {
-  display: block;
-  padding: 12px 20px;
-  color: var(--vp-c-text-2);
-  text-decoration: none;
-  transition: background-color 0.2s;
-}
-
-.dropdown-item:hover {
-  background: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
 }
 
 /* Hero Section */
@@ -1008,8 +1049,7 @@ const faqs = [
     font-size: 2rem;
   }
 
-  .features-grid,
-  .testimonials-grid {
+  .features-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1041,7 +1081,6 @@ const faqs = [
   }
 
   .features-section,
-  .testimonials-section,
   .faq-section,
   .cta-section {
     padding: 80px 0;

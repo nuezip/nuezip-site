@@ -1,0 +1,153 @@
+---
+layout: home
+
+hero:
+  name: "NueZip"
+  text: "macOS 向けプロフェッショナル・アーカイブマネージャー"
+  tagline: "すべての主要なアーカイブフォーマットを圧縮・展開・管理。ネイティブで高速、そして安全 —— macOS のために作られました。"
+  image:
+    src: /hero-illustration.png
+    alt: NueZip のスクリーンショット
+  actions:
+    - theme: brand
+      text: 始める
+      link: /ja/guide/introduction
+    - theme: alt
+      text: ダウンロード
+      link: /ja/guide/installation
+
+features:
+  - icon:
+      light: /icons/layers.svg
+      dark: /icons/layers-dark.svg
+      alt: レイヤー
+      width: "24"
+      height: "24"
+    title: マルチフォーマット対応
+    details: RAR、ZIP、7-Zip、TAR、GZIP、BZIP2 などに対応。人気のあるあらゆるフォーマットのアーカイブを開いたり作成したりできます。
+    link: /ja/guide/formats
+    linkText: フォーマットを見る
+  - icon:
+      light: /icons/zap.svg
+      dark: /icons/zap-dark.svg
+      alt: 稲妻
+      width: "24"
+      height: "24"
+    title: 高速なデュアルエンジン展開
+    details: 各フォーマットに最適なエンジンを自動選択し、最高の速度を実現。フォーマット最適化されたバックエンドでより高速に展開します。
+    link: /ja/guide/usage
+    linkText: 詳しく見る
+  - icon:
+      light: /icons/frame.svg
+      dark: /icons/frame-dark.svg
+      alt: フレーム
+      width: "24"
+      height: "24"
+    title: ネイティブな macOS 体験
+    details: Swift 6 + SwiftUI で構築。Apple Silicon に完全対応し、リソース消費を最小化しつつシステムとシームレスに統合します。
+    link: /ja/guide/introduction
+    linkText: NueZip について
+  - icon:
+      light: /icons/sparkles.svg
+      dark: /icons/sparkles-dark.svg
+      alt: きらめき
+      width: "24"
+      height: "24"
+    title: バッチ操作
+    details: 複数のファイルを一度にバッチ圧縮・展開・変換・暗号化し、繰り返し作業の時間を節約します。
+    link: /ja/guide/usage
+    linkText: 詳しく見る
+  - icon:
+      light: /icons/eye.svg
+      dark: /icons/eye-dark.svg
+      alt: 目
+      width: "24"
+      height: "24"
+    title: パスワードと暗号化
+    details: AES 暗号化を用いてパスワード保護されたアーカイブを作成。便利に使える内蔵パスワードマネージャー付き。
+    link: /ja/guide/usage
+    linkText: 詳しく見る
+  - icon:
+      light: /icons/camera.svg
+      dark: /icons/camera-dark.svg
+      alt: カメラ
+      width: "24"
+      height: "24"
+    title: 高度なツール
+    details: アーカイブ修復、フォーマット変換、パフォーマンスベンチマーク、アーカイブ検索、ファイル情報ビューア。
+    link: /ja/guide/usage
+    linkText: ツールを見る
+
+home:
+  floatingCards:
+    - マルチフォーマット
+    - 高速展開
+    - パスワード保護
+  sections:
+    featuresTitle: 主な機能
+    featuresSubtitle: macOS でアーカイブを効率的に管理するために必要なすべて
+    formatsTitle: 対応アーカイブフォーマット
+    formatsSubtitle: すべての主要なアーカイブフォーマットを圧縮・展開
+    howTitle: 動作のしくみ
+    howSubtitle: macOS らしく、シンプルで直感的
+    faqTitle: よくある質問
+    faqSubtitle: macOS ユーザー向けの簡潔な回答
+  formatsCtaText: フォーマット詳細を見る
+  formatsCtaLink: /ja/guide/formats
+  steps:
+    - num: "01"
+      title: NueZip をインストール
+      desc: Mac App Store または GitHub からダウンロード。起動して必要な権限を許可します。
+    - num: "02"
+      title: 任意のアーカイブを開く
+      desc: アーカイブファイルをダブルクリックするか、Finder の右クリックメニューから直接展開します。
+    - num: "03"
+      title: 圧縮して管理
+      desc: 新しいアーカイブの作成、ファイルのバッチ処理、パスワード暗号化など。
+  faqs:
+    - question: NueZip は無料ですか？
+      answer: NueZip は Mac App Store で提供される有料アプリです。試用版が用意されている場合があります。
+    - question: NueZip はどのフォーマットに対応していますか？
+      answer: NueZip は RAR、ZIP、7-Zip、TAR、GZIP、BZIP2 の圧縮と展開に対応しています。
+    - question: 対応している macOS のバージョンは？
+      answer: NueZip は macOS 14 Sonoma 以降に対応し、Apple Silicon（M シリーズ）向けに最適化されています。
+    - question: NueZip はオフラインで動作しますか？
+      answer: はい。すべてのアーカイブ操作は完全にオフラインで動作します。圧縮や展開にインターネット接続は不要です。
+    - question: 私のデータは安全ですか？
+      answer: はい。NueZip はすべて Mac ローカルで実行され、データをアップロードすることはありません。パスワード保護されたアーカイブには業界標準の暗号化が使用されています。
+  cta:
+    title: アーカイブ管理をもっと簡単に？
+    description: NueZip をダウンロードして、macOS 上で高速でネイティブなアーカイブ管理を体験しましょう。
+    primary: 始める
+    primaryLink: /ja/guide/installation
+    secondary: 使い方
+    secondaryLink: /ja/guide/usage
+  footer:
+    tagline: シンプルで、高速で、信頼できるアーカイブ管理。
+    columns:
+      - heading: 製品
+        links:
+          - text: ダウンロード
+            link: /ja/guide/installation
+          - text: 機能
+            link: /ja/guide/usage
+          - text: フォーマット
+            link: /ja/guide/formats
+      - heading: サポート
+        links:
+          - text: ガイド
+            link: /ja/guide/introduction
+          - text: よくある質問
+            link: /ja/guide/faq
+          - text: トラブルシューティング
+            link: /ja/guide/troubleshooting
+      - heading: コミュニティ
+        links:
+          - text: GitHub
+            link: https://github.com/nuezip/nuezip
+          - text: リリース
+            link: https://github.com/nuezip/nuezip/releases
+          - text: Product Hunt
+            link: https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility
+    copyright: © 2026 NueZip Project. macOS のために作られました。
+---

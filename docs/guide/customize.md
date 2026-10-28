@@ -77,14 +77,14 @@ Customize the menu bar drop panel:
 
 Access these in **Settings → General**:
 
-- **Language**: Switch between English and Chinese (Simplified)
-- **Launch at Login**: PetReminder starts automatically when you log in
+- **Language**: Switch between English, 中文, 日本語, and more
+- **Launch at Login**: NueZip starts automatically when you log in
 - **Theme**: Light or dark mode (follows system by default)
 - **Menu bar icon**: Show or hide the menu bar icon
 
 ## Tips
 
-- Assign different pets to different types of reminders for variety
-- Reduce animation speed if the pet is too distracting
-- Try pairing a calm pet (Ragdoll) for work reminders and an energetic one (Shiba) for breaks
-- Enable "Launch at Login" so you never miss important reminders
+- Set your favorite compression defaults once to speed up everyday archiving
+- Enable "Launch at Login" so NueZip is always one click away
+- Use the Finder extension for the fastest extract/compress workflow
+- Review folder access periodically in System Settings to keep things tidy

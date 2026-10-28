@@ -77,5 +77,77 @@ features:
     details: Archive repair, format conversion, performance benchmark, archive search, and file info viewer.
     link: /guide/usage
     linkText: Explore tools
----
 
+home:
+  floatingCards:
+    - Multi-Format
+    - Fast Extraction
+    - Password Secure
+  sections:
+    featuresTitle: Key Features
+    featuresSubtitle: Everything you need to manage archives efficiently on macOS
+    formatsTitle: Supported Archive Formats
+    formatsSubtitle: Compress and extract all major archive formats
+    howTitle: How It Works
+    howSubtitle: Simple and intuitive, just like macOS should be
+    faqTitle: Frequently Asked Questions
+    faqSubtitle: Quick answers for macOS users
+  formatsCtaText: View Full Format Details
+  formatsCtaLink: /guide/formats
+  steps:
+    - num: "01"
+      title: Install NueZip
+      desc: Download from the Mac App Store or GitHub. Launch and grant necessary permissions.
+    - num: "02"
+      title: Open Any Archive
+      desc: Double-click any archive file, or use the Finder context menu to extract directly.
+    - num: "03"
+      title: Compress & Manage
+      desc: Create new archives, batch process files, encrypt with passwords, and more.
+  faqs:
+    - question: Is NueZip free?
+      answer: NueZip is a paid app available on the Mac App Store. A trial version may be available for testing.
+    - question: What formats does NueZip support?
+      answer: NueZip supports RAR, ZIP, 7-Zip, TAR, GZIP, and BZIP2 formats for both compression and extraction.
+    - question: Which macOS versions are supported?
+      answer: NueZip supports macOS 14 Sonoma and later, optimized for Apple Silicon (M-series).
+    - question: Does NueZip work offline?
+      answer: Yes. All archive operations work fully offline. No internet connection is required for compression or extraction.
+    - question: Is my data secure?
+      answer: Yes. NueZip runs entirely locally on your Mac with no data uploads. Password-protected archives use industry-standard encryption.
+  cta:
+    title: Ready to Simplify Archive Management?
+    description: Download NueZip and experience fast, native archive management on macOS.
+    primary: Get Started
+    primaryLink: /guide/installation
+    secondary: How to Use
+    secondaryLink: /guide/usage
+  footer:
+    tagline: Simple, fast, and reliable archive management.
+    columns:
+      - heading: Product
+        links:
+          - text: Download
+            link: /guide/installation
+          - text: Features
+            link: /guide/usage
+          - text: Formats
+            link: /guide/formats
+      - heading: Support
+        links:
+          - text: Guide
+            link: /guide/introduction
+          - text: FAQ
+            link: /guide/faq
+          - text: Troubleshooting
+            link: /guide/troubleshooting
+      - heading: Community
+        links:
+          - text: GitHub
+            link: https://github.com/nuezip/nuezip
+          - text: Releases
+            link: https://github.com/nuezip/nuezip/releases
+          - text: Product Hunt
+            link: https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility
+    copyright: © 2026 NueZip Project. Built for macOS.
+---

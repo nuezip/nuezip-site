@@ -50,5 +50,4 @@ NueZip supports a wide range of archive formats for both reading and writing. Be
 - **For personal archiving**: Use **7-Zip** — best compression ratios, save disk space
 - **For large files**: Use **Split ZIP** or **Split 7-Zip** to break into manageable volumes
 - **For sensitive data**: Always enable **AES-256 encryption** with a strong password
-- Distinctive round face with big eyes
 
